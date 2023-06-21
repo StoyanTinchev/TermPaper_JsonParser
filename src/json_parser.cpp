@@ -1,5 +1,22 @@
 #include <sstream>
 #include "../include/json_parser.h"
+#include "../include/json_exceptions.h"
+
+void JsonParser::validate() {
+    if (!JsonValidator::validate(jsonStream)) {
+        throw InvalidJsonFormat();
+    }
+}
+
+void JsonParser::skipWhitespace() {
+    while (position < jsonStream.size() && std::isspace(jsonStream[position])) {
+        position++;
+    }
+}
+
+JsonParser::JsonParser(const std::string &jsonStream) : jsonStream(jsonStream), position(0) {
+    validate();
+}
 
 double JsonParser::parseNumber() {
     size_t endPos;
@@ -33,7 +50,7 @@ bool JsonParser::parseBool() {
         return false;
     }
 
-    throw std::runtime_error("Invalid boolean value");
+    throw InvalidBooleanValue();
 }
 
 JsonArray *JsonParser::parseArray() {
@@ -53,7 +70,7 @@ JsonArray *JsonParser::parseArray() {
     }
 
     if (position >= jsonStream.size() || jsonStream[position] != ']') {
-        throw std::runtime_error("Invalid array syntax");
+        throw InvalidArraySyntax();
     }
 
     position++;
@@ -70,7 +87,7 @@ JsonObject *JsonParser::parseObject() {
         skipWhitespace();
 
         if (position >= jsonStream.size() || jsonStream[position] != ':') {
-            throw std::runtime_error("Invalid object syntax");
+            throw InvalidObjectSyntax();
         }
 
         position++;
@@ -87,7 +104,7 @@ JsonObject *JsonParser::parseObject() {
     }
 
     if (position >= jsonStream.size() || jsonStream[position] != '}') {
-        throw std::runtime_error("Invalid object syntax");
+        throw InvalidObjectSyntax();
     }
 
     position++;
@@ -116,7 +133,6 @@ JsonElement *JsonParser::parse() {
                 return new JsonValue("");
             }
 
-            throw std::runtime_error("Unexpected token");
+            throw UnexpectedToken();
     }
 }
-

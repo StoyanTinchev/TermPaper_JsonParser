@@ -16,17 +16,9 @@ private:
     std::string jsonStream;
     size_t position;
 
-    void validate() {
-        if (!JsonValidator::validate(jsonStream)) {
-            throw std::runtime_error("Invalid JSON format");
-        }
-    }
+    void validate();
 
-    void skipWhitespace() {
-        while (position < jsonStream.size() && std::isspace(jsonStream[position])) {
-            position++;
-        }
-    }
+    void skipWhitespace();
 
     double parseNumber();
 
@@ -39,9 +31,7 @@ private:
     JsonObject *parseObject();
 
 public:
-    explicit JsonParser(const std::string &jsonStream) : jsonStream(jsonStream), position(0) {
-        validate();
-    }
+    explicit JsonParser(const std::string &jsonStream);
 
     JsonElement *parse();
 };;

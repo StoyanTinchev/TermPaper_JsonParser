@@ -5,11 +5,12 @@
 #include "json_key.h"
 #include "json_object.h"
 #include "json_array.h"
+#include "../json_exceptions.h"
 #include <vector>
 #include <string>
 
 enum class ValueType {
-    Null, Number, String, Bool, Object, Array
+    Number, String, Bool, Object, Array
 };
 
 class JsonValue : public JsonElement {
@@ -34,7 +35,14 @@ public:
     explicit JsonValue(JsonObject *value);
 
     std::string to_string() const override;
+
+    std::vector<std::string> search(const std::string &key) override;
+
+    bool contains(const std::string &value) override;
+
+    void set(const std::vector<std::string> &path, const std::string &new_value) override;
 };
+;
 
 
 #endif // JSON_VALUE_H
