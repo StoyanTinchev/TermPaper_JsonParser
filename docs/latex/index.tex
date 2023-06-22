@@ -1,0 +1,32 @@
+\chapter{JSON Parser Console Application Documentation}
+\hypertarget{index}{}\label{index}\index{JSON Parser Console Application Documentation@{JSON Parser Console Application Documentation}}
+\hypertarget{index_intro_sec}{}\doxysection{\texorpdfstring{Introduction}{Introduction}}\label{index_intro_sec}
+Welcome to the documentation of our JSON Parser Console Application. This application is designed to parse, manipulate and validate JSON files. It provides a console-\/based interface for working with JSON data. You can open, save, and perform various operations on JSON data like search, insert, delete, and move JSON elements.\hypertarget{index_usage_sec}{}\doxysection{\texorpdfstring{Usage}{Usage}}\label{index_usage_sec}
+After you open a JSON file with our application, you can use the following commands\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily validate}\+: Validates the JSON file.
+\item {\ttfamily print}\+: Prints the JSON file.
+\item {\ttfamily search \texorpdfstring{$<$}{<}key\texorpdfstring{$>$}{>}}\+: Searches for the key in the JSON and returns its path.
+\item {\ttfamily contains \texorpdfstring{$<$}{<}value\texorpdfstring{$>$}{>}}\+: Checks if the JSON contains the provided value.
+\item {\ttfamily set \texorpdfstring{$<$}{<}path\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}new\+\_\+value\texorpdfstring{$>$}{>}}\+: Sets the new value at the given path.
+\item {\ttfamily create \texorpdfstring{$<$}{<}path\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}value\texorpdfstring{$>$}{>}}\+: Creates a new element with the given value at the specified path.
+\item {\ttfamily delete \texorpdfstring{$<$}{<}path\texorpdfstring{$>$}{>}}\+: Deletes the element at the given path.
+\item {\ttfamily move \texorpdfstring{$<$}{<}from\+Path\texorpdfstring{$>$}{>} \texorpdfstring{$<$}{<}to\+Path\texorpdfstring{$>$}{>}}\+: Moves the element from the source path to the destination path.
+\item {\ttfamily save} \mbox{[}$<$path$>$\mbox{]} saveas $<$file$>$ \mbox{[}$<$path$>$\mbox{]}\+: Saves the JSON file to the specified path.
+\end{DoxyItemize}\hypertarget{index_classes_sec}{}\doxysection{\texorpdfstring{Classes}{Classes}}\label{index_classes_sec}
+The application includes several classes to handle JSON data, including\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{class_json_manager}{Json\+Manager}}\+: Manages JSON file operations like opening, saving, etc.
+\item {\ttfamily \doxylink{class_json_parser}{Json\+Parser}}\+: Parses JSON data.
+\item {\ttfamily \doxylink{class_json_object}{Json\+Object}}, {\ttfamily \doxylink{class_json_array}{Json\+Array}}, {\ttfamily \doxylink{class_json_value}{Json\+Value}}\+: Represent different types of JSON elements.
+\item {\ttfamily \doxylink{class_json_key}{Json\+Key}}\+: Represents a key in a JSON object.
+\item {\ttfamily \doxylink{class_json_validator}{Json\+Validator}}\+: Validates a JSON string.
+\item {\ttfamily \doxylink{class_json_exception}{Json\+Exception}} and its subclasses\+: Represent various exceptions that can occur while handling JSON data.
+\end{DoxyItemize}
+
+Detailed information about these classes can be found in the \"{}\+Classes\"{} section.\hypertarget{index_install_sec}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{index_install_sec}
+To use the JSON Parser Console Application, simply clone the repository and build it using a C++ compiler. The application does not have any external dependencies. 

@@ -1,0 +1,253 @@
+\doxysection{Json\+Manager Class Reference}
+\hypertarget{class_json_manager}{}\label{class_json_manager}\index{JsonManager@{JsonManager}}
+
+
+The \doxylink{class_json_manager}{Json\+Manager} class provides functionalities to manage JSON operations.  
+
+
+
+
+{\ttfamily \#include $<$json\+\_\+manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_json_manager_aa59244b57e3e2464b6eb304ccab55a8a}{Json\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_json_manager}{Json\+Manager}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_json_manager_ade81448ded6365c5eb6b221106287167}{\texorpdfstring{$\sim$}{\string~}\+Json\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_json_manager}{Json\+Manager}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_manager_a9c7da9043a8ea2e1a2abd0dc80aacd0a}{open}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Opens a JSON file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_manager_a99193595221737461254a7ac1070f094}{save}} ()
+\begin{DoxyCompactList}\small\item\em Saves the current JSON to the file path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_manager_abee72a29e0831cda8677e8580f873f39}{save\+As}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Saves the current JSON to a new file path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_manager_ae27c26642d8bc720664575d41559a3a8}{exit}} ()
+\begin{DoxyCompactList}\small\item\em Exits the \doxylink{class_json_manager}{Json\+Manager}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_json_manager_abd264c8052df90523e74a2d16aa11b01}{validate}} ()
+\begin{DoxyCompactList}\small\item\em Validates the JSON file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_manager_a7d9abbe836ab188e9557243d0009de6f}{print}} ()
+\begin{DoxyCompactList}\small\item\em Prints the JSON to the console. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_json_manager_ae06d1273d38e97c73a0664bbd9954b6e}{search}} (const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Searches the JSON for a key. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_json_manager_a053445c350b3ffcea0496323660a5a8c}{contains}} (const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Checks if the JSON contains a value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_manager_af5a3960c3006c90f0d807437b0e9b766}{set}} (const std\+::string \&path, const std\+::string \&new\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Sets a value in the JSON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_manager_ad0c5ce51d3704bd940cd1bf611ff31de}{create}} (const std\+::string \&path, const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Creates a new key-\/value pair in the JSON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_manager_a9cee399626899e3d7e89c34b10c2ec61}{delete\+\_\+element}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Deletes an element in the JSON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_manager_a3acb1531a5d27032a7914bfd1f1874a1}{move}} (const std\+::string \&from\+Path, const std\+::string \&to\+Path)
+\begin{DoxyCompactList}\small\item\em Moves an element from one location to another in the JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_json_manager}{Json\+Manager} class provides functionalities to manage JSON operations. 
+
+\doxylink{class_json_manager}{Json\+Manager} uses a \doxylink{class_json_parser}{Json\+Parser} to parse the JSON, and provides operations like opening, saving, validating, printing, searching, checking containment, setting, creating, deleting, and moving elements within a JSON. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_json_manager_aa59244b57e3e2464b6eb304ccab55a8a}\label{class_json_manager_aa59244b57e3e2464b6eb304ccab55a8a} 
+\index{JsonManager@{JsonManager}!JsonManager@{JsonManager}}
+\index{JsonManager@{JsonManager}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{JsonManager()}{JsonManager()}}
+{\footnotesize\ttfamily Json\+Manager\+::\+Json\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for \doxylink{class_json_manager}{Json\+Manager}. 
+
+\Hypertarget{class_json_manager_ade81448ded6365c5eb6b221106287167}\label{class_json_manager_ade81448ded6365c5eb6b221106287167} 
+\index{JsonManager@{JsonManager}!````~JsonManager@{\texorpdfstring{$\sim$}{\string~}JsonManager}}
+\index{````~JsonManager@{\texorpdfstring{$\sim$}{\string~}JsonManager}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}JsonManager()}{\string~JsonManager()}}
+{\footnotesize\ttfamily Json\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Json\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_json_manager}{Json\+Manager}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_json_manager_a053445c350b3ffcea0496323660a5a8c}\label{class_json_manager_a053445c350b3ffcea0496323660a5a8c} 
+\index{JsonManager@{JsonManager}!contains@{contains}}
+\index{contains@{contains}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Json\+Manager\+::contains (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Checks if the JSON contains a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to check for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the JSON contains the value, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_json_manager_ad0c5ce51d3704bd940cd1bf611ff31de}\label{class_json_manager_ad0c5ce51d3704bd940cd1bf611ff31de} 
+\index{JsonManager@{JsonManager}!create@{create}}
+\index{create@{create}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void Json\+Manager\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Creates a new key-\/value pair in the JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the place to create the new key-\/value pair. \\
+\hline
+{\em value} & The value of the new key-\/value pair. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_json_manager_a9cee399626899e3d7e89c34b10c2ec61}\label{class_json_manager_a9cee399626899e3d7e89c34b10c2ec61} 
+\index{JsonManager@{JsonManager}!delete\_element@{delete\_element}}
+\index{delete\_element@{delete\_element}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{delete\_element()}{delete\_element()}}
+{\footnotesize\ttfamily void Json\+Manager\+::delete\+\_\+element (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Deletes an element in the JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the element to delete. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_json_manager_ae27c26642d8bc720664575d41559a3a8}\label{class_json_manager_ae27c26642d8bc720664575d41559a3a8} 
+\index{JsonManager@{JsonManager}!exit@{exit}}
+\index{exit@{exit}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily void Json\+Manager\+::exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exits the \doxylink{class_json_manager}{Json\+Manager}. 
+
+\Hypertarget{class_json_manager_a3acb1531a5d27032a7914bfd1f1874a1}\label{class_json_manager_a3acb1531a5d27032a7914bfd1f1874a1} 
+\index{JsonManager@{JsonManager}!move@{move}}
+\index{move@{move}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Json\+Manager\+::move (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{from\+Path,  }\item[{const std\+::string \&}]{to\+Path }\end{DoxyParamCaption})}
+
+
+
+Moves an element from one location to another in the JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Path} & The path to the element to move. \\
+\hline
+{\em to\+Path} & The path to the new location for the element. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_json_manager_a9c7da9043a8ea2e1a2abd0dc80aacd0a}\label{class_json_manager_a9c7da9043a8ea2e1a2abd0dc80aacd0a} 
+\index{JsonManager@{JsonManager}!open@{open}}
+\index{open@{open}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily void Json\+Manager\+::open (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Opens a JSON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & The path to the JSON file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_json_manager_a7d9abbe836ab188e9557243d0009de6f}\label{class_json_manager_a7d9abbe836ab188e9557243d0009de6f} 
+\index{JsonManager@{JsonManager}!print@{print}}
+\index{print@{print}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Json\+Manager\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the JSON to the console. 
+
+\Hypertarget{class_json_manager_a99193595221737461254a7ac1070f094}\label{class_json_manager_a99193595221737461254a7ac1070f094} 
+\index{JsonManager@{JsonManager}!save@{save}}
+\index{save@{save}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Json\+Manager\+::save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saves the current JSON to the file path. 
+
+\Hypertarget{class_json_manager_abee72a29e0831cda8677e8580f873f39}\label{class_json_manager_abee72a29e0831cda8677e8580f873f39} 
+\index{JsonManager@{JsonManager}!saveAs@{saveAs}}
+\index{saveAs@{saveAs}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{saveAs()}{saveAs()}}
+{\footnotesize\ttfamily void Json\+Manager\+::save\+As (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Saves the current JSON to a new file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & The new path to save the JSON file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_json_manager_ae06d1273d38e97c73a0664bbd9954b6e}\label{class_json_manager_ae06d1273d38e97c73a0664bbd9954b6e} 
+\index{JsonManager@{JsonManager}!search@{search}}
+\index{search@{search}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Json\+Manager\+::search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Searches the JSON for a key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of strings with the path to the key. 
+\end{DoxyReturn}
+\Hypertarget{class_json_manager_af5a3960c3006c90f0d807437b0e9b766}\label{class_json_manager_af5a3960c3006c90f0d807437b0e9b766} 
+\index{JsonManager@{JsonManager}!set@{set}}
+\index{set@{set}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Json\+Manager\+::set (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{const std\+::string \&}]{new\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Sets a value in the JSON. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the value to set. \\
+\hline
+{\em new\+\_\+value} & The new value to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_json_manager_abd264c8052df90523e74a2d16aa11b01}\label{class_json_manager_abd264c8052df90523e74a2d16aa11b01} 
+\index{JsonManager@{JsonManager}!validate@{validate}}
+\index{validate@{validate}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily bool Json\+Manager\+::validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Validates the JSON file. 
+
+\begin{DoxyReturn}{Returns}
+true if the JSON file is valid, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{json__manager_8h}{json\+\_\+manager.\+h}}\end{DoxyCompactItemize}

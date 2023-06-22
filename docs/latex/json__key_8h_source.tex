@@ -1,0 +1,29 @@
+\doxysection{json\+\_\+key.\+h}
+\hypertarget{json__key_8h_source}{}\label{json__key_8h_source}\index{include/json\_base/json\_key.h@{include/json\_base/json\_key.h}}
+\mbox{\hyperlink{json__key_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ JSON\_KEY\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ JSON\_KEY\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_json_key}{JsonKey}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ key;\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_json_key_a251455a554c09cb155f0c0424bed06d0}{JsonKey}}(\textcolor{keyword}{const}\ std::string\ \&key)\ :\ key(key)\ \{\}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ std::string\ \mbox{\hyperlink{class_json_key_ae101c7d8daebff9af2374a001c08edaf}{get\_key}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ key;\ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_key_ade25bc3d303fe67dbf132baf2d911f9c}{set\_key}}(\textcolor{keyword}{const}\ std::string\ \&newKey)\ \{\ key\ =\ newKey;\ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ std::string\ \mbox{\hyperlink{class_json_key_a20aceec919d27e8824b47b64277341b4}{to\_string}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}\(\backslash\)"{}"{}}\ +\ key\ +\ \textcolor{stringliteral}{"{}\(\backslash\)"{}"{}};}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ JSON\_KEY\_H}}
+
+\end{DoxyCode}

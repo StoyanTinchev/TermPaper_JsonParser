@@ -19,6 +19,5 @@ add_executable(TermPaper_JsonParser
         include/json_validator.h
         include/json_parser.h src/json_parser.cpp
         include/json_exceptions.h
-        include/json_manager.h src/json_manager.cpp
-)
+        include/json_manager.h src/json_manager.cpp)
 

@@ -1,0 +1,46 @@
+\doxysection{json\+\_\+object.\+h}
+\hypertarget{json__object_8h_source}{}\label{json__object_8h_source}\index{include/json\_base/json\_object.h@{include/json\_base/json\_object.h}}
+\mbox{\hyperlink{json__object_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ JSON\_OBJECT\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ JSON\_OBJECT\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__element_8h}{json\_base/json\_element.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__key_8h}{json\_base/json\_key.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_json_object}{JsonObject}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_element}{JsonElement}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ std::vector<std::pair<JsonKey\ *,\ JsonElement\ *>>\ data;\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00030\ \ \ \ \ std::vector<std::pair<JsonKey\ *,\ JsonElement\ *>>::iterator\ find\_element(\textcolor{keyword}{const}\ std::string\ \&key);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_json_object_aa41d053fc27e4fcf4f1c6f55ef28f4a9}{JsonObject}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_json_object_a9c99921d0fd1f9e401609d2fdef6ba22}{\string~JsonObject}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_object_a36973ccf370b1e995beaa97d485765da}{add\_element}}(\mbox{\hyperlink{class_json_key}{JsonKey}}\ *key,\ \mbox{\hyperlink{class_json_element}{JsonElement}}\ *value);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_json_element}{JsonElement}}\ *\mbox{\hyperlink{class_json_object_ab3225eee55311a06311dd4d67606797e}{get\_element}}(\textcolor{keyword}{const}\ std::string\ \&key);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ std::string\ \mbox{\hyperlink{class_json_object_a68d96ac09e41acba1492abc5ec1a0eea}{to\_string}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_json_object_a096210e59d3c570a970944cda0486274}{search}}(\textcolor{keyword}{const}\ std::string\ \&key)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_object_ae008482ab6e401e07187766c1a4e006a}{contains}}(\textcolor{keyword}{const}\ std::string\ \&value)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_object_ae30d3d2fa69c1a965f489bf6a8146c53}{set}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&new\_value)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_object_ab3d665ec4299314e1aef378e60e0a0ca}{create}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&value)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_object_ac6fc5f1ed2cd446dfb5a775f432f76d2}{delete\_element}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_object_a9c475b7b6466243971fe706db3ec96c5}{move}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&fromPath,\ \textcolor{keyword}{const}\ std::vector<std::string>\ \&toPath)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ JSON\_OBJECT\_H}}
+
+\end{DoxyCode}

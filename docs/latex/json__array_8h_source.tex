@@ -1,0 +1,44 @@
+\doxysection{json\+\_\+array.\+h}
+\hypertarget{json__array_8h_source}{}\label{json__array_8h_source}\index{include/json\_base/json\_array.h@{include/json\_base/json\_array.h}}
+\mbox{\hyperlink{json__array_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ JSON\_ARRAY\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ JSON\_ARRAY\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__element_8h}{json\_base/json\_element.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{json__exceptions_8h}{json\_exceptions.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_json_array}{JsonArray}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_element}{JsonElement}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ std::vector<JsonElement\ *>\ data;\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_json_array_a304f5ede160dbc87f9ec7d7983bd1cbf}{JsonArray}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_json_array_a9ca4578a4a02708517eb6f15e4cd9b8b}{\string~JsonArray}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_array_a33c6f0ccbcb938b4b678e7d8f06a3d55}{add\_element}}(\mbox{\hyperlink{class_json_element}{JsonElement}}\ *value);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_json_element}{JsonElement}}\ *\mbox{\hyperlink{class_json_array_abd7b391adb022d6fc32ed76eeb048d19}{get\_element}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ std::string\ \mbox{\hyperlink{class_json_array_ae65670649aedfad0375b1f3b8b6a1b20}{to\_string}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_json_array_a79a316409a5f3fa8ebab101eb2d1e313}{search}}(\textcolor{keyword}{const}\ std::string\ \&key)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_array_a1f09fd4a5b4ec045945e3ed9d301c3d9}{contains}}(\textcolor{keyword}{const}\ std::string\ \&value)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_array_afa38f83b7b285940d66117104be65748}{set}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&new\_value)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_array_a3869c3769f8d253a7a639c2e0f141688}{create}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&value)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_array_ae93c0b17ebef659d034eaeb3dd736ffa}{delete\_element}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_array_ad86b8c638a507fee7db3d58d43e1d7a1}{move}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&fromPath,\ \textcolor{keyword}{const}\ std::vector<std::string>\ \&toPath)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ JSON\_ARRAY\_H}}
+
+\end{DoxyCode}

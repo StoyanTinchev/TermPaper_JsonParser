@@ -1,0 +1,62 @@
+\doxysection{Json\+Parser Class Reference}
+\hypertarget{class_json_parser}{}\label{class_json_parser}\index{JsonParser@{JsonParser}}
+
+
+This class is responsible for parsing JSON text.  
+
+
+
+
+{\ttfamily \#include $<$json\+\_\+parser.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_json_parser_ab2bfea1ba43bf7110d05bd1537cd3f90}{Json\+Parser}} (const std\+::string \&json\+Stream)
+\begin{DoxyCompactList}\small\item\em Constructs a new Json Parser object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_json_parser_a95c7513cd7b8c7f09a2deda73c019bb4}{parse}} ()
+\begin{DoxyCompactList}\small\item\em Begins parsing the JSON text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is responsible for parsing JSON text. 
+
+It reads a string of JSON text and constructs an in-\/memory representation of the JSON using {\ttfamily \doxylink{class_json_value}{Json\+Value}}, {\ttfamily \doxylink{class_json_array}{Json\+Array}}, and {\ttfamily \doxylink{class_json_object}{Json\+Object}} objects. The parsing process includes validation of the JSON text structure according to the JSON standard. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_json_parser_ab2bfea1ba43bf7110d05bd1537cd3f90}\label{class_json_parser_ab2bfea1ba43bf7110d05bd1537cd3f90} 
+\index{JsonParser@{JsonParser}!JsonParser@{JsonParser}}
+\index{JsonParser@{JsonParser}!JsonParser@{JsonParser}}
+\doxysubsubsection{\texorpdfstring{JsonParser()}{JsonParser()}}
+{\footnotesize\ttfamily Json\+Parser\+::\+Json\+Parser (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a new Json Parser object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Stream} & The JSON text to parse. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_json_parser_a95c7513cd7b8c7f09a2deda73c019bb4}\label{class_json_parser_a95c7513cd7b8c7f09a2deda73c019bb4} 
+\index{JsonParser@{JsonParser}!parse@{parse}}
+\index{parse@{parse}!JsonParser@{JsonParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*} Json\+Parser\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Begins parsing the JSON text. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the root {\ttfamily \doxylink{class_json_element}{Json\+Element}} object representing the parsed JSON. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{json__parser_8h}{json\+\_\+parser.\+h}}\end{DoxyCompactItemize}

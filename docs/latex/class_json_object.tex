@@ -1,0 +1,275 @@
+\doxysection{Json\+Object Class Reference}
+\hypertarget{class_json_object}{}\label{class_json_object}\index{JsonObject@{JsonObject}}
+
+
+A class that represents an object in JSON.  
+
+
+
+
+{\ttfamily \#include $<$json\+\_\+object.\+h$>$}
+
+Inheritance diagram for Json\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_json_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_json_object_aa41d053fc27e4fcf4f1c6f55ef28f4a9}{Json\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_json_object}{Json\+Object}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_json_object_a9c99921d0fd1f9e401609d2fdef6ba22}{\texorpdfstring{$\sim$}{\string~}\+Json\+Object}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_json_object}{Json\+Object}, overridden from \doxylink{class_json_element}{Json\+Element}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_object_a36973ccf370b1e995beaa97d485765da}{add\+\_\+element}} (\mbox{\hyperlink{class_json_key}{Json\+Key}} \texorpdfstring{$\ast$}{*}key, \mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*}value)
+\begin{DoxyCompactList}\small\item\em Add a key-\/value pair to the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_json_object_ab3225eee55311a06311dd4d67606797e}{get\+\_\+element}} (const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Get the value associated with a given key in the object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_json_object_a68d96ac09e41acba1492abc5ec1a0eea}{to\+\_\+string}} () const override
+\begin{DoxyCompactList}\small\item\em Convert the object to a JSON-\/formatted string. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_json_object_a096210e59d3c570a970944cda0486274}{search}} (const std\+::string \&key) override
+\begin{DoxyCompactList}\small\item\em Search for a key in the object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_json_object_ae008482ab6e401e07187766c1a4e006a}{contains}} (const std\+::string \&value) override
+\begin{DoxyCompactList}\small\item\em Check if the object contains a value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_object_ae30d3d2fa69c1a965f489bf6a8146c53}{set}} (const std\+::vector$<$ std\+::string $>$ \&path, const std\+::string \&new\+\_\+value) override
+\begin{DoxyCompactList}\small\item\em Set the value of an element at a given path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_object_ab3d665ec4299314e1aef378e60e0a0ca}{create}} (const std\+::vector$<$ std\+::string $>$ \&path, const std\+::string \&value) override
+\begin{DoxyCompactList}\small\item\em Create a new element at a given path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_object_ac6fc5f1ed2cd446dfb5a775f432f76d2}{delete\+\_\+element}} (const std\+::vector$<$ std\+::string $>$ \&path) override
+\begin{DoxyCompactList}\small\item\em Delete an element at a given path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_object_a9c475b7b6466243971fe706db3ec96c5}{move}} (const std\+::vector$<$ std\+::string $>$ \&from\+Path, const std\+::vector$<$ std\+::string $>$ \&to\+Path) override
+\begin{DoxyCompactList}\small\item\em Move an element from one path to another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_json_element}{Json\+Element}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_json_element_a65dbb209b55ae334059698d025783fed}{\texorpdfstring{$\sim$}{\string~}\+Json\+Element}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_json_element_acaa559e1be09dff2f6b347775d0983dc}{to\+\_\+string}} () const =0
+\begin{DoxyCompactList}\small\item\em Convert the JSON element to a string. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_json_element_a89efc03621132a676694994be0b88ee5}{search}} (const std\+::string \&key)=0
+\begin{DoxyCompactList}\small\item\em Search for a key in the JSON element. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_json_element_aff8ec1964ccbfcd7d450d66d9956e3f7}{contains}} (const std\+::string \&value)=0
+\begin{DoxyCompactList}\small\item\em Check if the JSON element contains a certain value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_json_element_a484d825f5e631f899fdff7ddb486a585}{set}} (const std\+::vector$<$ std\+::string $>$ \&path, const std\+::string \&new\+\_\+value)=0
+\begin{DoxyCompactList}\small\item\em Set the value at a certain path in the JSON element. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_json_element_a4dd348e9dc77f27397d023405b5bcd45}{create}} (const std\+::vector$<$ std\+::string $>$ \&path, const std\+::string \&value)=0
+\begin{DoxyCompactList}\small\item\em Create a new key-\/value pair at a certain path in the JSON element. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_json_element_ac6330f1734e30ed7a316087e68fc6f0f}{delete\+\_\+element}} (const std\+::vector$<$ std\+::string $>$ \&path)=0
+\begin{DoxyCompactList}\small\item\em Delete a key-\/value pair at a certain path in the JSON element. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_json_element_a2ddc931b379e450ce2ebd4e240e5a628}{move}} (const std\+::vector$<$ std\+::string $>$ \&from\+Path, const std\+::vector$<$ std\+::string $>$ \&to\+Path)=0
+\begin{DoxyCompactList}\small\item\em Move a key-\/value pair from one path to another in the JSON element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents an object in JSON. 
+
+The \doxylink{class_json_object}{Json\+Object} class encapsulates a vector of key-\/value pairs where the key is a \doxylink{class_json_key}{Json\+Key} pointer and the value is a \doxylink{class_json_element}{Json\+Element} pointer. The class provides methods to manipulate, search, and convert the object to a JSON-\/formatted string. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_json_object_aa41d053fc27e4fcf4f1c6f55ef28f4a9}\label{class_json_object_aa41d053fc27e4fcf4f1c6f55ef28f4a9} 
+\index{JsonObject@{JsonObject}!JsonObject@{JsonObject}}
+\index{JsonObject@{JsonObject}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{JsonObject()}{JsonObject()}}
+{\footnotesize\ttfamily Json\+Object\+::\+Json\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for \doxylink{class_json_object}{Json\+Object}. 
+
+\Hypertarget{class_json_object_a9c99921d0fd1f9e401609d2fdef6ba22}\label{class_json_object_a9c99921d0fd1f9e401609d2fdef6ba22} 
+\index{JsonObject@{JsonObject}!````~JsonObject@{\texorpdfstring{$\sim$}{\string~}JsonObject}}
+\index{````~JsonObject@{\texorpdfstring{$\sim$}{\string~}JsonObject}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}JsonObject()}{\string~JsonObject()}}
+{\footnotesize\ttfamily Json\+Object\+::\texorpdfstring{$\sim$}{\string~}\+Json\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for \doxylink{class_json_object}{Json\+Object}, overridden from \doxylink{class_json_element}{Json\+Element}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_json_object_a36973ccf370b1e995beaa97d485765da}\label{class_json_object_a36973ccf370b1e995beaa97d485765da} 
+\index{JsonObject@{JsonObject}!add\_element@{add\_element}}
+\index{add\_element@{add\_element}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{add\_element()}{add\_element()}}
+{\footnotesize\ttfamily void Json\+Object\+::add\+\_\+element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_json_key}{Json\+Key}} \texorpdfstring{$\ast$}{*}}]{key,  }\item[{\mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*}}]{value }\end{DoxyParamCaption})}
+
+
+
+Add a key-\/value pair to the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to add. \\
+\hline
+{\em value} & The value to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_json_object_ae008482ab6e401e07187766c1a4e006a}\label{class_json_object_ae008482ab6e401e07187766c1a4e006a} 
+\index{JsonObject@{JsonObject}!contains@{contains}}
+\index{contains@{contains}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Json\+Object\+::contains (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the object contains a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to check for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the value is found, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_json_element_aff8ec1964ccbfcd7d450d66d9956e3f7}{Json\+Element}}.
+
+\Hypertarget{class_json_object_ab3d665ec4299314e1aef378e60e0a0ca}\label{class_json_object_ab3d665ec4299314e1aef378e60e0a0ca} 
+\index{JsonObject@{JsonObject}!create@{create}}
+\index{create@{create}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void Json\+Object\+::create (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{path,  }\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a new element at a given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the new element. \\
+\hline
+{\em value} & The value of the new element. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_json_element_a4dd348e9dc77f27397d023405b5bcd45}{Json\+Element}}.
+
+\Hypertarget{class_json_object_ac6fc5f1ed2cd446dfb5a775f432f76d2}\label{class_json_object_ac6fc5f1ed2cd446dfb5a775f432f76d2} 
+\index{JsonObject@{JsonObject}!delete\_element@{delete\_element}}
+\index{delete\_element@{delete\_element}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{delete\_element()}{delete\_element()}}
+{\footnotesize\ttfamily void Json\+Object\+::delete\+\_\+element (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Delete an element at a given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the element to delete. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_json_element_ac6330f1734e30ed7a316087e68fc6f0f}{Json\+Element}}.
+
+\Hypertarget{class_json_object_ab3225eee55311a06311dd4d67606797e}\label{class_json_object_ab3225eee55311a06311dd4d67606797e} 
+\index{JsonObject@{JsonObject}!get\_element@{get\_element}}
+\index{get\_element@{get\_element}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{get\_element()}{get\_element()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*} Json\+Object\+::get\+\_\+element (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Get the value associated with a given key in the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key associated with the value to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value associated with the given key. 
+\end{DoxyReturn}
+\Hypertarget{class_json_object_a9c475b7b6466243971fe706db3ec96c5}\label{class_json_object_a9c475b7b6466243971fe706db3ec96c5} 
+\index{JsonObject@{JsonObject}!move@{move}}
+\index{move@{move}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Json\+Object\+::move (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{from\+Path,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{to\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Move an element from one path to another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Path} & The current path of the element. \\
+\hline
+{\em to\+Path} & The new path for the element. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_json_element_a2ddc931b379e450ce2ebd4e240e5a628}{Json\+Element}}.
+
+\Hypertarget{class_json_object_a096210e59d3c570a970944cda0486274}\label{class_json_object_a096210e59d3c570a970944cda0486274} 
+\index{JsonObject@{JsonObject}!search@{search}}
+\index{search@{search}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Json\+Object\+::search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Search for a key in the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of paths to the elements that contain the key. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_json_element_a89efc03621132a676694994be0b88ee5}{Json\+Element}}.
+
+\Hypertarget{class_json_object_ae30d3d2fa69c1a965f489bf6a8146c53}\label{class_json_object_ae30d3d2fa69c1a965f489bf6a8146c53} 
+\index{JsonObject@{JsonObject}!set@{set}}
+\index{set@{set}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Json\+Object\+::set (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{path,  }\item[{const std\+::string \&}]{new\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the value of an element at a given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the element. \\
+\hline
+{\em new\+\_\+value} & The new value to set. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_json_element_a484d825f5e631f899fdff7ddb486a585}{Json\+Element}}.
+
+\Hypertarget{class_json_object_a68d96ac09e41acba1492abc5ec1a0eea}\label{class_json_object_a68d96ac09e41acba1492abc5ec1a0eea} 
+\index{JsonObject@{JsonObject}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!JsonObject@{JsonObject}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string Json\+Object\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Convert the object to a JSON-\/formatted string. 
+
+\begin{DoxyReturn}{Returns}
+A JSON-\/formatted string representing the object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_json_element_acaa559e1be09dff2f6b347775d0983dc}{Json\+Element}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/json\+\_\+base/\mbox{\hyperlink{json__object_8h}{json\+\_\+object.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,273 @@
+\doxysection{Json\+Array Class Reference}
+\hypertarget{class_json_array}{}\label{class_json_array}\index{JsonArray@{JsonArray}}
+
+
+A class that represents an array in JSON.  
+
+
+
+
+{\ttfamily \#include $<$json\+\_\+array.\+h$>$}
+
+Inheritance diagram for Json\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_json_array}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_json_array_a304f5ede160dbc87f9ec7d7983bd1cbf}{Json\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_json_array}{Json\+Array}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_json_array_a9ca4578a4a02708517eb6f15e4cd9b8b}{\texorpdfstring{$\sim$}{\string~}\+Json\+Array}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_json_array}{Json\+Array}, overridden from \doxylink{class_json_element}{Json\+Element}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_array_a33c6f0ccbcb938b4b678e7d8f06a3d55}{add\+\_\+element}} (\mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*}value)
+\begin{DoxyCompactList}\small\item\em Add an element to the array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_json_array_abd7b391adb022d6fc32ed76eeb048d19}{get\+\_\+element}} (int index)
+\begin{DoxyCompactList}\small\item\em Get an element from the array by index. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_json_array_ae65670649aedfad0375b1f3b8b6a1b20}{to\+\_\+string}} () const override
+\begin{DoxyCompactList}\small\item\em Convert the array to a JSON-\/formatted string. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_json_array_a79a316409a5f3fa8ebab101eb2d1e313}{search}} (const std\+::string \&key) override
+\begin{DoxyCompactList}\small\item\em Search for a key in the array. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_json_array_a1f09fd4a5b4ec045945e3ed9d301c3d9}{contains}} (const std\+::string \&value) override
+\begin{DoxyCompactList}\small\item\em Check if the array contains a value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_array_afa38f83b7b285940d66117104be65748}{set}} (const std\+::vector$<$ std\+::string $>$ \&path, const std\+::string \&new\+\_\+value) override
+\begin{DoxyCompactList}\small\item\em Set the value of an element at a given path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_array_a3869c3769f8d253a7a639c2e0f141688}{create}} (const std\+::vector$<$ std\+::string $>$ \&path, const std\+::string \&value) override
+\begin{DoxyCompactList}\small\item\em Create a new element at a given path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_array_ae93c0b17ebef659d034eaeb3dd736ffa}{delete\+\_\+element}} (const std\+::vector$<$ std\+::string $>$ \&path) override
+\begin{DoxyCompactList}\small\item\em Delete an element at a given path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_array_ad86b8c638a507fee7db3d58d43e1d7a1}{move}} (const std\+::vector$<$ std\+::string $>$ \&from\+Path, const std\+::vector$<$ std\+::string $>$ \&to\+Path) override
+\begin{DoxyCompactList}\small\item\em Move an element from one path to another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_json_element}{Json\+Element}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_json_element_a65dbb209b55ae334059698d025783fed}{\texorpdfstring{$\sim$}{\string~}\+Json\+Element}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_json_element_acaa559e1be09dff2f6b347775d0983dc}{to\+\_\+string}} () const =0
+\begin{DoxyCompactList}\small\item\em Convert the JSON element to a string. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_json_element_a89efc03621132a676694994be0b88ee5}{search}} (const std\+::string \&key)=0
+\begin{DoxyCompactList}\small\item\em Search for a key in the JSON element. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_json_element_aff8ec1964ccbfcd7d450d66d9956e3f7}{contains}} (const std\+::string \&value)=0
+\begin{DoxyCompactList}\small\item\em Check if the JSON element contains a certain value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_json_element_a484d825f5e631f899fdff7ddb486a585}{set}} (const std\+::vector$<$ std\+::string $>$ \&path, const std\+::string \&new\+\_\+value)=0
+\begin{DoxyCompactList}\small\item\em Set the value at a certain path in the JSON element. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_json_element_a4dd348e9dc77f27397d023405b5bcd45}{create}} (const std\+::vector$<$ std\+::string $>$ \&path, const std\+::string \&value)=0
+\begin{DoxyCompactList}\small\item\em Create a new key-\/value pair at a certain path in the JSON element. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_json_element_ac6330f1734e30ed7a316087e68fc6f0f}{delete\+\_\+element}} (const std\+::vector$<$ std\+::string $>$ \&path)=0
+\begin{DoxyCompactList}\small\item\em Delete a key-\/value pair at a certain path in the JSON element. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_json_element_a2ddc931b379e450ce2ebd4e240e5a628}{move}} (const std\+::vector$<$ std\+::string $>$ \&from\+Path, const std\+::vector$<$ std\+::string $>$ \&to\+Path)=0
+\begin{DoxyCompactList}\small\item\em Move a key-\/value pair from one path to another in the JSON element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents an array in JSON. 
+
+The \doxylink{class_json_array}{Json\+Array} class encapsulates a vector of \doxylink{class_json_element}{Json\+Element} pointers and provides methods to manipulate and search the array, in addition to converting the array to a JSON-\/formatted string. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_json_array_a304f5ede160dbc87f9ec7d7983bd1cbf}\label{class_json_array_a304f5ede160dbc87f9ec7d7983bd1cbf} 
+\index{JsonArray@{JsonArray}!JsonArray@{JsonArray}}
+\index{JsonArray@{JsonArray}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{JsonArray()}{JsonArray()}}
+{\footnotesize\ttfamily Json\+Array\+::\+Json\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for \doxylink{class_json_array}{Json\+Array}. 
+
+\Hypertarget{class_json_array_a9ca4578a4a02708517eb6f15e4cd9b8b}\label{class_json_array_a9ca4578a4a02708517eb6f15e4cd9b8b} 
+\index{JsonArray@{JsonArray}!````~JsonArray@{\texorpdfstring{$\sim$}{\string~}JsonArray}}
+\index{````~JsonArray@{\texorpdfstring{$\sim$}{\string~}JsonArray}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}JsonArray()}{\string~JsonArray()}}
+{\footnotesize\ttfamily Json\+Array\+::\texorpdfstring{$\sim$}{\string~}\+Json\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for \doxylink{class_json_array}{Json\+Array}, overridden from \doxylink{class_json_element}{Json\+Element}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_json_array_a33c6f0ccbcb938b4b678e7d8f06a3d55}\label{class_json_array_a33c6f0ccbcb938b4b678e7d8f06a3d55} 
+\index{JsonArray@{JsonArray}!add\_element@{add\_element}}
+\index{add\_element@{add\_element}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{add\_element()}{add\_element()}}
+{\footnotesize\ttfamily void Json\+Array\+::add\+\_\+element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*}}]{value }\end{DoxyParamCaption})}
+
+
+
+Add an element to the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The element to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_json_array_a1f09fd4a5b4ec045945e3ed9d301c3d9}\label{class_json_array_a1f09fd4a5b4ec045945e3ed9d301c3d9} 
+\index{JsonArray@{JsonArray}!contains@{contains}}
+\index{contains@{contains}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Json\+Array\+::contains (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the array contains a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to check for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the value is found, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_json_element_aff8ec1964ccbfcd7d450d66d9956e3f7}{Json\+Element}}.
+
+\Hypertarget{class_json_array_a3869c3769f8d253a7a639c2e0f141688}\label{class_json_array_a3869c3769f8d253a7a639c2e0f141688} 
+\index{JsonArray@{JsonArray}!create@{create}}
+\index{create@{create}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void Json\+Array\+::create (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{path,  }\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create a new element at a given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the new element. \\
+\hline
+{\em value} & The value of the new element. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_json_element_a4dd348e9dc77f27397d023405b5bcd45}{Json\+Element}}.
+
+\Hypertarget{class_json_array_ae93c0b17ebef659d034eaeb3dd736ffa}\label{class_json_array_ae93c0b17ebef659d034eaeb3dd736ffa} 
+\index{JsonArray@{JsonArray}!delete\_element@{delete\_element}}
+\index{delete\_element@{delete\_element}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{delete\_element()}{delete\_element()}}
+{\footnotesize\ttfamily void Json\+Array\+::delete\+\_\+element (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Delete an element at a given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the element to delete. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_json_element_ac6330f1734e30ed7a316087e68fc6f0f}{Json\+Element}}.
+
+\Hypertarget{class_json_array_abd7b391adb022d6fc32ed76eeb048d19}\label{class_json_array_abd7b391adb022d6fc32ed76eeb048d19} 
+\index{JsonArray@{JsonArray}!get\_element@{get\_element}}
+\index{get\_element@{get\_element}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{get\_element()}{get\_element()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*} Json\+Array\+::get\+\_\+element (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Get an element from the array by index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the element to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The element at the given index. 
+\end{DoxyReturn}
+\Hypertarget{class_json_array_ad86b8c638a507fee7db3d58d43e1d7a1}\label{class_json_array_ad86b8c638a507fee7db3d58d43e1d7a1} 
+\index{JsonArray@{JsonArray}!move@{move}}
+\index{move@{move}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Json\+Array\+::move (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{from\+Path,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{to\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Move an element from one path to another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Path} & The current path of the element. \\
+\hline
+{\em to\+Path} & The new path for the element. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_json_element_a2ddc931b379e450ce2ebd4e240e5a628}{Json\+Element}}.
+
+\Hypertarget{class_json_array_a79a316409a5f3fa8ebab101eb2d1e313}\label{class_json_array_a79a316409a5f3fa8ebab101eb2d1e313} 
+\index{JsonArray@{JsonArray}!search@{search}}
+\index{search@{search}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Json\+Array\+::search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Search for a key in the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of paths to the elements that contain the key. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_json_element_a89efc03621132a676694994be0b88ee5}{Json\+Element}}.
+
+\Hypertarget{class_json_array_afa38f83b7b285940d66117104be65748}\label{class_json_array_afa38f83b7b285940d66117104be65748} 
+\index{JsonArray@{JsonArray}!set@{set}}
+\index{set@{set}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Json\+Array\+::set (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{path,  }\item[{const std\+::string \&}]{new\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the value of an element at a given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the element. \\
+\hline
+{\em new\+\_\+value} & The new value to set. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_json_element_a484d825f5e631f899fdff7ddb486a585}{Json\+Element}}.
+
+\Hypertarget{class_json_array_ae65670649aedfad0375b1f3b8b6a1b20}\label{class_json_array_ae65670649aedfad0375b1f3b8b6a1b20} 
+\index{JsonArray@{JsonArray}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!JsonArray@{JsonArray}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string Json\+Array\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Convert the array to a JSON-\/formatted string. 
+
+\begin{DoxyReturn}{Returns}
+A JSON-\/formatted string representing the array. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_json_element_acaa559e1be09dff2f6b347775d0983dc}{Json\+Element}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/json\+\_\+base/\mbox{\hyperlink{json__array_8h}{json\+\_\+array.\+h}}\end{DoxyCompactItemize}

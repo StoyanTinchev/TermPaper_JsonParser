@@ -1,0 +1,33 @@
+\doxysection{json\+\_\+element.\+h}
+\hypertarget{json__element_8h_source}{}\label{json__element_8h_source}\index{include/json\_base/json\_element.h@{include/json\_base/json\_element.h}}
+\mbox{\hyperlink{json__element_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ JSON\_ELEMENT\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ JSON\_ELEMENT\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_json_element}{JsonElement}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_json_element_a65dbb209b55ae334059698d025783fed}{\string~JsonElement}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_json_element_acaa559e1be09dff2f6b347775d0983dc}{to\_string}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ std::vector<std::string>\ \mbox{\hyperlink{class_json_element_a89efc03621132a676694994be0b88ee5}{search}}(\textcolor{keyword}{const}\ std::string\ \&key)\ =\ 0;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_element_aff8ec1964ccbfcd7d450d66d9956e3f7}{contains}}(\textcolor{keyword}{const}\ std::string\ \&value)\ =\ 0;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_element_a484d825f5e631f899fdff7ddb486a585}{set}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&new\_value)\ =\ 0;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_element_a4dd348e9dc77f27397d023405b5bcd45}{create}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&value)\ =\ 0;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_element_ac6330f1734e30ed7a316087e68fc6f0f}{delete\_element}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path)\ =\ 0;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_element_a2ddc931b379e450ce2ebd4e240e5a628}{move}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&fromPath,\ \textcolor{keyword}{const}\ std::vector<std::string>\ \&toPath)\ =\ 0;}
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ JSON\_ELEMENT\_H}}
+
+\end{DoxyCode}

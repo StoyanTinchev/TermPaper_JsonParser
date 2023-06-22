@@ -1,0 +1,62 @@
+\doxysection{json\+\_\+value.\+h}
+\hypertarget{json__value_8h_source}{}\label{json__value_8h_source}\index{include/json\_base/json\_value.h@{include/json\_base/json\_value.h}}
+\mbox{\hyperlink{json__value_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ JSON\_VALUE\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ JSON\_VALUE\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__element_8h}{json\_base/json\_element.h}}>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__key_8h}{json\_base/json\_key.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__object_8h}{json\_base/json\_object.h}}>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__array_8h}{json\_base/json\_array.h}}>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__exceptions_8h}{json\_exceptions.h}}>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1}{ValueType}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ab2ee912b91d69b435159c7c3f6df7f5f}{Number}},\ \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a27118326006d3829667a400ad23d5d98}{String}},\ \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ac26f15e86e3de4c398a8273272aba034}{Bool}},\ \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a497031794414a552435f90151ac3b54b}{Object}},\ \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a4410ec34d9e6c1a68100ca0ce033fb17}{Array}}}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_json_value}{JsonValue}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_element}{JsonElement}}\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ std::string\ stringValue;\ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{double}\ numberValue;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ boolValue;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1}{ValueType}}\ valueType;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_json_array}{JsonArray}}\ *arrayValue;\ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_json_object}{JsonObject}}\ *objectValue;\ \ \ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_json_value_aba2587eefca1ad50f946b0202bda7767}{JsonValue}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_json_value_a6101e8292a02da86d5321c8ae8a934cd}{JsonValue}}(\textcolor{keyword}{const}\ std::string\ \&value);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_json_value_abcea4ddd4925c5f17007a030ae025c81}{JsonValue}}(\textcolor{keywordtype}{double}\ value);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_json_value_ae3242123655bc487e5c946f517e062f4}{JsonValue}}(\textcolor{keywordtype}{bool}\ value);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_json_value_a42658f6d2ca756c35ef65cb71b095cd6}{JsonValue}}(\mbox{\hyperlink{class_json_array}{JsonArray}}\ *value);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_json_value_aefbd2827747eea9f887441be8cf6b519}{JsonValue}}(\mbox{\hyperlink{class_json_object}{JsonObject}}\ *value);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \ \ std::string\ \mbox{\hyperlink{class_json_value_a8ad1e0635db285f3f0b525b144260fc3}{to\_string}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_json_value_a39576338933618f8f47cee8e6141979b}{search}}(\textcolor{keyword}{const}\ std::string\ \&key)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_value_a340e8d17bc44d0618fc82f48f0202dc4}{contains}}(\textcolor{keyword}{const}\ std::string\ \&value)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_value_ab859138a2fa51b49669f8bc6c659e9c1}{set}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&new\_value)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_value_accce4336f6462bd1572fe09cfb8ba420}{create}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&value)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_value_a22721a96f72f09a56e2004f24ea80eee}{delete\_element}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&path)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_value_a48f892b291985cc0e8e5d1804a4776ec}{move}}(\textcolor{keyword}{const}\ std::vector<std::string>\ \&fromPath,\ \textcolor{keyword}{const}\ std::vector<std::string>\ \&toPath)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ JSON\_VALUE\_H}}
+
+\end{DoxyCode}

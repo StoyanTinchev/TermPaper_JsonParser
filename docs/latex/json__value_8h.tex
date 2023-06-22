@@ -1,0 +1,71 @@
+\doxysection{include/json\+\_\+base/json\+\_\+value.h File Reference}
+\hypertarget{json__value_8h}{}\label{json__value_8h}\index{include/json\_base/json\_value.h@{include/json\_base/json\_value.h}}
+
+
+Definition of the \doxylink{class_json_value}{Json\+Value} class.  
+
+
+{\ttfamily \#include $<$json\+\_\+base/json\+\_\+element.\+h$>$}\newline
+{\ttfamily \#include $<$json\+\_\+base/json\+\_\+key.\+h$>$}\newline
+{\ttfamily \#include $<$json\+\_\+base/json\+\_\+object.\+h$>$}\newline
+{\ttfamily \#include $<$json\+\_\+base/json\+\_\+array.\+h$>$}\newline
+{\ttfamily \#include $<$json\+\_\+exceptions.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_json_value}{Json\+Value}}
+\begin{DoxyCompactList}\small\item\em JSON Value class that implements \doxylink{class_json_element}{Json\+Element} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1}{Value\+Type}} \{ \newline
+\mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ab2ee912b91d69b435159c7c3f6df7f5f}{Number}}
+, \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a27118326006d3829667a400ad23d5d98}{String}}
+, \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ac26f15e86e3de4c398a8273272aba034}{Bool}}
+, \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a497031794414a552435f90151ac3b54b}{Object}}
+, \newline
+\mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a4410ec34d9e6c1a68100ca0ce033fb17}{Array}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum class defining the possible value types of a JSON element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definition of the \doxylink{class_json_value}{Json\+Value} class. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1}\label{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1} 
+\index{json\_value.h@{json\_value.h}!ValueType@{ValueType}}
+\index{ValueType@{ValueType}!json\_value.h@{json\_value.h}}
+\doxysubsubsection{\texorpdfstring{ValueType}{ValueType}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1}{Value\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum class defining the possible value types of a JSON element. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Number@{Number}!json\_value.h@{json\_value.h}}\index{json\_value.h@{json\_value.h}!Number@{Number}}}\Hypertarget{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ab2ee912b91d69b435159c7c3f6df7f5f}\label{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ab2ee912b91d69b435159c7c3f6df7f5f} 
+Number&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{String@{String}!json\_value.h@{json\_value.h}}\index{json\_value.h@{json\_value.h}!String@{String}}}\Hypertarget{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a27118326006d3829667a400ad23d5d98}\label{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a27118326006d3829667a400ad23d5d98} 
+String&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bool@{Bool}!json\_value.h@{json\_value.h}}\index{json\_value.h@{json\_value.h}!Bool@{Bool}}}\Hypertarget{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ac26f15e86e3de4c398a8273272aba034}\label{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1ac26f15e86e3de4c398a8273272aba034} 
+Bool&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Object@{Object}!json\_value.h@{json\_value.h}}\index{json\_value.h@{json\_value.h}!Object@{Object}}}\Hypertarget{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a497031794414a552435f90151ac3b54b}\label{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a497031794414a552435f90151ac3b54b} 
+Object&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Array@{Array}!json\_value.h@{json\_value.h}}\index{json\_value.h@{json\_value.h}!Array@{Array}}}\Hypertarget{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a4410ec34d9e6c1a68100ca0ce033fb17}\label{json__value_8h_ad9971b6ef33e02ba2c75d19c1d2518a1a4410ec34d9e6c1a68100ca0ce033fb17} 
+Array&\\
+\hline
+
+\end{DoxyEnumFields}

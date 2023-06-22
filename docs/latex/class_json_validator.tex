@@ -1,0 +1,49 @@
+\doxysection{Json\+Validator Class Reference}
+\hypertarget{class_json_validator}{}\label{class_json_validator}\index{JsonValidator@{JsonValidator}}
+
+
+The \doxylink{class_json_validator}{Json\+Validator} class validates a string to check if it\textquotesingle{}s a correctly formed JSON.  
+
+
+
+
+{\ttfamily \#include $<$json\+\_\+validator.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_json_validator_a5614538dd8fe80b904bf3dc9b028d0bc}{validate}} (const std\+::string \&json)
+\begin{DoxyCompactList}\small\item\em Validates a JSON string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_json_validator}{Json\+Validator} class validates a string to check if it\textquotesingle{}s a correctly formed JSON. 
+
+\doxylink{class_json_validator}{Json\+Validator} has a static method \doxylink{class_json_validator_a5614538dd8fe80b904bf3dc9b028d0bc}{validate()} that checks if the given string forms a valid JSON. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_json_validator_a5614538dd8fe80b904bf3dc9b028d0bc}\label{class_json_validator_a5614538dd8fe80b904bf3dc9b028d0bc} 
+\index{JsonValidator@{JsonValidator}!validate@{validate}}
+\index{validate@{validate}!JsonValidator@{JsonValidator}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily static bool Json\+Validator\+::validate (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Validates a JSON string. 
+
+This static method validates a string to see if it\textquotesingle{}s a correctly formatted JSON. It checks for correctly paired brackets (both square and curly), correct usage of double quotes for strings, and ignores characters within strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & The JSON string to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the string is a valid JSON, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{json__validator_8h}{json\+\_\+validator.\+h}}\end{DoxyCompactItemize}

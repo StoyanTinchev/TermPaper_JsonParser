@@ -1,0 +1,94 @@
+\doxysection{Json\+Key Class Reference}
+\hypertarget{class_json_key}{}\label{class_json_key}\index{JsonKey@{JsonKey}}
+
+
+A class representing a key in a JSON key-\/value pair.  
+
+
+
+
+{\ttfamily \#include $<$json\+\_\+key.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_json_key_a251455a554c09cb155f0c0424bed06d0}{Json\+Key}} (const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_json_key}{Json\+Key} object with a given key. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_json_key_ae101c7d8daebff9af2374a001c08edaf}{get\+\_\+key}} () const
+\begin{DoxyCompactList}\small\item\em Get the encapsulated key. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_json_key_ade25bc3d303fe67dbf132baf2d911f9c}{set\+\_\+key}} (const std\+::string \&new\+Key)
+\begin{DoxyCompactList}\small\item\em Set the encapsulated key. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_json_key_a20aceec919d27e8824b47b64277341b4}{to\+\_\+string}} () const
+\begin{DoxyCompactList}\small\item\em Convert the encapsulated key to a JSON-\/formatted string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a key in a JSON key-\/value pair. 
+
+The \doxylink{class_json_key}{Json\+Key} class encapsulates a string key used in a JSON object. The key can be obtained or modified through accessor methods, and can be converted to a JSON-\/formatted string. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_json_key_a251455a554c09cb155f0c0424bed06d0}\label{class_json_key_a251455a554c09cb155f0c0424bed06d0} 
+\index{JsonKey@{JsonKey}!JsonKey@{JsonKey}}
+\index{JsonKey@{JsonKey}!JsonKey@{JsonKey}}
+\doxysubsubsection{\texorpdfstring{JsonKey()}{JsonKey()}}
+{\footnotesize\ttfamily Json\+Key\+::\+Json\+Key (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Construct a new \doxylink{class_json_key}{Json\+Key} object with a given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The string to use as the key. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_json_key_ae101c7d8daebff9af2374a001c08edaf}\label{class_json_key_ae101c7d8daebff9af2374a001c08edaf} 
+\index{JsonKey@{JsonKey}!get\_key@{get\_key}}
+\index{get\_key@{get\_key}!JsonKey@{JsonKey}}
+\doxysubsubsection{\texorpdfstring{get\_key()}{get\_key()}}
+{\footnotesize\ttfamily std\+::string Json\+Key\+::get\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the encapsulated key. 
+
+\begin{DoxyReturn}{Returns}
+The encapsulated key. 
+\end{DoxyReturn}
+\Hypertarget{class_json_key_ade25bc3d303fe67dbf132baf2d911f9c}\label{class_json_key_ade25bc3d303fe67dbf132baf2d911f9c} 
+\index{JsonKey@{JsonKey}!set\_key@{set\_key}}
+\index{set\_key@{set\_key}!JsonKey@{JsonKey}}
+\doxysubsubsection{\texorpdfstring{set\_key()}{set\_key()}}
+{\footnotesize\ttfamily void Json\+Key\+::set\+\_\+key (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{new\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the encapsulated key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Key} & The new string to use as the key. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_json_key_a20aceec919d27e8824b47b64277341b4}\label{class_json_key_a20aceec919d27e8824b47b64277341b4} 
+\index{JsonKey@{JsonKey}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!JsonKey@{JsonKey}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string Json\+Key\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convert the encapsulated key to a JSON-\/formatted string. 
+
+\begin{DoxyReturn}{Returns}
+A JSON-\/formatted string representing the key. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/json\+\_\+base/\mbox{\hyperlink{json__key_8h}{json\+\_\+key.\+h}}\end{DoxyCompactItemize}

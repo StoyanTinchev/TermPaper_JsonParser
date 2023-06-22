@@ -1,0 +1,73 @@
+\doxysection{json\+\_\+exceptions.\+h}
+\hypertarget{json__exceptions_8h_source}{}\label{json__exceptions_8h_source}\index{include/json\_exceptions.h@{include/json\_exceptions.h}}
+\mbox{\hyperlink{json__exceptions_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ JSON\_EXCEPTIONS\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ JSON\_EXCEPTIONS\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_json_exception}{JsonException}}\ :\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_json_exception_aa8f4604518e6bd508b48bdda8cb6bc19}{JsonException}}(\textcolor{keyword}{const}\ std::string\ \&msg)\ :\ std::runtime\_error(msg)\ \{\}}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_invalid_json_format}{InvalidJsonFormat}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_exception}{JsonException}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_invalid_json_format_a7066633de76859c1acad632377cff959}{InvalidJsonFormat}}(\textcolor{keyword}{const}\ std::string\ \&msg\ =\ \textcolor{stringliteral}{"{}Invalid\ JSON\ format"{}})}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_json_exception}{JsonException}}(msg)\ \{\}}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_invalid_boolean_value}{InvalidBooleanValue}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_exception}{JsonException}}\ \{}
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_invalid_boolean_value_adfea0cfc5149fff1972b5fed83d0ee1e}{InvalidBooleanValue}}(\textcolor{keyword}{const}\ std::string\ \&msg\ =\ \textcolor{stringliteral}{"{}Invalid\ boolean\ value\ in\ Json"{}})}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_json_exception}{JsonException}}(msg)\ \{\}}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_invalid_array_syntax}{InvalidArraySyntax}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_exception}{JsonException}}\ \{}
+\DoxyCodeLine{00050\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_invalid_array_syntax_a9bc326828e52fe2e65b15137842b6880}{InvalidArraySyntax}}(\textcolor{keyword}{const}\ std::string\ \&msg\ =\ \textcolor{stringliteral}{"{}Invalid\ array\ syntax\ in\ Json"{}})}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_json_exception}{JsonException}}(msg)\ \{\}}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_invalid_object_syntax}{InvalidObjectSyntax}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_exception}{JsonException}}\ \{}
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_invalid_object_syntax_a3d5ff7d6034a2e7f69d47810a5c3db7e}{InvalidObjectSyntax}}(\textcolor{keyword}{const}\ std::string\ \&msg\ =\ \textcolor{stringliteral}{"{}Invalid\ object\ syntax\ in\ Json"{}})}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_json_exception}{JsonException}}(msg)\ \{\}}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_unexpected_token}{UnexpectedToken}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_exception}{JsonException}}\ \{}
+\DoxyCodeLine{00072\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_unexpected_token_a827110f5d99d2c62f256bc94f1a59bb1}{UnexpectedToken}}(\textcolor{keyword}{const}\ std::string\ \&msg\ =\ \textcolor{stringliteral}{"{}Unexpected\ token\ in\ Json"{}})}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_json_exception}{JsonException}}(msg)\ \{\}}
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_file_error}{FileError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_exception}{JsonException}}\ \{}
+\DoxyCodeLine{00083\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_file_error_ab54b4dab1a800b452dbd930b6ee72d8c}{FileError}}(\textcolor{keyword}{const}\ std::string\ \&msg\ =\ \textcolor{stringliteral}{"{}File\ error"{}})}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_json_exception}{JsonException}}(msg)\ \{\}}
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_invalid_path_error}{InvalidPathError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_exception}{JsonException}}\ \{}
+\DoxyCodeLine{00094\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_invalid_path_error_a9b46c8e6d82ae2386bc346c294ddbdb4}{InvalidPathError}}(\textcolor{keyword}{const}\ std::string\ \&msg\ =\ \textcolor{stringliteral}{"{}Invalid\ path\ provided"{}})}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_json_exception}{JsonException}}(msg)\ \{\}}
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_element_not_found_error}{ElementNotFoundError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_exception}{JsonException}}\ \{}
+\DoxyCodeLine{00105\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_element_not_found_error_a4ad1b63948842c829e4a80bf7132f464}{ElementNotFoundError}}(\textcolor{keyword}{const}\ std::string\ \&msg\ =\ \textcolor{stringliteral}{"{}Specified\ element\ not\ found"{}})}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_json_exception}{JsonException}}(msg)\ \{\}}
+\DoxyCodeLine{00108\ \};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00115\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_element_already_exists_error}{ElementAlreadyExistsError}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_json_exception}{JsonException}}\ \{}
+\DoxyCodeLine{00116\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_element_already_exists_error_a6041ba99700140a11a37f2147dffab84}{ElementAlreadyExistsError}}(\textcolor{keyword}{const}\ std::string\ \&msg\ =\ \textcolor{stringliteral}{"{}Specified\ element\ already\ exists"{}})}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_json_exception}{JsonException}}(msg)\ \{\}}
+\DoxyCodeLine{00119\ \};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ JSON\_EXCEPTIONS\_H}}
+
+\end{DoxyCode}
