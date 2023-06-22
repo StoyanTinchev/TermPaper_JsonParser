@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_invalid_path_error" kind="class" language="C++" prot="public">
+    <compoundname>InvalidPathError</compoundname>
+    <basecompoundref refid="class_json_exception" prot="public" virt="non-virtual">JsonException</basecompoundref>
+    <includes refid="json__exceptions_8h" local="no">json_exceptions.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_invalid_path_error_1a9b46c8e6d82ae2386bc346c294ddbdb4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InvalidPathError::InvalidPathError</definition>
+        <argsstring>(const std::string &amp;msg=&quot;Invalid path provided&quot;)</argsstring>
+        <name>InvalidPathError</name>
+        <qualifiedname>InvalidPathError::InvalidPathError</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+          <defval>&quot;Invalid path provided&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_exceptions.h" line="95" column="14" bodyfile="include/json_exceptions.h" bodystart="95" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Exception indicating an invalid path in a JSON document. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This exception is thrown when an invalid path is provided for operations that require a path in a JSON document. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>InvalidPathError</label>
+        <link refid="class_invalid_path_error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonException</label>
+        <link refid="class_json_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::runtime_error</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>InvalidPathError</label>
+        <link refid="class_invalid_path_error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonException</label>
+        <link refid="class_json_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::runtime_error</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json_exceptions.h" line="93" column="1" bodyfile="include/json_exceptions.h" bodystart="93" bodyend="97"/>
+    <listofallmembers>
+      <member refid="class_invalid_path_error_1a9b46c8e6d82ae2386bc346c294ddbdb4" prot="public" virt="non-virtual"><scope>InvalidPathError</scope><name>InvalidPathError</name></member>
+      <member refid="class_json_exception_1aa8f4604518e6bd508b48bdda8cb6bc19" prot="public" virt="non-virtual"><scope>InvalidPathError</scope><name>JsonException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

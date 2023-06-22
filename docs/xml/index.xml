@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="class_json_array" kind="class"><name>JsonArray</name>
+    <member refid="class_json_array_1a4e9cbf56ac5002929df6ce8584b9c6b1" kind="variable"><name>data</name></member>
+    <member refid="class_json_array_1a304f5ede160dbc87f9ec7d7983bd1cbf" kind="function"><name>JsonArray</name></member>
+    <member refid="class_json_array_1a9ca4578a4a02708517eb6f15e4cd9b8b" kind="function"><name>~JsonArray</name></member>
+    <member refid="class_json_array_1a33c6f0ccbcb938b4b678e7d8f06a3d55" kind="function"><name>add_element</name></member>
+    <member refid="class_json_array_1abd7b391adb022d6fc32ed76eeb048d19" kind="function"><name>get_element</name></member>
+    <member refid="class_json_array_1ae65670649aedfad0375b1f3b8b6a1b20" kind="function"><name>to_string</name></member>
+    <member refid="class_json_array_1a79a316409a5f3fa8ebab101eb2d1e313" kind="function"><name>search</name></member>
+    <member refid="class_json_array_1a1f09fd4a5b4ec045945e3ed9d301c3d9" kind="function"><name>contains</name></member>
+    <member refid="class_json_array_1afa38f83b7b285940d66117104be65748" kind="function"><name>set</name></member>
+    <member refid="class_json_array_1a3869c3769f8d253a7a639c2e0f141688" kind="function"><name>create</name></member>
+    <member refid="class_json_array_1ae93c0b17ebef659d034eaeb3dd736ffa" kind="function"><name>delete_element</name></member>
+    <member refid="class_json_array_1ad86b8c638a507fee7db3d58d43e1d7a1" kind="function"><name>move</name></member>
+  </compound>
+  <compound refid="class_json_element" kind="class"><name>JsonElement</name>
+    <member refid="class_json_element_1a65dbb209b55ae334059698d025783fed" kind="function"><name>~JsonElement</name></member>
+    <member refid="class_json_element_1acaa559e1be09dff2f6b347775d0983dc" kind="function"><name>to_string</name></member>
+    <member refid="class_json_element_1a89efc03621132a676694994be0b88ee5" kind="function"><name>search</name></member>
+    <member refid="class_json_element_1aff8ec1964ccbfcd7d450d66d9956e3f7" kind="function"><name>contains</name></member>
+    <member refid="class_json_element_1a484d825f5e631f899fdff7ddb486a585" kind="function"><name>set</name></member>
+    <member refid="class_json_element_1a4dd348e9dc77f27397d023405b5bcd45" kind="function"><name>create</name></member>
+    <member refid="class_json_element_1ac6330f1734e30ed7a316087e68fc6f0f" kind="function"><name>delete_element</name></member>
+    <member refid="class_json_element_1a2ddc931b379e450ce2ebd4e240e5a628" kind="function"><name>move</name></member>
+  </compound>
+  <compound refid="class_json_key" kind="class"><name>JsonKey</name>
+    <member refid="class_json_key_1a368b2aec0748dd421a7092a9597c67bf" kind="variable"><name>key</name></member>
+    <member refid="class_json_key_1a251455a554c09cb155f0c0424bed06d0" kind="function"><name>JsonKey</name></member>
+    <member refid="class_json_key_1ae101c7d8daebff9af2374a001c08edaf" kind="function"><name>get_key</name></member>
+    <member refid="class_json_key_1ade25bc3d303fe67dbf132baf2d911f9c" kind="function"><name>set_key</name></member>
+    <member refid="class_json_key_1a20aceec919d27e8824b47b64277341b4" kind="function"><name>to_string</name></member>
+  </compound>
+  <compound refid="class_json_manager" kind="class"><name>JsonManager</name>
+    <member refid="class_json_manager_1ac81021abf489ed6486557dac851890a8" kind="variable"><name>currentFilePath</name></member>
+    <member refid="class_json_manager_1a9cc0436c016fe245b8c3c0f3d980ac3d" kind="variable"><name>root</name></member>
+    <member refid="class_json_manager_1a92b0f8cf64c4844d71a15ab1b7480cb2" kind="variable"><name>parser</name></member>
+    <member refid="class_json_manager_1abdba52bb6daf33665b9bdcba30e760a0" kind="function"><name>split</name></member>
+    <member refid="class_json_manager_1aa59244b57e3e2464b6eb304ccab55a8a" kind="function"><name>JsonManager</name></member>
+    <member refid="class_json_manager_1ade81448ded6365c5eb6b221106287167" kind="function"><name>~JsonManager</name></member>
+    <member refid="class_json_manager_1a9c7da9043a8ea2e1a2abd0dc80aacd0a" kind="function"><name>open</name></member>
+    <member refid="class_json_manager_1a99193595221737461254a7ac1070f094" kind="function"><name>save</name></member>
+    <member refid="class_json_manager_1abee72a29e0831cda8677e8580f873f39" kind="function"><name>saveAs</name></member>
+    <member refid="class_json_manager_1ae27c26642d8bc720664575d41559a3a8" kind="function"><name>exit</name></member>
+    <member refid="class_json_manager_1abd264c8052df90523e74a2d16aa11b01" kind="function"><name>validate</name></member>
+    <member refid="class_json_manager_1a7d9abbe836ab188e9557243d0009de6f" kind="function"><name>print</name></member>
+    <member refid="class_json_manager_1ae06d1273d38e97c73a0664bbd9954b6e" kind="function"><name>search</name></member>
+    <member refid="class_json_manager_1a053445c350b3ffcea0496323660a5a8c" kind="function"><name>contains</name></member>
+    <member refid="class_json_manager_1af5a3960c3006c90f0d807437b0e9b766" kind="function"><name>set</name></member>
+    <member refid="class_json_manager_1ad0c5ce51d3704bd940cd1bf611ff31de" kind="function"><name>create</name></member>
+    <member refid="class_json_manager_1a9cee399626899e3d7e89c34b10c2ec61" kind="function"><name>delete_element</name></member>
+    <member refid="class_json_manager_1a3acb1531a5d27032a7914bfd1f1874a1" kind="function"><name>move</name></member>
+  </compound>
+  <compound refid="class_json_object" kind="class"><name>JsonObject</name>
+    <member refid="class_json_object_1a00f0ece0382a57f7d7f05431f3c30428" kind="variable"><name>data</name></member>
+    <member refid="class_json_object_1a94a25e1c62f6d1018d481b8a5cba4605" kind="function"><name>find_element</name></member>
+    <member refid="class_json_object_1aa41d053fc27e4fcf4f1c6f55ef28f4a9" kind="function"><name>JsonObject</name></member>
+    <member refid="class_json_object_1a9c99921d0fd1f9e401609d2fdef6ba22" kind="function"><name>~JsonObject</name></member>
+    <member refid="class_json_object_1a36973ccf370b1e995beaa97d485765da" kind="function"><name>add_element</name></member>
+    <member refid="class_json_object_1ab3225eee55311a06311dd4d67606797e" kind="function"><name>get_element</name></member>
+    <member refid="class_json_object_1a68d96ac09e41acba1492abc5ec1a0eea" kind="function"><name>to_string</name></member>
+    <member refid="class_json_object_1a096210e59d3c570a970944cda0486274" kind="function"><name>search</name></member>
+    <member refid="class_json_object_1ae008482ab6e401e07187766c1a4e006a" kind="function"><name>contains</name></member>
+    <member refid="class_json_object_1ae30d3d2fa69c1a965f489bf6a8146c53" kind="function"><name>set</name></member>
+    <member refid="class_json_object_1ab3d665ec4299314e1aef378e60e0a0ca" kind="function"><name>create</name></member>
+    <member refid="class_json_object_1ac6fc5f1ed2cd446dfb5a775f432f76d2" kind="function"><name>delete_element</name></member>
+    <member refid="class_json_object_1a9c475b7b6466243971fe706db3ec96c5" kind="function"><name>move</name></member>
+  </compound>
+  <compound refid="class_json_parser" kind="class"><name>JsonParser</name>
+    <member refid="class_json_parser_1a798b64482e73aee50a30d5c1bf629c57" kind="variable"><name>jsonStream</name></member>
+    <member refid="class_json_parser_1aecdf359ca07d0748d337bdab026ae690" kind="variable"><name>position</name></member>
+    <member refid="class_json_parser_1afcbd78da5ae4291f23d776251b7f9427" kind="function"><name>validate</name></member>
+    <member refid="class_json_parser_1a07f37ba9dcb901b89cd5a9701a0ddfa8" kind="function"><name>skipWhitespace</name></member>
+    <member refid="class_json_parser_1abe01048896188530fc33a27fa578339c" kind="function"><name>parseNumber</name></member>
+    <member refid="class_json_parser_1ab5f66a89e940a1b8767e8b92225ef767" kind="function"><name>parseString</name></member>
+    <member refid="class_json_parser_1a0785b63ffba2c8ed4ad59d90bbbdb57e" kind="function"><name>parseBool</name></member>
+    <member refid="class_json_parser_1a2c16d35f18b257201ecb3508071767c2" kind="function"><name>parseArray</name></member>
+    <member refid="class_json_parser_1ac46751c3ee66d7ea9e4d9bf2b1eba8e2" kind="function"><name>parseObject</name></member>
+    <member refid="class_json_parser_1ab2bfea1ba43bf7110d05bd1537cd3f90" kind="function"><name>JsonParser</name></member>
+    <member refid="class_json_parser_1a95c7513cd7b8c7f09a2deda73c019bb4" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="class_json_validator" kind="class"><name>JsonValidator</name>
+    <member refid="class_json_validator_1a5614538dd8fe80b904bf3dc9b028d0bc" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="class_json_value" kind="class"><name>JsonValue</name>
+    <member refid="class_json_value_1aead84202554443e377ab93645a7da105" kind="variable"><name>stringValue</name></member>
+    <member refid="class_json_value_1a511a1b02191db92c2df1060768ab0730" kind="variable"><name>numberValue</name></member>
+    <member refid="class_json_value_1af64d5fc962042903f1c1c7e49e4337d4" kind="variable"><name>boolValue</name></member>
+    <member refid="class_json_value_1ab7aa67db3cc4a7e8418bb234a5948dab" kind="variable"><name>valueType</name></member>
+    <member refid="class_json_value_1ac4e002a189875b775bb329259fa29005" kind="variable"><name>arrayValue</name></member>
+    <member refid="class_json_value_1aefc8525a583d8af606ade7bafb14515b" kind="variable"><name>objectValue</name></member>
+    <member refid="class_json_value_1aba2587eefca1ad50f946b0202bda7767" kind="function"><name>JsonValue</name></member>
+    <member refid="class_json_value_1a6101e8292a02da86d5321c8ae8a934cd" kind="function"><name>JsonValue</name></member>
+    <member refid="class_json_value_1abcea4ddd4925c5f17007a030ae025c81" kind="function"><name>JsonValue</name></member>
+    <member refid="class_json_value_1ae3242123655bc487e5c946f517e062f4" kind="function"><name>JsonValue</name></member>
+    <member refid="class_json_value_1a42658f6d2ca756c35ef65cb71b095cd6" kind="function"><name>JsonValue</name></member>
+    <member refid="class_json_value_1aefbd2827747eea9f887441be8cf6b519" kind="function"><name>JsonValue</name></member>
+    <member refid="class_json_value_1a8ad1e0635db285f3f0b525b144260fc3" kind="function"><name>to_string</name></member>
+    <member refid="class_json_value_1a39576338933618f8f47cee8e6141979b" kind="function"><name>search</name></member>
+    <member refid="class_json_value_1a340e8d17bc44d0618fc82f48f0202dc4" kind="function"><name>contains</name></member>
+    <member refid="class_json_value_1ab859138a2fa51b49669f8bc6c659e9c1" kind="function"><name>set</name></member>
+    <member refid="class_json_value_1accce4336f6462bd1572fe09cfb8ba420" kind="function"><name>create</name></member>
+    <member refid="class_json_value_1a22721a96f72f09a56e2004f24ea80eee" kind="function"><name>delete_element</name></member>
+    <member refid="class_json_value_1a48f892b291985cc0e8e5d1804a4776ec" kind="function"><name>move</name></member>
+  </compound>
+  <compound refid="json__array_8h" kind="file"><name>json_array.h</name>
+  </compound>
+  <compound refid="json__element_8h" kind="file"><name>json_element.h</name>
+  </compound>
+  <compound refid="json__key_8h" kind="file"><name>json_key.h</name>
+  </compound>
+  <compound refid="json__object_8h" kind="file"><name>json_object.h</name>
+  </compound>
+  <compound refid="json__value_8h" kind="file"><name>json_value.h</name>
+    <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1" kind="enum"><name>ValueType</name></member>
+    <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1ab2ee912b91d69b435159c7c3f6df7f5f" kind="enumvalue"><name>Number</name></member>
+    <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1a27118326006d3829667a400ad23d5d98" kind="enumvalue"><name>String</name></member>
+    <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1ac26f15e86e3de4c398a8273272aba034" kind="enumvalue"><name>Bool</name></member>
+    <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1a497031794414a552435f90151ac3b54b" kind="enumvalue"><name>Object</name></member>
+    <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1a4410ec34d9e6c1a68100ca0ce033fb17" kind="enumvalue"><name>Array</name></member>
+  </compound>
+  <compound refid="json__manager_8h" kind="file"><name>json_manager.h</name>
+  </compound>
+  <compound refid="json__parser_8h" kind="file"><name>json_parser.h</name>
+  </compound>
+  <compound refid="json__validator_8h" kind="file"><name>json_validator.h</name>
+  </compound>
+  <compound refid="mainpage_8h" kind="file"><name>mainpage.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_108e9b8a5e91f655c686c7842a88adac" kind="dir"><name>include/json_base</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_json_manager" kind="class" language="C++" prot="public">
+    <compoundname>JsonManager</compoundname>
+    <includes refid="json__manager_8h" local="no">json_manager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_manager_1ac81021abf489ed6486557dac851890a8" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string JsonManager::currentFilePath</definition>
+        <argsstring></argsstring>
+        <name>currentFilePath</name>
+        <qualifiedname>JsonManager::currentFilePath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The current file path of the JSON file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="23" column="17" bodyfile="include/json_manager.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_manager_1a9cc0436c016fe245b8c3c0f3d980ac3d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_element" kindref="compound">JsonElement</ref> *</type>
+        <definition>JsonElement* JsonManager::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <qualifiedname>JsonManager::root</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The root of the JSON structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="24" column="17" bodyfile="include/json_manager.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_manager_1a92b0f8cf64c4844d71a15ab1b7480cb2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_parser" kindref="compound">JsonParser</ref> *</type>
+        <definition>JsonParser* JsonManager::parser</definition>
+        <argsstring></argsstring>
+        <name>parser</name>
+        <qualifiedname>JsonManager::parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="class_json_parser" kindref="compound">JsonParser</ref> used to parse the JSON. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="25" column="16" bodyfile="include/json_manager.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_json_manager_1abdba52bb6daf33665b9bdcba30e760a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; JsonManager::split</definition>
+        <argsstring>(const std::string &amp;str, char delimiter)</argsstring>
+        <name>split</name>
+        <qualifiedname>JsonManager::split</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>delimiter</declname>
+        </param>
+        <briefdescription>
+<para>Splits a string by a delimiter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to split. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delimiter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The delimiter character. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector of strings which are split by the delimiter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="34" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_manager_1aa59244b57e3e2464b6eb304ccab55a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonManager::JsonManager</definition>
+        <argsstring>()</argsstring>
+        <name>JsonManager</name>
+        <qualifiedname>JsonManager::JsonManager</qualifiedname>
+        <briefdescription>
+<para>Default constructor for <ref refid="class_json_manager" kindref="compound">JsonManager</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="40" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1ade81448ded6365c5eb6b221106287167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonManager::~JsonManager</definition>
+        <argsstring>()</argsstring>
+        <name>~JsonManager</name>
+        <qualifiedname>JsonManager::~JsonManager</qualifiedname>
+        <briefdescription>
+<para>Destructor for <ref refid="class_json_manager" kindref="compound">JsonManager</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="45" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1a9c7da9043a8ea2e1a2abd0dc80aacd0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonManager::open</definition>
+        <argsstring>(const std::string &amp;filePath)</argsstring>
+        <name>open</name>
+        <qualifiedname>JsonManager::open</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Opens a JSON file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the JSON file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1a99193595221737461254a7ac1070f094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonManager::save</definition>
+        <argsstring>()</argsstring>
+        <name>save</name>
+        <qualifiedname>JsonManager::save</qualifiedname>
+        <briefdescription>
+<para>Saves the current JSON to the file path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1abee72a29e0831cda8677e8580f873f39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonManager::saveAs</definition>
+        <argsstring>(const std::string &amp;filePath)</argsstring>
+        <name>saveAs</name>
+        <qualifiedname>JsonManager::saveAs</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Saves the current JSON to a new file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new path to save the JSON file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1ae27c26642d8bc720664575d41559a3a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonManager::exit</definition>
+        <argsstring>()</argsstring>
+        <name>exit</name>
+        <qualifiedname>JsonManager::exit</qualifiedname>
+        <briefdescription>
+<para>Exits the <ref refid="class_json_manager" kindref="compound">JsonManager</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1abd264c8052df90523e74a2d16aa11b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool JsonManager::validate</definition>
+        <argsstring>()</argsstring>
+        <name>validate</name>
+        <qualifiedname>JsonManager::validate</qualifiedname>
+        <briefdescription>
+<para>Validates the JSON file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the JSON file is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1a7d9abbe836ab188e9557243d0009de6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonManager::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <qualifiedname>JsonManager::print</qualifiedname>
+        <briefdescription>
+<para>Prints the JSON to the console. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1ae06d1273d38e97c73a0664bbd9954b6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; JsonManager::search</definition>
+        <argsstring>(const std::string &amp;key)</argsstring>
+        <name>search</name>
+        <qualifiedname>JsonManager::search</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Searches the JSON for a key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to search for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector of strings with the path to the key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="89" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1a053445c350b3ffcea0496323660a5a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool JsonManager::contains</definition>
+        <argsstring>(const std::string &amp;value)</argsstring>
+        <name>contains</name>
+        <qualifiedname>JsonManager::contains</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the JSON contains a value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to check for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the JSON contains the value, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1af5a3960c3006c90f0d807437b0e9b766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonManager::set</definition>
+        <argsstring>(const std::string &amp;path, const std::string &amp;new_value)</argsstring>
+        <name>set</name>
+        <qualifiedname>JsonManager::set</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>new_value</declname>
+        </param>
+        <briefdescription>
+<para>Sets a value in the JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the value to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1ad0c5ce51d3704bd940cd1bf611ff31de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonManager::create</definition>
+        <argsstring>(const std::string &amp;path, const std::string &amp;value)</argsstring>
+        <name>create</name>
+        <qualifiedname>JsonManager::create</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new key-value pair in the JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the place to create the new key-value pair. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the new key-value pair. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1a9cee399626899e3d7e89c34b10c2ec61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonManager::delete_element</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>delete_element</name>
+        <qualifiedname>JsonManager::delete_element</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Deletes an element in the JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the element to delete. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="120" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_manager_1a3acb1531a5d27032a7914bfd1f1874a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonManager::move</definition>
+        <argsstring>(const std::string &amp;fromPath, const std::string &amp;toPath)</argsstring>
+        <name>move</name>
+        <qualifiedname>JsonManager::move</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fromPath</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>toPath</declname>
+        </param>
+        <briefdescription>
+<para>Moves an element from one location to another in the JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fromPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the element to move. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the new location for the element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="128" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_json_manager" kindref="compound">JsonManager</ref> class provides functionalities to manage JSON operations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_json_manager" kindref="compound">JsonManager</ref> uses a <ref refid="class_json_parser" kindref="compound">JsonParser</ref> to parse the JSON, and provides operations like opening, saving, validating, printing, searching, checking containment, setting, creating, deleting, and moving elements within a JSON. </para>
+    </detaileddescription>
+    <location file="include/json_manager.h" line="21" column="1" bodyfile="include/json_manager.h" bodystart="21" bodyend="129"/>
+    <listofallmembers>
+      <member refid="class_json_manager_1a053445c350b3ffcea0496323660a5a8c" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>contains</name></member>
+      <member refid="class_json_manager_1ad0c5ce51d3704bd940cd1bf611ff31de" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>create</name></member>
+      <member refid="class_json_manager_1ac81021abf489ed6486557dac851890a8" prot="private" virt="non-virtual"><scope>JsonManager</scope><name>currentFilePath</name></member>
+      <member refid="class_json_manager_1a9cee399626899e3d7e89c34b10c2ec61" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>delete_element</name></member>
+      <member refid="class_json_manager_1ae27c26642d8bc720664575d41559a3a8" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>exit</name></member>
+      <member refid="class_json_manager_1aa59244b57e3e2464b6eb304ccab55a8a" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>JsonManager</name></member>
+      <member refid="class_json_manager_1a3acb1531a5d27032a7914bfd1f1874a1" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>move</name></member>
+      <member refid="class_json_manager_1a9c7da9043a8ea2e1a2abd0dc80aacd0a" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>open</name></member>
+      <member refid="class_json_manager_1a92b0f8cf64c4844d71a15ab1b7480cb2" prot="private" virt="non-virtual"><scope>JsonManager</scope><name>parser</name></member>
+      <member refid="class_json_manager_1a7d9abbe836ab188e9557243d0009de6f" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>print</name></member>
+      <member refid="class_json_manager_1a9cc0436c016fe245b8c3c0f3d980ac3d" prot="private" virt="non-virtual"><scope>JsonManager</scope><name>root</name></member>
+      <member refid="class_json_manager_1a99193595221737461254a7ac1070f094" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>save</name></member>
+      <member refid="class_json_manager_1abee72a29e0831cda8677e8580f873f39" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>saveAs</name></member>
+      <member refid="class_json_manager_1ae06d1273d38e97c73a0664bbd9954b6e" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>search</name></member>
+      <member refid="class_json_manager_1af5a3960c3006c90f0d807437b0e9b766" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>set</name></member>
+      <member refid="class_json_manager_1abdba52bb6daf33665b9bdcba30e760a0" prot="private" virt="non-virtual"><scope>JsonManager</scope><name>split</name></member>
+      <member refid="class_json_manager_1abd264c8052df90523e74a2d16aa11b01" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>validate</name></member>
+      <member refid="class_json_manager_1ade81448ded6365c5eb6b221106287167" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>~JsonManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

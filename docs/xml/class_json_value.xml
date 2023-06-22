@@ -1,0 +1,554 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_json_value" kind="class" language="C++" prot="public">
+    <compoundname>JsonValue</compoundname>
+    <basecompoundref refid="class_json_element" prot="public" virt="non-virtual">JsonElement</basecompoundref>
+    <includes refid="json__value_8h" local="no">json_value.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_value_1aead84202554443e377ab93645a7da105" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string JsonValue::stringValue</definition>
+        <argsstring></argsstring>
+        <name>stringValue</name>
+        <qualifiedname>JsonValue::stringValue</qualifiedname>
+        <briefdescription>
+<para>Holds value when JSON value is a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="32" column="17" bodyfile="include/json_base/json_value.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_value_1a511a1b02191db92c2df1060768ab0730" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double JsonValue::numberValue</definition>
+        <argsstring></argsstring>
+        <name>numberValue</name>
+        <qualifiedname>JsonValue::numberValue</qualifiedname>
+        <briefdescription>
+<para>Holds value when JSON value is a number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="33" column="12" bodyfile="include/json_base/json_value.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_value_1af64d5fc962042903f1c1c7e49e4337d4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool JsonValue::boolValue</definition>
+        <argsstring></argsstring>
+        <name>boolValue</name>
+        <qualifiedname>JsonValue::boolValue</qualifiedname>
+        <briefdescription>
+<para>Holds value when JSON value is a boolean. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="34" column="10" bodyfile="include/json_base/json_value.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_value_1ab7aa67db3cc4a7e8418bb234a5948dab" prot="private" static="no" mutable="no">
+        <type><ref refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1" kindref="member">ValueType</ref></type>
+        <definition>ValueType JsonValue::valueType</definition>
+        <argsstring></argsstring>
+        <name>valueType</name>
+        <qualifiedname>JsonValue::valueType</qualifiedname>
+        <briefdescription>
+<para>Enum indicating the type of the JSON value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="35" column="15" bodyfile="include/json_base/json_value.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_value_1ac4e002a189875b775bb329259fa29005" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_array" kindref="compound">JsonArray</ref> *</type>
+        <definition>JsonArray* JsonValue::arrayValue</definition>
+        <argsstring></argsstring>
+        <name>arrayValue</name>
+        <qualifiedname>JsonValue::arrayValue</qualifiedname>
+        <briefdescription>
+<para>Holds value when JSON value is an array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="36" column="15" bodyfile="include/json_base/json_value.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_value_1aefc8525a583d8af606ade7bafb14515b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_object" kindref="compound">JsonObject</ref> *</type>
+        <definition>JsonObject* JsonValue::objectValue</definition>
+        <argsstring></argsstring>
+        <name>objectValue</name>
+        <qualifiedname>JsonValue::objectValue</qualifiedname>
+        <briefdescription>
+<para>Holds value when JSON value is an object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="37" column="16" bodyfile="include/json_base/json_value.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_value_1aba2587eefca1ad50f946b0202bda7767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonValue::JsonValue</definition>
+        <argsstring>()</argsstring>
+        <name>JsonValue</name>
+        <qualifiedname>JsonValue::JsonValue</qualifiedname>
+        <briefdescription>
+<para>Default constructor for <ref refid="class_json_value" kindref="compound">JsonValue</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="43" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1a6101e8292a02da86d5321c8ae8a934cd" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonValue::JsonValue</definition>
+        <argsstring>(const std::string &amp;value)</argsstring>
+        <name>JsonValue</name>
+        <qualifiedname>JsonValue::JsonValue</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for creating a <ref refid="class_json_value" kindref="compound">JsonValue</ref> of type string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="49" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1abcea4ddd4925c5f17007a030ae025c81" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonValue::JsonValue</definition>
+        <argsstring>(double value)</argsstring>
+        <name>JsonValue</name>
+        <qualifiedname>JsonValue::JsonValue</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for creating a <ref refid="class_json_value" kindref="compound">JsonValue</ref> of type number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="55" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1ae3242123655bc487e5c946f517e062f4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonValue::JsonValue</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>JsonValue</name>
+        <qualifiedname>JsonValue::JsonValue</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for creating a <ref refid="class_json_value" kindref="compound">JsonValue</ref> of type bool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bool value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="61" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1a42658f6d2ca756c35ef65cb71b095cd6" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonValue::JsonValue</definition>
+        <argsstring>(JsonArray *value)</argsstring>
+        <name>JsonValue</name>
+        <qualifiedname>JsonValue::JsonValue</qualifiedname>
+        <param>
+          <type><ref refid="class_json_array" kindref="compound">JsonArray</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for creating a <ref refid="class_json_value" kindref="compound">JsonValue</ref> of type <ref refid="class_json_array" kindref="compound">JsonArray</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_json_array" kindref="compound">JsonArray</ref> value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="67" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1aefbd2827747eea9f887441be8cf6b519" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonValue::JsonValue</definition>
+        <argsstring>(JsonObject *value)</argsstring>
+        <name>JsonValue</name>
+        <qualifiedname>JsonValue::JsonValue</qualifiedname>
+        <param>
+          <type><ref refid="class_json_object" kindref="compound">JsonObject</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for creating a <ref refid="class_json_value" kindref="compound">JsonValue</ref> of type <ref refid="class_json_object" kindref="compound">JsonObject</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_json_object" kindref="compound">JsonObject</ref> value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="73" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1a8ad1e0635db285f3f0b525b144260fc3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string JsonValue::to_string</definition>
+        <argsstring>() const override</argsstring>
+        <name>to_string</name>
+        <qualifiedname>JsonValue::to_string</qualifiedname>
+        <reimplements refid="class_json_element_1acaa559e1be09dff2f6b347775d0983dc">to_string</reimplements>
+        <briefdescription>
+<para>Converts <ref refid="class_json_value" kindref="compound">JsonValue</ref> to a string representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A JSON-formatted string representing the object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="79" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1a39576338933618f8f47cee8e6141979b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; JsonValue::search</definition>
+        <argsstring>(const std::string &amp;key) override</argsstring>
+        <name>search</name>
+        <qualifiedname>JsonValue::search</qualifiedname>
+        <reimplements refid="class_json_element_1a89efc03621132a676694994be0b88ee5">search</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Search for a key in <ref refid="class_json_value" kindref="compound">JsonValue</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to search for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector of paths to the elements that contain the key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="86" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1a340e8d17bc44d0618fc82f48f0202dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool JsonValue::contains</definition>
+        <argsstring>(const std::string &amp;value) override</argsstring>
+        <name>contains</name>
+        <qualifiedname>JsonValue::contains</qualifiedname>
+        <reimplements refid="class_json_element_1aff8ec1964ccbfcd7d450d66d9956e3f7">contains</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Check if <ref refid="class_json_value" kindref="compound">JsonValue</ref> contains a specific string value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to check for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the value is found, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1ab859138a2fa51b49669f8bc6c659e9c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonValue::set</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;path, const std::string &amp;new_value) override</argsstring>
+        <name>set</name>
+        <qualifiedname>JsonValue::set</qualifiedname>
+        <reimplements refid="class_json_element_1a484d825f5e631f899fdff7ddb486a585">set</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>new_value</declname>
+        </param>
+        <briefdescription>
+<para>Sets a new value in a <ref refid="class_json_value" kindref="compound">JsonValue</ref> using a path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="100" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1accce4336f6462bd1572fe09cfb8ba420" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonValue::create</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;path, const std::string &amp;value) override</argsstring>
+        <name>create</name>
+        <qualifiedname>JsonValue::create</qualifiedname>
+        <reimplements refid="class_json_element_1a4dd348e9dc77f27397d023405b5bcd45">create</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new <ref refid="class_json_value" kindref="compound">JsonValue</ref> using a path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the new element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the new element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1a22721a96f72f09a56e2004f24ea80eee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonValue::delete_element</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;path) override</argsstring>
+        <name>delete_element</name>
+        <qualifiedname>JsonValue::delete_element</qualifiedname>
+        <reimplements refid="class_json_element_1ac6330f1734e30ed7a316087e68fc6f0f">delete_element</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Deletes an element in a <ref refid="class_json_value" kindref="compound">JsonValue</ref> using a path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the element to delete. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_value_1a48f892b291985cc0e8e5d1804a4776ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonValue::move</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;fromPath, const std::vector&lt; std::string &gt; &amp;toPath) override</argsstring>
+        <name>move</name>
+        <qualifiedname>JsonValue::move</qualifiedname>
+        <reimplements refid="class_json_element_1a2ddc931b379e450ce2ebd4e240e5a628">move</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>fromPath</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>toPath</declname>
+        </param>
+        <briefdescription>
+<para>Moves an element from one path to another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fromPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current path of the element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new path for the element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="120" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>JSON Value class that implements <ref refid="class_json_element" kindref="compound">JsonElement</ref> interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_json_value" kindref="compound">JsonValue</ref> class represents a JSON value which could be of type: String, Number, Bool, Object or Array. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>JsonElement</label>
+        <link refid="class_json_element"/>
+      </node>
+      <node id="1">
+        <label>JsonValue</label>
+        <link refid="class_json_value"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>JsonElement</label>
+        <link refid="class_json_element"/>
+      </node>
+      <node id="1">
+        <label>JsonValue</label>
+        <link refid="class_json_value"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/json_base/json_value.h" line="30" column="1" bodyfile="include/json_base/json_value.h" bodystart="30" bodyend="122"/>
+    <listofallmembers>
+      <member refid="class_json_value_1ac4e002a189875b775bb329259fa29005" prot="private" virt="non-virtual"><scope>JsonValue</scope><name>arrayValue</name></member>
+      <member refid="class_json_value_1af64d5fc962042903f1c1c7e49e4337d4" prot="private" virt="non-virtual"><scope>JsonValue</scope><name>boolValue</name></member>
+      <member refid="class_json_value_1a340e8d17bc44d0618fc82f48f0202dc4" prot="public" virt="virtual"><scope>JsonValue</scope><name>contains</name></member>
+      <member refid="class_json_value_1accce4336f6462bd1572fe09cfb8ba420" prot="public" virt="virtual"><scope>JsonValue</scope><name>create</name></member>
+      <member refid="class_json_value_1a22721a96f72f09a56e2004f24ea80eee" prot="public" virt="virtual"><scope>JsonValue</scope><name>delete_element</name></member>
+      <member refid="class_json_value_1aba2587eefca1ad50f946b0202bda7767" prot="public" virt="non-virtual"><scope>JsonValue</scope><name>JsonValue</name></member>
+      <member refid="class_json_value_1a6101e8292a02da86d5321c8ae8a934cd" prot="public" virt="non-virtual"><scope>JsonValue</scope><name>JsonValue</name></member>
+      <member refid="class_json_value_1abcea4ddd4925c5f17007a030ae025c81" prot="public" virt="non-virtual"><scope>JsonValue</scope><name>JsonValue</name></member>
+      <member refid="class_json_value_1ae3242123655bc487e5c946f517e062f4" prot="public" virt="non-virtual"><scope>JsonValue</scope><name>JsonValue</name></member>
+      <member refid="class_json_value_1a42658f6d2ca756c35ef65cb71b095cd6" prot="public" virt="non-virtual"><scope>JsonValue</scope><name>JsonValue</name></member>
+      <member refid="class_json_value_1aefbd2827747eea9f887441be8cf6b519" prot="public" virt="non-virtual"><scope>JsonValue</scope><name>JsonValue</name></member>
+      <member refid="class_json_value_1a48f892b291985cc0e8e5d1804a4776ec" prot="public" virt="virtual"><scope>JsonValue</scope><name>move</name></member>
+      <member refid="class_json_value_1a511a1b02191db92c2df1060768ab0730" prot="private" virt="non-virtual"><scope>JsonValue</scope><name>numberValue</name></member>
+      <member refid="class_json_value_1aefc8525a583d8af606ade7bafb14515b" prot="private" virt="non-virtual"><scope>JsonValue</scope><name>objectValue</name></member>
+      <member refid="class_json_value_1a39576338933618f8f47cee8e6141979b" prot="public" virt="virtual"><scope>JsonValue</scope><name>search</name></member>
+      <member refid="class_json_value_1ab859138a2fa51b49669f8bc6c659e9c1" prot="public" virt="virtual"><scope>JsonValue</scope><name>set</name></member>
+      <member refid="class_json_value_1aead84202554443e377ab93645a7da105" prot="private" virt="non-virtual"><scope>JsonValue</scope><name>stringValue</name></member>
+      <member refid="class_json_value_1a8ad1e0635db285f3f0b525b144260fc3" prot="public" virt="virtual"><scope>JsonValue</scope><name>to_string</name></member>
+      <member refid="class_json_value_1ab7aa67db3cc4a7e8418bb234a5948dab" prot="private" virt="non-virtual"><scope>JsonValue</scope><name>valueType</name></member>
+      <member refid="class_json_element_1a65dbb209b55ae334059698d025783fed" prot="public" virt="virtual"><scope>JsonValue</scope><name>~JsonElement</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

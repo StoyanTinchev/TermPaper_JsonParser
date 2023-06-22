@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_json_array" kind="class" language="C++" prot="public">
+    <compoundname>JsonArray</compoundname>
+    <basecompoundref refid="class_json_element" prot="public" virt="non-virtual">JsonElement</basecompoundref>
+    <includes refid="json__array_8h" local="no">json_array.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_array_1a4e9cbf56ac5002929df6ce8584b9c6b1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_json_element" kindref="compound">JsonElement</ref> * &gt;</type>
+        <definition>std::vector&lt;JsonElement *&gt; JsonArray::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>JsonArray::data</qualifiedname>
+        <briefdescription>
+<para>Vector of <ref refid="class_json_element" kindref="compound">JsonElement</ref> pointers that make up the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="22" column="17" bodyfile="include/json_base/json_array.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_array_1a304f5ede160dbc87f9ec7d7983bd1cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonArray::JsonArray</definition>
+        <argsstring>()</argsstring>
+        <name>JsonArray</name>
+        <qualifiedname>JsonArray::JsonArray</qualifiedname>
+        <briefdescription>
+<para>Default constructor for <ref refid="class_json_array" kindref="compound">JsonArray</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="28" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_array_1a9ca4578a4a02708517eb6f15e4cd9b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonArray::~JsonArray</definition>
+        <argsstring>() override</argsstring>
+        <name>~JsonArray</name>
+        <qualifiedname>JsonArray::~JsonArray</qualifiedname>
+        <briefdescription>
+<para>Destructor for <ref refid="class_json_array" kindref="compound">JsonArray</ref>, overridden from <ref refid="class_json_element" kindref="compound">JsonElement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="33" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_array_1a33c6f0ccbcb938b4b678e7d8f06a3d55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonArray::add_element</definition>
+        <argsstring>(JsonElement *value)</argsstring>
+        <name>add_element</name>
+        <qualifiedname>JsonArray::add_element</qualifiedname>
+        <param>
+          <type><ref refid="class_json_element" kindref="compound">JsonElement</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add an element to the array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="39" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_array_1abd7b391adb022d6fc32ed76eeb048d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_element" kindref="compound">JsonElement</ref> *</type>
+        <definition>JsonElement * JsonArray::get_element</definition>
+        <argsstring>(int index)</argsstring>
+        <name>get_element</name>
+        <qualifiedname>JsonArray::get_element</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get an element from the array by index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the element to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The element at the given index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="46" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_array_1ae65670649aedfad0375b1f3b8b6a1b20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string JsonArray::to_string</definition>
+        <argsstring>() const override</argsstring>
+        <name>to_string</name>
+        <qualifiedname>JsonArray::to_string</qualifiedname>
+        <reimplements refid="class_json_element_1acaa559e1be09dff2f6b347775d0983dc">to_string</reimplements>
+        <briefdescription>
+<para>Convert the array to a JSON-formatted string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A JSON-formatted string representing the array. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="52" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_array_1a79a316409a5f3fa8ebab101eb2d1e313" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; JsonArray::search</definition>
+        <argsstring>(const std::string &amp;key) override</argsstring>
+        <name>search</name>
+        <qualifiedname>JsonArray::search</qualifiedname>
+        <reimplements refid="class_json_element_1a89efc03621132a676694994be0b88ee5">search</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Search for a key in the array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to search for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector of paths to the elements that contain the key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="59" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_array_1a1f09fd4a5b4ec045945e3ed9d301c3d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool JsonArray::contains</definition>
+        <argsstring>(const std::string &amp;value) override</argsstring>
+        <name>contains</name>
+        <qualifiedname>JsonArray::contains</qualifiedname>
+        <reimplements refid="class_json_element_1aff8ec1964ccbfcd7d450d66d9956e3f7">contains</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Check if the array contains a value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to check for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the value is found, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_array_1afa38f83b7b285940d66117104be65748" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonArray::set</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;path, const std::string &amp;new_value) override</argsstring>
+        <name>set</name>
+        <qualifiedname>JsonArray::set</qualifiedname>
+        <reimplements refid="class_json_element_1a484d825f5e631f899fdff7ddb486a585">set</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>new_value</declname>
+        </param>
+        <briefdescription>
+<para>Set the value of an element at a given path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_array_1a3869c3769f8d253a7a639c2e0f141688" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonArray::create</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;path, const std::string &amp;value) override</argsstring>
+        <name>create</name>
+        <qualifiedname>JsonArray::create</qualifiedname>
+        <reimplements refid="class_json_element_1a4dd348e9dc77f27397d023405b5bcd45">create</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Create a new element at a given path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the new element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the new element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_array_1ae93c0b17ebef659d034eaeb3dd736ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonArray::delete_element</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;path) override</argsstring>
+        <name>delete_element</name>
+        <qualifiedname>JsonArray::delete_element</qualifiedname>
+        <reimplements refid="class_json_element_1ac6330f1734e30ed7a316087e68fc6f0f">delete_element</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Delete an element at a given path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the element to delete. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_array_1ad86b8c638a507fee7db3d58d43e1d7a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonArray::move</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;fromPath, const std::vector&lt; std::string &gt; &amp;toPath) override</argsstring>
+        <name>move</name>
+        <qualifiedname>JsonArray::move</qualifiedname>
+        <reimplements refid="class_json_element_1a2ddc931b379e450ce2ebd4e240e5a628">move</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>fromPath</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>toPath</declname>
+        </param>
+        <briefdescription>
+<para>Move an element from one path to another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fromPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current path of the element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new path for the element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_array.h" line="93" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class that represents an array in JSON. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_json_array" kindref="compound">JsonArray</ref> class encapsulates a vector of <ref refid="class_json_element" kindref="compound">JsonElement</ref> pointers and provides methods to manipulate and search the array, in addition to converting the array to a JSON-formatted string. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>JsonArray</label>
+        <link refid="class_json_array"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonElement</label>
+        <link refid="class_json_element"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>JsonArray</label>
+        <link refid="class_json_array"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonElement</label>
+        <link refid="class_json_element"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/json_base/json_array.h" line="20" column="1" bodyfile="include/json_base/json_array.h" bodystart="20" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_json_array_1a33c6f0ccbcb938b4b678e7d8f06a3d55" prot="public" virt="non-virtual"><scope>JsonArray</scope><name>add_element</name></member>
+      <member refid="class_json_array_1a1f09fd4a5b4ec045945e3ed9d301c3d9" prot="public" virt="virtual"><scope>JsonArray</scope><name>contains</name></member>
+      <member refid="class_json_array_1a3869c3769f8d253a7a639c2e0f141688" prot="public" virt="virtual"><scope>JsonArray</scope><name>create</name></member>
+      <member refid="class_json_array_1a4e9cbf56ac5002929df6ce8584b9c6b1" prot="private" virt="non-virtual"><scope>JsonArray</scope><name>data</name></member>
+      <member refid="class_json_array_1ae93c0b17ebef659d034eaeb3dd736ffa" prot="public" virt="virtual"><scope>JsonArray</scope><name>delete_element</name></member>
+      <member refid="class_json_array_1abd7b391adb022d6fc32ed76eeb048d19" prot="public" virt="non-virtual"><scope>JsonArray</scope><name>get_element</name></member>
+      <member refid="class_json_array_1a304f5ede160dbc87f9ec7d7983bd1cbf" prot="public" virt="non-virtual"><scope>JsonArray</scope><name>JsonArray</name></member>
+      <member refid="class_json_array_1ad86b8c638a507fee7db3d58d43e1d7a1" prot="public" virt="virtual"><scope>JsonArray</scope><name>move</name></member>
+      <member refid="class_json_array_1a79a316409a5f3fa8ebab101eb2d1e313" prot="public" virt="virtual"><scope>JsonArray</scope><name>search</name></member>
+      <member refid="class_json_array_1afa38f83b7b285940d66117104be65748" prot="public" virt="virtual"><scope>JsonArray</scope><name>set</name></member>
+      <member refid="class_json_array_1ae65670649aedfad0375b1f3b8b6a1b20" prot="public" virt="virtual"><scope>JsonArray</scope><name>to_string</name></member>
+      <member refid="class_json_array_1a9ca4578a4a02708517eb6f15e4cd9b8b" prot="public" virt="non-virtual"><scope>JsonArray</scope><name>~JsonArray</name></member>
+      <member refid="class_json_element_1a65dbb209b55ae334059698d025783fed" prot="public" virt="virtual"><scope>JsonArray</scope><name>~JsonElement</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

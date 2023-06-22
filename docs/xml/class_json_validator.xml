@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_json_validator" kind="class" language="C++" prot="public">
+    <compoundname>JsonValidator</compoundname>
+    <includes refid="json__validator_8h" local="no">json_validator.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_json_validator_1a5614538dd8fe80b904bf3dc9b028d0bc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool JsonValidator::validate</definition>
+        <argsstring>(const std::string &amp;json)</argsstring>
+        <name>validate</name>
+        <qualifiedname>JsonValidator::validate</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+<para>Validates a JSON string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This static method validates a string to see if it&apos;s a correctly formatted JSON. It checks for correctly paired brackets (both square and curly), correct usage of double quotes for strings, and ignores characters within strings.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>json</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The JSON string to validate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the string is a valid JSON, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_validator.h" line="31" column="17" bodyfile="include/json_validator.h" bodystart="31" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_json_validator" kindref="compound">JsonValidator</ref> class validates a string to check if it&apos;s a correctly formed JSON. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_json_validator" kindref="compound">JsonValidator</ref> has a static method <ref refid="class_json_validator_1a5614538dd8fe80b904bf3dc9b028d0bc" kindref="member">validate()</ref> that checks if the given string forms a valid JSON. </para>
+    </detaileddescription>
+    <location file="include/json_validator.h" line="19" column="1" bodyfile="include/json_validator.h" bodystart="19" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_json_validator_1a5614538dd8fe80b904bf3dc9b028d0bc" prot="public" virt="non-virtual"><scope>JsonValidator</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

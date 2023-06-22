@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_element_already_exists_error" kind="class" language="C++" prot="public">
+    <compoundname>ElementAlreadyExistsError</compoundname>
+    <basecompoundref refid="class_json_exception" prot="public" virt="non-virtual">JsonException</basecompoundref>
+    <includes refid="json__exceptions_8h" local="no">json_exceptions.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_element_already_exists_error_1a6041ba99700140a11a37f2147dffab84" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ElementAlreadyExistsError::ElementAlreadyExistsError</definition>
+        <argsstring>(const std::string &amp;msg=&quot;Specified element already exists&quot;)</argsstring>
+        <name>ElementAlreadyExistsError</name>
+        <qualifiedname>ElementAlreadyExistsError::ElementAlreadyExistsError</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+          <defval>&quot;Specified element already exists&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_exceptions.h" line="117" column="14" bodyfile="include/json_exceptions.h" bodystart="117" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Exception indicating that a specified element already exists in a JSON document. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This exception is thrown when an operation attempts to create an element that already exists at the specified location in the JSON document. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ElementAlreadyExistsError</label>
+        <link refid="class_element_already_exists_error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonException</label>
+        <link refid="class_json_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::runtime_error</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ElementAlreadyExistsError</label>
+        <link refid="class_element_already_exists_error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonException</label>
+        <link refid="class_json_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::runtime_error</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json_exceptions.h" line="115" column="1" bodyfile="include/json_exceptions.h" bodystart="115" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_element_already_exists_error_1a6041ba99700140a11a37f2147dffab84" prot="public" virt="non-virtual"><scope>ElementAlreadyExistsError</scope><name>ElementAlreadyExistsError</name></member>
+      <member refid="class_json_exception_1aa8f4604518e6bd508b48bdda8cb6bc19" prot="public" virt="non-virtual"><scope>ElementAlreadyExistsError</scope><name>JsonException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

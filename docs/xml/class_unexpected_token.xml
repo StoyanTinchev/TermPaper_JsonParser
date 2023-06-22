@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_unexpected_token" kind="class" language="C++" prot="public">
+    <compoundname>UnexpectedToken</compoundname>
+    <basecompoundref refid="class_json_exception" prot="public" virt="non-virtual">JsonException</basecompoundref>
+    <includes refid="json__exceptions_8h" local="no">json_exceptions.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unexpected_token_1a827110f5d99d2c62f256bc94f1a59bb1" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnexpectedToken::UnexpectedToken</definition>
+        <argsstring>(const std::string &amp;msg=&quot;Unexpected token in Json&quot;)</argsstring>
+        <name>UnexpectedToken</name>
+        <qualifiedname>UnexpectedToken::UnexpectedToken</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+          <defval>&quot;Unexpected token in Json&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_exceptions.h" line="73" column="14" bodyfile="include/json_exceptions.h" bodystart="73" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Exception indicating an unexpected token in a JSON document. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This exception is thrown when an unexpected token is encountered while parsing a JSON document. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>JsonException</label>
+        <link refid="class_json_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UnexpectedToken</label>
+        <link refid="class_unexpected_token"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::runtime_error</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>JsonException</label>
+        <link refid="class_json_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UnexpectedToken</label>
+        <link refid="class_unexpected_token"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::runtime_error</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json_exceptions.h" line="71" column="1" bodyfile="include/json_exceptions.h" bodystart="71" bodyend="75"/>
+    <listofallmembers>
+      <member refid="class_json_exception_1aa8f4604518e6bd508b48bdda8cb6bc19" prot="public" virt="non-virtual"><scope>UnexpectedToken</scope><name>JsonException</name></member>
+      <member refid="class_unexpected_token_1a827110f5d99d2c62f256bc94f1a59bb1" prot="public" virt="non-virtual"><scope>UnexpectedToken</scope><name>UnexpectedToken</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

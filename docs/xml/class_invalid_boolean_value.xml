@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_invalid_boolean_value" kind="class" language="C++" prot="public">
+    <compoundname>InvalidBooleanValue</compoundname>
+    <basecompoundref refid="class_json_exception" prot="public" virt="non-virtual">JsonException</basecompoundref>
+    <includes refid="json__exceptions_8h" local="no">json_exceptions.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_invalid_boolean_value_1adfea0cfc5149fff1972b5fed83d0ee1e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InvalidBooleanValue::InvalidBooleanValue</definition>
+        <argsstring>(const std::string &amp;msg=&quot;Invalid boolean value in Json&quot;)</argsstring>
+        <name>InvalidBooleanValue</name>
+        <qualifiedname>InvalidBooleanValue::InvalidBooleanValue</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+          <defval>&quot;Invalid boolean value in Json&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_exceptions.h" line="40" column="14" bodyfile="include/json_exceptions.h" bodystart="40" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Exception indicating an invalid boolean value in a JSON document. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This exception is thrown when an attempt to parse a boolean value in a JSON document fails because the value is not &apos;true&apos; or &apos;false&apos;. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>InvalidBooleanValue</label>
+        <link refid="class_invalid_boolean_value"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonException</label>
+        <link refid="class_json_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::runtime_error</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>InvalidBooleanValue</label>
+        <link refid="class_invalid_boolean_value"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonException</label>
+        <link refid="class_json_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::runtime_error</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json_exceptions.h" line="38" column="1" bodyfile="include/json_exceptions.h" bodystart="38" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_invalid_boolean_value_1adfea0cfc5149fff1972b5fed83d0ee1e" prot="public" virt="non-virtual"><scope>InvalidBooleanValue</scope><name>InvalidBooleanValue</name></member>
+      <member refid="class_json_exception_1aa8f4604518e6bd508b48bdda8cb6bc19" prot="public" virt="non-virtual"><scope>InvalidBooleanValue</scope><name>JsonException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

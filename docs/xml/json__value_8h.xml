@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="json__value_8h" kind="file" language="C++">
+    <compoundname>json_value.h</compoundname>
+    <includes refid="json__element_8h" local="no">json_base/json_element.h</includes>
+    <includes refid="json__key_8h" local="no">json_base/json_key.h</includes>
+    <includes refid="json__object_8h" local="no">json_base/json_object.h</includes>
+    <includes refid="json__array_8h" local="no">json_base/json_array.h</includes>
+    <includes local="no">json_exceptions.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includedby refid="json__parser_8h" local="no">include/json_parser.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>json_base/json_array.h</label>
+        <link refid="json__array_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>json_base/json_element.h</label>
+        <link refid="json__element_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>json_base/json_key.h</label>
+        <link refid="json__key_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>json_base/json_object.h</label>
+        <link refid="json__object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/json_base/json_value.h</label>
+        <link refid="json__value_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>json_exceptions.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/json_base/json_value.h</label>
+        <link refid="json__value_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/json_manager.h</label>
+        <link refid="json__manager_8h"/>
+      </node>
+      <node id="2">
+        <label>include/json_parser.h</label>
+        <link refid="json__parser_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_json_value" prot="public">JsonValue</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ValueType</name>
+        <enumvalue id="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1ab2ee912b91d69b435159c7c3f6df7f5f" prot="public">
+          <name>Number</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1a27118326006d3829667a400ad23d5d98" prot="public">
+          <name>String</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1ac26f15e86e3de4c398a8273272aba034" prot="public">
+          <name>Bool</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1a497031794414a552435f90151ac3b54b" prot="public">
+          <name>Object</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1a4410ec34d9e6c1a68100ca0ce033fb17" prot="public">
+          <name>Array</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum class defining the possible value types of a JSON element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_value.h" line="20" column="1" bodyfile="include/json_base/json_value.h" bodystart="20" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definition of the <ref refid="class_json_value" kindref="compound">JsonValue</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/json_base/json_value.h"/>
+  </compounddef>
+</doxygen>

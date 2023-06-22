@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="json__parser_8h" kind="file" language="C++">
+    <compoundname>json_parser.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="json__value_8h" local="no">json_base/json_value.h</includes>
+    <includes local="no">cctype</includes>
+    <includes local="no">stdexcept</includes>
+    <includes refid="json__element_8h" local="no">json_base/json_element.h</includes>
+    <includes refid="json__array_8h" local="no">json_base/json_array.h</includes>
+    <includes refid="json__object_8h" local="no">json_base/json_object.h</includes>
+    <includes refid="json__validator_8h" local="no">json_validator.h</includes>
+    <includedby refid="json__manager_8h" local="no">include/json_manager.h</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>json_base/json_array.h</label>
+        <link refid="json__array_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>json_base/json_element.h</label>
+        <link refid="json__element_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>json_base/json_key.h</label>
+        <link refid="json__key_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>json_base/json_object.h</label>
+        <link refid="json__object_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>json_base/json_value.h</label>
+        <link refid="json__value_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/json_parser.h</label>
+        <link refid="json__parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>json_validator.h</label>
+        <link refid="json__validator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cctype</label>
+      </node>
+      <node id="10">
+        <label>json_exceptions.h</label>
+      </node>
+      <node id="3">
+        <label>sstream</label>
+      </node>
+      <node id="14">
+        <label>stack</label>
+      </node>
+      <node id="12">
+        <label>stdexcept</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/json_manager.h</label>
+        <link refid="json__manager_8h"/>
+      </node>
+      <node id="1">
+        <label>include/json_parser.h</label>
+        <link refid="json__parser_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_json_parser" prot="public">JsonParser</innerclass>
+    <briefdescription>
+<para>Definition of the <ref refid="class_json_parser" kindref="compound">JsonParser</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/json_parser.h"/>
+  </compounddef>
+</doxygen>

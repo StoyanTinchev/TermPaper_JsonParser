@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_json_parser" kind="class" language="C++" prot="public">
+    <compoundname>JsonParser</compoundname>
+    <includes refid="json__parser_8h" local="no">json_parser.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_parser_1a798b64482e73aee50a30d5c1bf629c57" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string JsonParser::jsonStream</definition>
+        <argsstring></argsstring>
+        <name>jsonStream</name>
+        <qualifiedname>JsonParser::jsonStream</qualifiedname>
+        <briefdescription>
+<para>JSON text to parse. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="28" column="17" bodyfile="include/json_parser.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_parser_1aecdf359ca07d0748d337bdab026ae690" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t JsonParser::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>JsonParser::position</qualifiedname>
+        <briefdescription>
+<para>Current position in the JSON text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="29" column="12" bodyfile="include/json_parser.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_json_parser_1afcbd78da5ae4291f23d776251b7f9427" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonParser::validate</definition>
+        <argsstring>()</argsstring>
+        <name>validate</name>
+        <qualifiedname>JsonParser::validate</qualifiedname>
+        <briefdescription>
+<para>Validates the JSON text structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses the <computeroutput><ref refid="class_json_validator" kindref="compound">JsonValidator</ref></computeroutput> class to ensure that the JSON text has a valid structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="36" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_parser_1a07f37ba9dcb901b89cd5a9701a0ddfa8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonParser::skipWhitespace</definition>
+        <argsstring>()</argsstring>
+        <name>skipWhitespace</name>
+        <qualifiedname>JsonParser::skipWhitespace</qualifiedname>
+        <briefdescription>
+<para>Skips whitespace characters in the JSON text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="41" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_parser_1abe01048896188530fc33a27fa578339c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double JsonParser::parseNumber</definition>
+        <argsstring>()</argsstring>
+        <name>parseNumber</name>
+        <qualifiedname>JsonParser::parseNumber</qualifiedname>
+        <briefdescription>
+<para>Parses a number value from the JSON text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The parsed number as a double. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="48" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_parser_1ab5f66a89e940a1b8767e8b92225ef767" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string JsonParser::parseString</definition>
+        <argsstring>()</argsstring>
+        <name>parseString</name>
+        <qualifiedname>JsonParser::parseString</qualifiedname>
+        <briefdescription>
+<para>Parses a string value from the JSON text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The parsed string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="55" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_parser_1a0785b63ffba2c8ed4ad59d90bbbdb57e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool JsonParser::parseBool</definition>
+        <argsstring>()</argsstring>
+        <name>parseBool</name>
+        <qualifiedname>JsonParser::parseBool</qualifiedname>
+        <briefdescription>
+<para>Parses a boolean value from the JSON text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The parsed boolean. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_parser_1a2c16d35f18b257201ecb3508071767c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_array" kindref="compound">JsonArray</ref> *</type>
+        <definition>JsonArray * JsonParser::parseArray</definition>
+        <argsstring>()</argsstring>
+        <name>parseArray</name>
+        <qualifiedname>JsonParser::parseArray</qualifiedname>
+        <briefdescription>
+<para>Parses an array value from the JSON text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the parsed <computeroutput><ref refid="class_json_array" kindref="compound">JsonArray</ref></computeroutput> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="69" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_parser_1ac46751c3ee66d7ea9e4d9bf2b1eba8e2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_object" kindref="compound">JsonObject</ref> *</type>
+        <definition>JsonObject * JsonParser::parseObject</definition>
+        <argsstring>()</argsstring>
+        <name>parseObject</name>
+        <qualifiedname>JsonParser::parseObject</qualifiedname>
+        <briefdescription>
+<para>Parses an object value from the JSON text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the parsed <computeroutput><ref refid="class_json_object" kindref="compound">JsonObject</ref></computeroutput> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="76" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_parser_1ab2bfea1ba43bf7110d05bd1537cd3f90" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonParser::JsonParser</definition>
+        <argsstring>(const std::string &amp;jsonStream)</argsstring>
+        <name>JsonParser</name>
+        <qualifiedname>JsonParser::JsonParser</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>jsonStream</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new Json Parser object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonStream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The JSON text to parse. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="84" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_parser_1a95c7513cd7b8c7f09a2deda73c019bb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_element" kindref="compound">JsonElement</ref> *</type>
+        <definition>JsonElement * JsonParser::parse</definition>
+        <argsstring>()</argsstring>
+        <name>parse</name>
+        <qualifiedname>JsonParser::parse</qualifiedname>
+        <briefdescription>
+<para>Begins parsing the JSON text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the root <computeroutput><ref refid="class_json_element" kindref="compound">JsonElement</ref></computeroutput> object representing the parsed JSON. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="91" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is responsible for parsing JSON text. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It reads a string of JSON text and constructs an in-memory representation of the JSON using <computeroutput><ref refid="class_json_value" kindref="compound">JsonValue</ref></computeroutput>, <computeroutput><ref refid="class_json_array" kindref="compound">JsonArray</ref></computeroutput>, and <computeroutput><ref refid="class_json_object" kindref="compound">JsonObject</ref></computeroutput> objects. The parsing process includes validation of the JSON text structure according to the JSON standard. </para>
+    </detaileddescription>
+    <location file="include/json_parser.h" line="26" column="1" bodyfile="include/json_parser.h" bodystart="26" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_json_parser_1ab2bfea1ba43bf7110d05bd1537cd3f90" prot="public" virt="non-virtual"><scope>JsonParser</scope><name>JsonParser</name></member>
+      <member refid="class_json_parser_1a798b64482e73aee50a30d5c1bf629c57" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>jsonStream</name></member>
+      <member refid="class_json_parser_1a95c7513cd7b8c7f09a2deda73c019bb4" prot="public" virt="non-virtual"><scope>JsonParser</scope><name>parse</name></member>
+      <member refid="class_json_parser_1a2c16d35f18b257201ecb3508071767c2" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>parseArray</name></member>
+      <member refid="class_json_parser_1a0785b63ffba2c8ed4ad59d90bbbdb57e" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>parseBool</name></member>
+      <member refid="class_json_parser_1abe01048896188530fc33a27fa578339c" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>parseNumber</name></member>
+      <member refid="class_json_parser_1ac46751c3ee66d7ea9e4d9bf2b1eba8e2" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>parseObject</name></member>
+      <member refid="class_json_parser_1ab5f66a89e940a1b8767e8b92225ef767" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>parseString</name></member>
+      <member refid="class_json_parser_1aecdf359ca07d0748d337bdab026ae690" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>position</name></member>
+      <member refid="class_json_parser_1a07f37ba9dcb901b89cd5a9701a0ddfa8" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>skipWhitespace</name></member>
+      <member refid="class_json_parser_1afcbd78da5ae4291f23d776251b7f9427" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

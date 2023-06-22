@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['invalidarraysyntax_0',['InvalidArraySyntax',['../class_invalid_array_syntax.html',1,'InvalidArraySyntax'],['../class_invalid_array_syntax.html#a9bc326828e52fe2e65b15137842b6880',1,'InvalidArraySyntax::InvalidArraySyntax()']]],
-  ['invalidbooleanvalue_1',['InvalidBooleanValue',['../class_invalid_boolean_value.html',1,'InvalidBooleanValue'],['../class_invalid_boolean_value.html#adfea0cfc5149fff1972b5fed83d0ee1e',1,'InvalidBooleanValue::InvalidBooleanValue()']]],
-  ['invalidjsonformat_2',['InvalidJsonFormat',['../class_invalid_json_format.html',1,'InvalidJsonFormat'],['../class_invalid_json_format.html#a7066633de76859c1acad632377cff959',1,'InvalidJsonFormat::InvalidJsonFormat()']]],
-  ['invalidobjectsyntax_3',['InvalidObjectSyntax',['../class_invalid_object_syntax.html',1,'InvalidObjectSyntax'],['../class_invalid_object_syntax.html#a3d5ff7d6034a2e7f69d47810a5c3db7e',1,'InvalidObjectSyntax::InvalidObjectSyntax()']]],
-  ['invalidpatherror_4',['InvalidPathError',['../class_invalid_path_error.html',1,'InvalidPathError'],['../class_invalid_path_error.html#a9b46c8e6d82ae2386bc346c294ddbdb4',1,'InvalidPathError::InvalidPathError()']]]
+  ['mainpage_2eh_0',['mainpage.h',['../mainpage_8h.html',1,'']]],
+  ['move_1',['move',['../class_json_array.html#ad86b8c638a507fee7db3d58d43e1d7a1',1,'JsonArray::move()'],['../class_json_element.html#a2ddc931b379e450ce2ebd4e240e5a628',1,'JsonElement::move()'],['../class_json_object.html#a9c475b7b6466243971fe706db3ec96c5',1,'JsonObject::move()'],['../class_json_value.html#a48f892b291985cc0e8e5d1804a4776ec',1,'JsonValue::move()'],['../class_json_manager.html#a3acb1531a5d27032a7914bfd1f1874a1',1,'JsonManager::move()']]]
 ];

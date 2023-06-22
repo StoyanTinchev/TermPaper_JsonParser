@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>JSON Parser Console Application Documentation</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="index_1intro_sec">
+<title>Introduction</title>
+<para>Welcome to the documentation of our JSON Parser Console Application. This application is designed to parse, manipulate and validate JSON files. It provides a console-based interface for working with JSON data. You can open, save, and perform various operations on JSON data like search, insert, delete, and move JSON elements.</para>
+</sect1>
+<sect1 id="index_1usage_sec">
+<title>Usage</title>
+<para>After you open a JSON file with our application, you can use the following commands:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>validate</computeroutput>: Validates the JSON file.</para>
+</listitem><listitem><para><computeroutput>print</computeroutput>: Prints the JSON file.</para>
+</listitem><listitem><para><computeroutput>search &lt;key&gt;</computeroutput>: Searches for the key in the JSON and returns its path.</para>
+</listitem><listitem><para><computeroutput>contains &lt;value&gt;</computeroutput>: Checks if the JSON contains the provided value.</para>
+</listitem><listitem><para><computeroutput>set &lt;path&gt; &lt;new_value&gt;</computeroutput>: Sets the new value at the given path.</para>
+</listitem><listitem><para><computeroutput>create &lt;path&gt; &lt;value&gt;</computeroutput>: Creates a new element with the given value at the specified path.</para>
+</listitem><listitem><para><computeroutput>delete &lt;path&gt;</computeroutput>: Deletes the element at the given path.</para>
+</listitem><listitem><para><computeroutput>move &lt;fromPath&gt; &lt;toPath&gt;</computeroutput>: Moves the element from the source path to the destination path.</para>
+</listitem><listitem><para><computeroutput>save</computeroutput> [&lt;path&gt;] saveas &lt;file&gt; [&lt;path&gt;]: Saves the JSON file to the specified path.</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="index_1classes_sec">
+<title>Classes</title>
+<para>The application includes several classes to handle JSON data, including:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput><ref refid="class_json_manager" kindref="compound">JsonManager</ref></computeroutput>: Manages JSON file operations like opening, saving, etc.</para>
+</listitem><listitem><para><computeroutput><ref refid="class_json_parser" kindref="compound">JsonParser</ref></computeroutput>: Parses JSON data.</para>
+</listitem><listitem><para><computeroutput><ref refid="class_json_object" kindref="compound">JsonObject</ref></computeroutput>, <computeroutput><ref refid="class_json_array" kindref="compound">JsonArray</ref></computeroutput>, <computeroutput><ref refid="class_json_value" kindref="compound">JsonValue</ref></computeroutput>: Represent different types of JSON elements.</para>
+</listitem><listitem><para><computeroutput><ref refid="class_json_key" kindref="compound">JsonKey</ref></computeroutput>: Represents a key in a JSON object.</para>
+</listitem><listitem><para><computeroutput><ref refid="class_json_validator" kindref="compound">JsonValidator</ref></computeroutput>: Validates a JSON string.</para>
+</listitem><listitem><para><computeroutput>JsonException</computeroutput> and its subclasses: Represent various exceptions that can occur while handling JSON data.</para>
+</listitem></itemizedlist>
+</para>
+<para>Detailed information about these classes can be found in the &quot;Classes&quot; section.</para>
+</sect1>
+<sect1 id="index_1install_sec">
+<title>Installation</title>
+<para>To use the JSON Parser Console Application, simply clone the repository and build it using a C++ compiler. The application does not have any external dependencies. </para>
+</sect1>
+    </detaileddescription>
+    <location file="include/mainpage.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="json__key_8h" kind="file" language="C++">
+    <compoundname>json_key.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="json__object_8h" local="no">include/json_base/json_object.h</includedby>
+    <includedby refid="json__value_8h" local="no">include/json_base/json_value.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/json_base/json_key.h</label>
+        <link refid="json__key_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/json_base/json_key.h</label>
+        <link refid="json__key_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/json_base/json_object.h</label>
+        <link refid="json__object_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/json_base/json_value.h</label>
+        <link refid="json__value_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/json_manager.h</label>
+        <link refid="json__manager_8h"/>
+      </node>
+      <node id="4">
+        <label>include/json_parser.h</label>
+        <link refid="json__parser_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_json_key" prot="public">JsonKey</innerclass>
+    <briefdescription>
+<para>Definition of the <ref refid="class_json_key" kindref="compound">JsonKey</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/json_base/json_key.h"/>
+  </compounddef>
+</doxygen>

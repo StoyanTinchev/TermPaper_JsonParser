@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_json_object" kind="class" language="C++" prot="public">
+    <compoundname>JsonObject</compoundname>
+    <basecompoundref refid="class_json_element" prot="public" virt="non-virtual">JsonElement</basecompoundref>
+    <includes refid="json__object_8h" local="no">json_object.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_object_1a00f0ece0382a57f7d7f05431f3c30428" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="class_json_key" kindref="compound">JsonKey</ref> *, <ref refid="class_json_element" kindref="compound">JsonElement</ref> * &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;JsonKey *, JsonElement *&gt; &gt; JsonObject::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>JsonObject::data</qualifiedname>
+        <briefdescription>
+<para>Vector of key-value pairs that make up the object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="23" column="17" bodyfile="include/json_base/json_object.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_json_object_1a94a25e1c62f6d1018d481b8a5cba4605" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; <ref refid="class_json_key" kindref="compound">JsonKey</ref> *, <ref refid="class_json_element" kindref="compound">JsonElement</ref> * &gt; &gt;::iterator</type>
+        <definition>std::vector&lt; std::pair&lt; JsonKey *, JsonElement * &gt; &gt;::iterator JsonObject::find_element</definition>
+        <argsstring>(const std::string &amp;key)</argsstring>
+        <name>find_element</name>
+        <qualifiedname>JsonObject::find_element</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Finds an element in the object using a given key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key associated with the element to find. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An iterator to the key-value pair, if found. Otherwise, it returns an iterator to the end of the data vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="30" column="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_object_1aa41d053fc27e4fcf4f1c6f55ef28f4a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonObject::JsonObject</definition>
+        <argsstring>()</argsstring>
+        <name>JsonObject</name>
+        <qualifiedname>JsonObject::JsonObject</qualifiedname>
+        <briefdescription>
+<para>Default constructor for <ref refid="class_json_object" kindref="compound">JsonObject</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="36" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_object_1a9c99921d0fd1f9e401609d2fdef6ba22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonObject::~JsonObject</definition>
+        <argsstring>() override</argsstring>
+        <name>~JsonObject</name>
+        <qualifiedname>JsonObject::~JsonObject</qualifiedname>
+        <briefdescription>
+<para>Destructor for <ref refid="class_json_object" kindref="compound">JsonObject</ref>, overridden from <ref refid="class_json_element" kindref="compound">JsonElement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="41" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_object_1a36973ccf370b1e995beaa97d485765da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonObject::add_element</definition>
+        <argsstring>(JsonKey *key, JsonElement *value)</argsstring>
+        <name>add_element</name>
+        <qualifiedname>JsonObject::add_element</qualifiedname>
+        <param>
+          <type><ref refid="class_json_key" kindref="compound">JsonKey</ref> *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_element" kindref="compound">JsonElement</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add a key-value pair to the object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to add. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="48" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_object_1ab3225eee55311a06311dd4d67606797e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_element" kindref="compound">JsonElement</ref> *</type>
+        <definition>JsonElement * JsonObject::get_element</definition>
+        <argsstring>(const std::string &amp;key)</argsstring>
+        <name>get_element</name>
+        <qualifiedname>JsonObject::get_element</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Get the value associated with a given key in the object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key associated with the value to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value associated with the given key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="55" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_object_1a68d96ac09e41acba1492abc5ec1a0eea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string JsonObject::to_string</definition>
+        <argsstring>() const override</argsstring>
+        <name>to_string</name>
+        <qualifiedname>JsonObject::to_string</qualifiedname>
+        <reimplements refid="class_json_element_1acaa559e1be09dff2f6b347775d0983dc">to_string</reimplements>
+        <briefdescription>
+<para>Convert the object to a JSON-formatted string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A JSON-formatted string representing the object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="61" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_object_1a096210e59d3c570a970944cda0486274" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; JsonObject::search</definition>
+        <argsstring>(const std::string &amp;key) override</argsstring>
+        <name>search</name>
+        <qualifiedname>JsonObject::search</qualifiedname>
+        <reimplements refid="class_json_element_1a89efc03621132a676694994be0b88ee5">search</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Search for a key in the object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key to search for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector of paths to the elements that contain the key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="68" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_object_1ae008482ab6e401e07187766c1a4e006a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool JsonObject::contains</definition>
+        <argsstring>(const std::string &amp;value) override</argsstring>
+        <name>contains</name>
+        <qualifiedname>JsonObject::contains</qualifiedname>
+        <reimplements refid="class_json_element_1aff8ec1964ccbfcd7d450d66d9956e3f7">contains</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Check if the object contains a value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to check for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the value is found, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="75" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_object_1ae30d3d2fa69c1a965f489bf6a8146c53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonObject::set</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;path, const std::string &amp;new_value) override</argsstring>
+        <name>set</name>
+        <qualifiedname>JsonObject::set</qualifiedname>
+        <reimplements refid="class_json_element_1a484d825f5e631f899fdff7ddb486a585">set</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>new_value</declname>
+        </param>
+        <briefdescription>
+<para>Set the value of an element at a given path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_object_1ab3d665ec4299314e1aef378e60e0a0ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonObject::create</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;path, const std::string &amp;value) override</argsstring>
+        <name>create</name>
+        <qualifiedname>JsonObject::create</qualifiedname>
+        <reimplements refid="class_json_element_1a4dd348e9dc77f27397d023405b5bcd45">create</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Create a new element at a given path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the new element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the new element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_object_1ac6fc5f1ed2cd446dfb5a775f432f76d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonObject::delete_element</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;path) override</argsstring>
+        <name>delete_element</name>
+        <qualifiedname>JsonObject::delete_element</qualifiedname>
+        <reimplements refid="class_json_element_1ac6330f1734e30ed7a316087e68fc6f0f">delete_element</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Delete an element at a given path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the element to delete. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_object_1a9c475b7b6466243971fe706db3ec96c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JsonObject::move</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;fromPath, const std::vector&lt; std::string &gt; &amp;toPath) override</argsstring>
+        <name>move</name>
+        <qualifiedname>JsonObject::move</qualifiedname>
+        <reimplements refid="class_json_element_1a2ddc931b379e450ce2ebd4e240e5a628">move</reimplements>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>fromPath</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>toPath</declname>
+        </param>
+        <briefdescription>
+<para>Move an element from one path to another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fromPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current path of the element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new path for the element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_object.h" line="102" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class that represents an object in JSON. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_json_object" kindref="compound">JsonObject</ref> class encapsulates a vector of key-value pairs where the key is a <ref refid="class_json_key" kindref="compound">JsonKey</ref> pointer and the value is a <ref refid="class_json_element" kindref="compound">JsonElement</ref> pointer. The class provides methods to manipulate, search, and convert the object to a JSON-formatted string. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>JsonElement</label>
+        <link refid="class_json_element"/>
+      </node>
+      <node id="1">
+        <label>JsonObject</label>
+        <link refid="class_json_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>JsonElement</label>
+        <link refid="class_json_element"/>
+      </node>
+      <node id="1">
+        <label>JsonObject</label>
+        <link refid="class_json_object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/json_base/json_object.h" line="21" column="1" bodyfile="include/json_base/json_object.h" bodystart="21" bodyend="104"/>
+    <listofallmembers>
+      <member refid="class_json_object_1a36973ccf370b1e995beaa97d485765da" prot="public" virt="non-virtual"><scope>JsonObject</scope><name>add_element</name></member>
+      <member refid="class_json_object_1ae008482ab6e401e07187766c1a4e006a" prot="public" virt="virtual"><scope>JsonObject</scope><name>contains</name></member>
+      <member refid="class_json_object_1ab3d665ec4299314e1aef378e60e0a0ca" prot="public" virt="virtual"><scope>JsonObject</scope><name>create</name></member>
+      <member refid="class_json_object_1a00f0ece0382a57f7d7f05431f3c30428" prot="private" virt="non-virtual"><scope>JsonObject</scope><name>data</name></member>
+      <member refid="class_json_object_1ac6fc5f1ed2cd446dfb5a775f432f76d2" prot="public" virt="virtual"><scope>JsonObject</scope><name>delete_element</name></member>
+      <member refid="class_json_object_1a94a25e1c62f6d1018d481b8a5cba4605" prot="private" virt="non-virtual"><scope>JsonObject</scope><name>find_element</name></member>
+      <member refid="class_json_object_1ab3225eee55311a06311dd4d67606797e" prot="public" virt="non-virtual"><scope>JsonObject</scope><name>get_element</name></member>
+      <member refid="class_json_object_1aa41d053fc27e4fcf4f1c6f55ef28f4a9" prot="public" virt="non-virtual"><scope>JsonObject</scope><name>JsonObject</name></member>
+      <member refid="class_json_object_1a9c475b7b6466243971fe706db3ec96c5" prot="public" virt="virtual"><scope>JsonObject</scope><name>move</name></member>
+      <member refid="class_json_object_1a096210e59d3c570a970944cda0486274" prot="public" virt="virtual"><scope>JsonObject</scope><name>search</name></member>
+      <member refid="class_json_object_1ae30d3d2fa69c1a965f489bf6a8146c53" prot="public" virt="virtual"><scope>JsonObject</scope><name>set</name></member>
+      <member refid="class_json_object_1a68d96ac09e41acba1492abc5ec1a0eea" prot="public" virt="virtual"><scope>JsonObject</scope><name>to_string</name></member>
+      <member refid="class_json_element_1a65dbb209b55ae334059698d025783fed" prot="public" virt="virtual"><scope>JsonObject</scope><name>~JsonElement</name></member>
+      <member refid="class_json_object_1a9c99921d0fd1f9e401609d2fdef6ba22" prot="public" virt="non-virtual"><scope>JsonObject</scope><name>~JsonObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

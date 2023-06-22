@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_json_exception" kind="class" language="C++" prot="public">
+    <compoundname>JsonException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::runtime_error</basecompoundref>
+    <derivedcompoundref refid="class_element_already_exists_error" prot="public" virt="non-virtual">ElementAlreadyExistsError</derivedcompoundref>
+    <derivedcompoundref refid="class_element_not_found_error" prot="public" virt="non-virtual">ElementNotFoundError</derivedcompoundref>
+    <derivedcompoundref refid="class_file_error" prot="public" virt="non-virtual">FileError</derivedcompoundref>
+    <derivedcompoundref refid="class_invalid_array_syntax" prot="public" virt="non-virtual">InvalidArraySyntax</derivedcompoundref>
+    <derivedcompoundref refid="class_invalid_boolean_value" prot="public" virt="non-virtual">InvalidBooleanValue</derivedcompoundref>
+    <derivedcompoundref refid="class_invalid_json_format" prot="public" virt="non-virtual">InvalidJsonFormat</derivedcompoundref>
+    <derivedcompoundref refid="class_invalid_object_syntax" prot="public" virt="non-virtual">InvalidObjectSyntax</derivedcompoundref>
+    <derivedcompoundref refid="class_invalid_path_error" prot="public" virt="non-virtual">InvalidPathError</derivedcompoundref>
+    <derivedcompoundref refid="class_unexpected_token" prot="public" virt="non-virtual">UnexpectedToken</derivedcompoundref>
+    <includes refid="json__exceptions_8h" local="no">json_exceptions.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_exception_1aa8f4604518e6bd508b48bdda8cb6bc19" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JsonException::JsonException</definition>
+        <argsstring>(const std::string &amp;msg)</argsstring>
+        <name>JsonException</name>
+        <qualifiedname>JsonException::JsonException</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_exceptions.h" line="19" column="14" bodyfile="include/json_exceptions.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for exceptions related to JSON processing. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class inherits from the std::runtime_error class and serves as the base class for all custom exceptions in the JSON library. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ElementAlreadyExistsError</label>
+        <link refid="class_element_already_exists_error"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ElementNotFoundError</label>
+        <link refid="class_element_not_found_error"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FileError</label>
+        <link refid="class_file_error"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>InvalidArraySyntax</label>
+        <link refid="class_invalid_array_syntax"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>InvalidBooleanValue</label>
+        <link refid="class_invalid_boolean_value"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>InvalidJsonFormat</label>
+        <link refid="class_invalid_json_format"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>InvalidObjectSyntax</label>
+        <link refid="class_invalid_object_syntax"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>InvalidPathError</label>
+        <link refid="class_invalid_path_error"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>JsonException</label>
+        <link refid="class_json_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>UnexpectedToken</label>
+        <link refid="class_unexpected_token"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::runtime_error</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>JsonException</label>
+        <link refid="class_json_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::runtime_error</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/json_exceptions.h" line="17" column="1" bodyfile="include/json_exceptions.h" bodystart="17" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_json_exception_1aa8f4604518e6bd508b48bdda8cb6bc19" prot="public" virt="non-virtual"><scope>JsonException</scope><name>JsonException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

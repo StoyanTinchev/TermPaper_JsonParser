@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="json__exceptions_8h" kind="file" language="C++">
+    <compoundname>json_exceptions.h</compoundname>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">string</includes>
+    <includedby refid="json__array_8h" local="yes">include/json_base/json_array.h</includedby>
+    <includedby refid="json__value_8h" local="no">include/json_base/json_value.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/json_exceptions.h</label>
+        <link refid="json__exceptions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdexcept</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/json_base/json_array.h</label>
+        <link refid="json__array_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/json_base/json_value.h</label>
+        <link refid="json__value_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/json_exceptions.h</label>
+        <link refid="json__exceptions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/json_manager.h</label>
+        <link refid="json__manager_8h"/>
+      </node>
+      <node id="4">
+        <label>include/json_parser.h</label>
+        <link refid="json__parser_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_json_exception" prot="public">JsonException</innerclass>
+    <innerclass refid="class_invalid_json_format" prot="public">InvalidJsonFormat</innerclass>
+    <innerclass refid="class_invalid_boolean_value" prot="public">InvalidBooleanValue</innerclass>
+    <innerclass refid="class_invalid_array_syntax" prot="public">InvalidArraySyntax</innerclass>
+    <innerclass refid="class_invalid_object_syntax" prot="public">InvalidObjectSyntax</innerclass>
+    <innerclass refid="class_unexpected_token" prot="public">UnexpectedToken</innerclass>
+    <innerclass refid="class_file_error" prot="public">FileError</innerclass>
+    <innerclass refid="class_invalid_path_error" prot="public">InvalidPathError</innerclass>
+    <innerclass refid="class_element_not_found_error" prot="public">ElementNotFoundError</innerclass>
+    <innerclass refid="class_element_already_exists_error" prot="public">ElementAlreadyExistsError</innerclass>
+    <briefdescription>
+<para>Definition of the custom exceptions used in the JSON library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>JSON_EXCEPTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_EXCEPTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_json_exception" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_json_exception" kindref="compound">JsonException</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::runtime_error<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="class_json_exception_1aa8f4604518e6bd508b48bdda8cb6bc19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_json_exception_1aa8f4604518e6bd508b48bdda8cb6bc19" kindref="member">JsonException</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg)<sp/>:<sp/>std::runtime_error(msg)<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_invalid_json_format" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_invalid_json_format" kindref="compound">InvalidJsonFormat</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="class_invalid_json_format_1a7066633de76859c1acad632377cff959" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_invalid_json_format_1a7066633de76859c1acad632377cff959" kindref="member">InvalidJsonFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>JSON<sp/>format&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref>(msg)<sp/>{}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_invalid_boolean_value" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_invalid_boolean_value" kindref="compound">InvalidBooleanValue</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40" refid="class_invalid_boolean_value_1adfea0cfc5149fff1972b5fed83d0ee1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_invalid_boolean_value_1adfea0cfc5149fff1972b5fed83d0ee1e" kindref="member">InvalidBooleanValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>boolean<sp/>value<sp/>in<sp/>Json&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref>(msg)<sp/>{}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_invalid_array_syntax" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_invalid_array_syntax" kindref="compound">InvalidArraySyntax</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51" refid="class_invalid_array_syntax_1a9bc326828e52fe2e65b15137842b6880" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_invalid_array_syntax_1a9bc326828e52fe2e65b15137842b6880" kindref="member">InvalidArraySyntax</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>array<sp/>syntax<sp/>in<sp/>Json&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref>(msg)<sp/>{}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_invalid_object_syntax" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_invalid_object_syntax" kindref="compound">InvalidObjectSyntax</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62" refid="class_invalid_object_syntax_1a3d5ff7d6034a2e7f69d47810a5c3db7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_invalid_object_syntax_1a3d5ff7d6034a2e7f69d47810a5c3db7e" kindref="member">InvalidObjectSyntax</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>object<sp/>syntax<sp/>in<sp/>Json&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref>(msg)<sp/>{}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_unexpected_token" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unexpected_token" kindref="compound">UnexpectedToken</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73" refid="class_unexpected_token_1a827110f5d99d2c62f256bc94f1a59bb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_unexpected_token_1a827110f5d99d2c62f256bc94f1a59bb1" kindref="member">UnexpectedToken</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Unexpected<sp/>token<sp/>in<sp/>Json&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref>(msg)<sp/>{}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="class_file_error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_file_error" kindref="compound">FileError</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84" refid="class_file_error_1ab54b4dab1a800b452dbd930b6ee72d8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_file_error_1ab54b4dab1a800b452dbd930b6ee72d8c" kindref="member">FileError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;File<sp/>error&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref>(msg)<sp/>{}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="class_invalid_path_error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_invalid_path_error" kindref="compound">InvalidPathError</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95" refid="class_invalid_path_error_1a9b46c8e6d82ae2386bc346c294ddbdb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_invalid_path_error_1a9b46c8e6d82ae2386bc346c294ddbdb4" kindref="member">InvalidPathError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>path<sp/>provided&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref>(msg)<sp/>{}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="class_element_not_found_error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_element_not_found_error" kindref="compound">ElementNotFoundError</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="106" refid="class_element_not_found_error_1a4ad1b63948842c829e4a80bf7132f464" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_element_not_found_error_1a4ad1b63948842c829e4a80bf7132f464" kindref="member">ElementNotFoundError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Specified<sp/>element<sp/>not<sp/>found&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref>(msg)<sp/>{}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="class_element_already_exists_error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_element_already_exists_error" kindref="compound">ElementAlreadyExistsError</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117" refid="class_element_already_exists_error_1a6041ba99700140a11a37f2147dffab84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_element_already_exists_error_1a6041ba99700140a11a37f2147dffab84" kindref="member">ElementAlreadyExistsError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Specified<sp/>element<sp/>already<sp/>exists&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_json_exception" kindref="compound">JsonException</ref>(msg)<sp/>{}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>JSON_EXCEPTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/json_exceptions.h"/>
+  </compounddef>
+</doxygen>

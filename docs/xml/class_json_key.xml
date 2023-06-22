@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_json_key" kind="class" language="C++" prot="public">
+    <compoundname>JsonKey</compoundname>
+    <includes refid="json__key_8h" local="no">json_key.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_key_1a368b2aec0748dd421a7092a9597c67bf" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string JsonKey::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>JsonKey::key</qualifiedname>
+        <briefdescription>
+<para>The encapsulated JSON key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_key.h" line="20" column="17" bodyfile="include/json_base/json_key.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_key_1a251455a554c09cb155f0c0424bed06d0" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JsonKey::JsonKey</definition>
+        <argsstring>(const std::string &amp;key)</argsstring>
+        <name>JsonKey</name>
+        <qualifiedname>JsonKey::JsonKey</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_json_key" kindref="compound">JsonKey</ref> object with a given key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to use as the key. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_key.h" line="27" column="14" bodyfile="include/json_base/json_key.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_key_1ae101c7d8daebff9af2374a001c08edaf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string JsonKey::get_key</definition>
+        <argsstring>() const</argsstring>
+        <name>get_key</name>
+        <qualifiedname>JsonKey::get_key</qualifiedname>
+        <briefdescription>
+<para>Get the encapsulated key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The encapsulated key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_key.h" line="33" column="17" bodyfile="include/json_base/json_key.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_key_1ade25bc3d303fe67dbf132baf2d911f9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonKey::set_key</definition>
+        <argsstring>(const std::string &amp;newKey)</argsstring>
+        <name>set_key</name>
+        <qualifiedname>JsonKey::set_key</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newKey</declname>
+        </param>
+        <briefdescription>
+<para>Set the encapsulated key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new string to use as the key. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_key.h" line="39" column="10" bodyfile="include/json_base/json_key.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_key_1a20aceec919d27e8824b47b64277341b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string JsonKey::to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <qualifiedname>JsonKey::to_string</qualifiedname>
+        <briefdescription>
+<para>Convert the encapsulated key to a JSON-formatted string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A JSON-formatted string representing the key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_base/json_key.h" line="45" column="17" bodyfile="include/json_base/json_key.h" bodystart="45" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class representing a key in a JSON key-value pair. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_json_key" kindref="compound">JsonKey</ref> class encapsulates a string key used in a JSON object. The key can be obtained or modified through accessor methods, and can be converted to a JSON-formatted string. </para>
+    </detaileddescription>
+    <location file="include/json_base/json_key.h" line="18" column="1" bodyfile="include/json_base/json_key.h" bodystart="18" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_json_key_1ae101c7d8daebff9af2374a001c08edaf" prot="public" virt="non-virtual"><scope>JsonKey</scope><name>get_key</name></member>
+      <member refid="class_json_key_1a251455a554c09cb155f0c0424bed06d0" prot="public" virt="non-virtual"><scope>JsonKey</scope><name>JsonKey</name></member>
+      <member refid="class_json_key_1a368b2aec0748dd421a7092a9597c67bf" prot="private" virt="non-virtual"><scope>JsonKey</scope><name>key</name></member>
+      <member refid="class_json_key_1ade25bc3d303fe67dbf132baf2d911f9c" prot="public" virt="non-virtual"><scope>JsonKey</scope><name>set_key</name></member>
+      <member refid="class_json_key_1a20aceec919d27e8824b47b64277341b4" prot="public" virt="non-virtual"><scope>JsonKey</scope><name>to_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

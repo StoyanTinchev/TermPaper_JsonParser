@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_108e9b8a5e91f655c686c7842a88adac" kind="dir">
+    <compoundname>include/json_base</compoundname>
+    <innerfile refid="json__array_8h">json_array.h</innerfile>
+    <innerfile refid="json__element_8h">json_element.h</innerfile>
+    <innerfile refid="json__key_8h">json_key.h</innerfile>
+    <innerfile refid="json__object_8h">json_object.h</innerfile>
+    <innerfile refid="json__value_8h">json_value.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/json_base/"/>
+  </compounddef>
+</doxygen>
