@@ -105,3 +105,26 @@ void JsonValue::set(const std::vector<std::string> &path, const std::string &new
             throw InvalidPathError("Cannot set a value in a non-object or non-array JSON value");
     }
 }
+
+void JsonValue::create(const std::vector<std::string> &path, const std::string &value) {
+    throw ElementAlreadyExistsError("Cannot add an element to a value");
+}
+
+void JsonValue::delete_element(const std::vector<std::string> &path) {
+    if (path.empty()) {
+        stringValue = "";
+        numberValue = 0;
+        boolValue = false;
+        valueType = ValueType::String;
+        delete arrayValue;
+        arrayValue = nullptr;
+        delete objectValue;
+        objectValue = nullptr;
+    } else {
+        throw InvalidPathError("Invalid path for JsonValue");
+    }
+}
+
+void JsonValue::move(const std::vector<std::string> &fromPath, const std::vector<std::string> &toPath) {
+    throw InvalidPathError("Cannot move from or to a value");
+}

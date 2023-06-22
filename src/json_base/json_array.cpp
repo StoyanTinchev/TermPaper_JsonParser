@@ -77,3 +77,63 @@ void JsonArray::set(const std::vector<std::string> &path, const std::string &new
         data[index]->set(sub_path, new_value);
     }
 }
+
+void JsonArray::create(const std::vector<std::string> &path, const std::string &value) {
+    int index = std::stoi(path[0]);
+
+    if (index < 0 || index >= data.size()) {
+        throw ElementNotFoundError("Index out of bounds");
+    }
+
+    if (path.size() > 1) {
+        std::vector<std::string> newPath(path.begin() + 1, path.end());
+        data[index]->create(newPath, value);
+    } else {
+        if (data[index]) {
+            throw ElementAlreadyExistsError("Element already exists at specified path");
+        }
+        data[index] = new JsonValue(value);
+    }
+}
+
+void JsonArray::delete_element(const std::vector<std::string> &path) {
+    if (path.empty()) {
+        throw InvalidPathError("Path cannot be empty for JsonArray");
+    }
+
+    int index = std::stoi(path[0]);
+
+    if (index < 0 || index >= data.size()) {
+        throw ElementNotFoundError("Index out of range in JsonArray");
+    }
+
+    if (path.size() == 1) {
+        delete data[index];
+        data.erase(data.begin() + index);
+    } else {
+        std::vector<std::string> subPath(path.begin() + 1, path.end());
+        data[index]->delete_element(subPath);
+    }
+}
+
+void JsonArray::move(const std::vector<std::string>& fromPath, const std::vector<std::string>& toPath) {
+    if (fromPath.empty()) {
+        throw InvalidPathError("Invalid path");
+    }
+
+    int index = std::stoi(fromPath[0]);
+    if (index < 0 || index >= data.size()) {
+        throw InvalidPathError("Element not found");
+    }
+
+    if (fromPath.size() == 1) {
+        JsonElement* movedElement = data[index];
+        data.erase(data.begin() + index);
+        if (!toPath.empty()) {
+            throw InvalidPathError("Cannot add element to array at specified path");
+        }
+        add_element(movedElement);
+    } else {
+        data[index]->move(std::vector<std::string>(fromPath.begin() + 1, fromPath.end()), toPath);
+    }
+}

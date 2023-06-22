@@ -95,10 +95,53 @@ bool JsonManager::contains(const std::string &value) {
     return root->contains(value);
 }
 
-void JsonManager::set(const std::vector<std::string> &path, const std::string &new_value) {
-    if (root == nullptr) {
-        throw InvalidPathError("No data to set");
+void JsonManager::set(const std::string &path, const std::string &new_value) {
+    std::vector<std::string> splitPath = split(path, '.');
+
+    if (!root) {
+        throw ElementNotFoundError("Root element not found");
     }
 
-    root->set(path, new_value);
+    root->set(splitPath, new_value);
 }
+
+void JsonManager::create(const std::string &path, const std::string &value) {
+    std::vector<std::string> splitPath = split(path, '.');
+
+    if (!root) {
+        throw ElementNotFoundError("Root element not found");
+    }
+
+    root->create(splitPath, value);
+}
+
+std::vector<std::string> JsonManager::split(const std::string &str, char delimiter) {
+    std::vector<std::string> result;
+    std::istringstream iss(str);
+    for (std::string token; std::getline(iss, token, delimiter);) {
+        result.push_back(std::move(token));
+    }
+    return result;
+}
+
+void JsonManager::delete_element(const std::string &path) {
+    std::vector<std::string> splitPath = split(path, '.');
+
+    if (splitPath.empty()) {
+        throw InvalidPathError("Path cannot be empty");
+    }
+
+    root->delete_element(splitPath);
+}
+
+void JsonManager::move(const std::string &fromPath, const std::string &toPath) {
+    std::vector<std::string> splitFromPath = split(fromPath, '.');
+    std::vector<std::string> splitToPath = split(toPath, '.');
+
+    if (splitFromPath.empty() || splitToPath.empty()) {
+        throw InvalidPathError("Path cannot be empty");
+    }
+
+    root->move(splitFromPath, splitToPath);
+}
+
