@@ -1,6 +1,6 @@
 #include <sstream>
-#include "../include/json_parser.h"
-#include "../include/json_exceptions.h"
+#include <json_parser.h>
+#include <json_exceptions.h>
 
 void JsonParser::validate() {
     if (!JsonValidator::validate(jsonStream)) {

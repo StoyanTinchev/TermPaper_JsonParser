@@ -1,6 +1,6 @@
-#include "../../include/json_base/json_object.h"
-#include "../../include/json_exceptions.h"
-#include "../../include/json_base/json_value.h"
+#include <json_base/json_object.h>
+#include <json_exceptions.h>
+#include <json_base/json_value.h>
 
 JsonObject::JsonObject() = default;
 

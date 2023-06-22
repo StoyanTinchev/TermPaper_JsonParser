@@ -1,7 +1,7 @@
 #ifndef JSON_ARRAY_H
 #define JSON_ARRAY_H
 
-#include "json_element.h"
+#include <json_base/json_element.h>
 #include <vector>
 
 class JsonArray : public JsonElement {

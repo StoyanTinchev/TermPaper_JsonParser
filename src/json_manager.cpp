@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../include/json_manager.h"
-#include "../include/json_exceptions.h"
+#include <json_manager.h>
+#include <json_exceptions.h>
 
 JsonManager::JsonManager() : root(nullptr), parser(nullptr) {}
 

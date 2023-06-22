@@ -1,6 +1,6 @@
-#include "../../include/json_base/json_array.h"
-#include "../../include/json_exceptions.h"
-#include "../../include/json_base/json_value.h"
+#include <json_base/json_array.h>
+#include <json_exceptions.h>
+#include <json_base/json_value.h>
 
 JsonArray::JsonArray() = default;
 

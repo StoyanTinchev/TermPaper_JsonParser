@@ -1,0 +1,20 @@
+{
+  "nice":,
+  "wonder": [
+    -924366887,
+    false,
+    [
+      false,
+      false,
+      true,
+      "castle",
+      false,
+      "fence"
+    false,
+    false,
+    false
+  ],
+  "flies": 1081340336.3867755,
+  "physical": true,
+  "slabs": -2071450992.359878,
+  "special": false

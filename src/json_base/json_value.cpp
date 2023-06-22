@@ -1,8 +1,8 @@
 #include <stdexcept>
-#include "../../include/json_base/json_value.h"
-#include "../../include/json_exceptions.h"
+#include <json_base/json_value.h>
+#include <json_exceptions.h>
 
-JsonValue::JsonValue() : valueType(ValueType::Null) {}
+JsonValue::JsonValue() = default;
 
 JsonValue::JsonValue(const std::string &value)
         : stringValue(value), valueType(ValueType::String) {}
@@ -31,12 +31,6 @@ std::string JsonValue::to_string() const {
         case ValueType::Bool:
             result = boolValue ? "true" : "false";
             break;
-        case ValueType::Object:
-            result = objectValue->to_string();
-            break;
-        case ValueType::Array:
-            result = arrayValue->to_string();
-            break;
         default:
             throw JsonException("Invalid JSON value type.");;
     }
@@ -61,16 +55,6 @@ std::vector<std::string> JsonValue::search(const std::string &key) {
                 results.push_back(to_string());
             }
             break;
-        case ValueType::Object:
-            if (objectValue != nullptr) {
-                results = objectValue->search(key);
-            }
-            break;
-        case ValueType::Array:
-            if (arrayValue != nullptr) {
-                results = arrayValue->search(key);
-            }
-            break;
         default:
             break;
     }
@@ -88,16 +72,6 @@ bool JsonValue::contains(const std::string &value) {
             break;
         case ValueType::Bool:
             result = std::to_string(boolValue) == value;
-            break;
-        case ValueType::Object:
-            if (objectValue != nullptr) {
-                result = objectValue->contains(value);
-            }
-            break;
-        case ValueType::Array:
-            if (arrayValue != nullptr) {
-                result = arrayValue->contains(value);
-            }
             break;
         default:
             break;
@@ -125,16 +99,6 @@ void JsonValue::set(const std::vector<std::string> &path, const std::string &new
         case ValueType::Bool:
             if (path.size() == 1 && path[0] == std::to_string(boolValue)) {
                 boolValue = new_value == "true";
-            }
-            break;
-        case ValueType::Object:
-            if (objectValue != nullptr) {
-                objectValue->set(path, new_value);
-            }
-            break;
-        case ValueType::Array:
-            if (arrayValue != nullptr) {
-                arrayValue->set(path, new_value);
             }
             break;
         default:

@@ -1,11 +1,11 @@
 #ifndef JSON_VALUE_H
 #define JSON_VALUE_H
 
-#include "json_element.h"
-#include "json_key.h"
-#include "json_object.h"
-#include "json_array.h"
-#include "../json_exceptions.h"
+#include <json_base/json_element.h>
+#include <json_base/json_key.h>
+#include <json_base/json_object.h>
+#include <json_base/json_array.h>
+#include <json_exceptions.h>
 #include <vector>
 #include <string>
 
@@ -42,7 +42,6 @@ public:
 
     void set(const std::vector<std::string> &path, const std::string &new_value) override;
 };
-;
 
 
 #endif // JSON_VALUE_H

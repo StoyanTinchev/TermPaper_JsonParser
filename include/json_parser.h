@@ -3,13 +3,13 @@
 
 #include <string>
 #include <sstream>
-#include "../include/json_base/json_value.h"
+#include <json_base/json_value.h>
 #include <cctype>
 #include <stdexcept>
-#include "json_base/json_element.h"
-#include "json_base/json_array.h"
-#include "json_base/json_object.h"
-#include "json_validator.h"
+#include <json_base/json_element.h>
+#include <json_base/json_array.h>
+#include <json_base/json_object.h>
+#include <json_validator.h>
 
 class JsonParser {
 private:

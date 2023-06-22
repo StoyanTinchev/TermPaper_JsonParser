@@ -4,7 +4,7 @@
 #include <string>
 #include <fstream>
 #include <regex>
-#include "json_parser.h"
+#include <json_parser.h>
 
 class JsonManager {
 private:
