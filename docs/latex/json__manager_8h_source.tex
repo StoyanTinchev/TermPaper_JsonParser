@@ -8,47 +8,48 @@
 \DoxyCodeLine{00008\ }
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
 \DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <fstream>}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <regex>}}
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__parser_8h}{json\_parser.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__parser_8h}{json\_parser.h}}>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__whitespace__formatter_8h}{json\_whitespace\_formatter.h}}>}}
 \DoxyCodeLine{00013\ }
 \DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_json_manager}{JsonManager}}\ \{}
 \DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00023\ \ \ \ \ std::string\ currentFilePath;\ }
 \DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_json_element}{JsonElement}}\ *root;\ }
 \DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_json_parser}{JsonParser}}\ *parser;\ }
-\DoxyCodeLine{00034\ \ \ \ \ std::vector<std::string>\ split(\textcolor{keyword}{const}\ std::string\ \&str,\ \textcolor{keywordtype}{char}\ delimiter);}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_json_manager_aa59244b57e3e2464b6eb304ccab55a8a}{JsonManager}}();}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_json_manager_ade81448ded6365c5eb6b221106287167}{\string~JsonManager}}();}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_a9c7da9043a8ea2e1a2abd0dc80aacd0a}{open}}(\textcolor{keyword}{const}\ std::string\ \&filePath);}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_a99193595221737461254a7ac1070f094}{save}}();}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_abee72a29e0831cda8677e8580f873f39}{saveAs}}(\textcolor{keyword}{const}\ std::string\ \&filePath);}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_ae27c26642d8bc720664575d41559a3a8}{exit}}();}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_manager_abd264c8052df90523e74a2d16aa11b01}{validate}}();}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_a7d9abbe836ab188e9557243d0009de6f}{print}}();}
-\DoxyCodeLine{00082\ }
-\DoxyCodeLine{00089\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_json_manager_ae06d1273d38e97c73a0664bbd9954b6e}{search}}(\textcolor{keyword}{const}\ std::string\ \&key);}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_manager_a053445c350b3ffcea0496323660a5a8c}{contains}}(\textcolor{keyword}{const}\ std::string\ \&value);}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_af5a3960c3006c90f0d807437b0e9b766}{set}}(\textcolor{keyword}{const}\ std::string\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&new\_value);}
-\DoxyCodeLine{00106\ }
-\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_ad0c5ce51d3704bd940cd1bf611ff31de}{create}}(\textcolor{keyword}{const}\ std::string\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&value);}
-\DoxyCodeLine{00114\ }
-\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_a9cee399626899e3d7e89c34b10c2ec61}{delete\_element}}(\textcolor{keyword}{const}\ std::string\ \&path);}
-\DoxyCodeLine{00121\ }
-\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_a3acb1531a5d27032a7914bfd1f1874a1}{move}}(\textcolor{keyword}{const}\ std::string\ \&fromPath,\ \textcolor{keyword}{const}\ std::string\ \&toPath);}
-\DoxyCodeLine{00129\ \};}
-\DoxyCodeLine{00130\ }
-\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ JSON\_MANAGER\_H}}
-\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ jsonOpened;\ }
+\DoxyCodeLine{00035\ \ \ \ \ std::vector<std::string>\ split(\textcolor{keyword}{const}\ std::string\ \&str,\ \textcolor{keywordtype}{char}\ delimiter);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_json_manager_aa59244b57e3e2464b6eb304ccab55a8a}{JsonManager}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_json_manager_ade81448ded6365c5eb6b221106287167}{\string~JsonManager}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_a9c7da9043a8ea2e1a2abd0dc80aacd0a}{open}}(\textcolor{keyword}{const}\ std::string\ \&filePath);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_a99193595221737461254a7ac1070f094}{save}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_abee72a29e0831cda8677e8580f873f39}{saveAs}}(\textcolor{keyword}{const}\ std::string\ \&filePath);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_aaf853db7b725a4b0d2381aed57a02631}{close}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_manager_abd264c8052df90523e74a2d16aa11b01}{validate}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_a7d9abbe836ab188e9557243d0009de6f}{print}}();}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00090\ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{class_json_manager_ae06d1273d38e97c73a0664bbd9954b6e}{search}}(\textcolor{keyword}{const}\ std::string\ \&key);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_json_manager_a053445c350b3ffcea0496323660a5a8c}{contains}}(\textcolor{keyword}{const}\ std::string\ \&value);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_af5a3960c3006c90f0d807437b0e9b766}{set}}(\textcolor{keyword}{const}\ std::string\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&new\_value);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_ad0c5ce51d3704bd940cd1bf611ff31de}{create}}(\textcolor{keyword}{const}\ std::string\ \&path,\ \textcolor{keyword}{const}\ std::string\ \&value);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_a9cee399626899e3d7e89c34b10c2ec61}{delete\_element}}(\textcolor{keyword}{const}\ std::string\ \&path);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_json_manager_a3acb1531a5d27032a7914bfd1f1874a1}{move}}(\textcolor{keyword}{const}\ std::string\ \&fromPath,\ \textcolor{keyword}{const}\ std::string\ \&toPath);}
+\DoxyCodeLine{00130\ \};}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ JSON\_MANAGER\_H}}
+\DoxyCodeLine{00133\ }
 
 \end{DoxyCode}

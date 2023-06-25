@@ -12,6 +12,8 @@ This class is responsible for parsing JSON text.
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{class_json_parser_afcbd78da5ae4291f23d776251b7f9427}{validate}} ()
+\begin{DoxyCompactList}\small\item\em Validates the JSON text structure. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_json_parser_ab2bfea1ba43bf7110d05bd1537cd3f90}{Json\+Parser}} (const std\+::string \&json\+Stream)
 \begin{DoxyCompactList}\small\item\em Constructs a new Json Parser object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_json_element}{Json\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_json_parser_a95c7513cd7b8c7f09a2deda73c019bb4}{parse}} ()
@@ -55,7 +57,17 @@ Begins parsing the JSON text.
 \begin{DoxyReturn}{Returns}
 A pointer to the root {\ttfamily \doxylink{class_json_element}{Json\+Element}} object representing the parsed JSON. 
 \end{DoxyReturn}
+\Hypertarget{class_json_parser_afcbd78da5ae4291f23d776251b7f9427}\label{class_json_parser_afcbd78da5ae4291f23d776251b7f9427} 
+\index{JsonParser@{JsonParser}!validate@{validate}}
+\index{validate@{validate}!JsonParser@{JsonParser}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily void Json\+Parser\+::validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Validates the JSON text structure. 
+
+Uses the {\ttfamily \doxylink{class_json_validator}{Json\+Validator}} class to ensure that the JSON text has a valid structure. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

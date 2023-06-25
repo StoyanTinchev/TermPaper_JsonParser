@@ -22,7 +22,7 @@ void \mbox{\hyperlink{class_json_manager_a99193595221737461254a7ac1070f094}{save
 \begin{DoxyCompactList}\small\item\em Saves the current JSON to the file path. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_json_manager_abee72a29e0831cda8677e8580f873f39}{save\+As}} (const std\+::string \&file\+Path)
 \begin{DoxyCompactList}\small\item\em Saves the current JSON to a new file path. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_json_manager_ae27c26642d8bc720664575d41559a3a8}{exit}} ()
+void \mbox{\hyperlink{class_json_manager_aaf853db7b725a4b0d2381aed57a02631}{close}} ()
 \begin{DoxyCompactList}\small\item\em Exits the \doxylink{class_json_manager}{Json\+Manager}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_json_manager_abd264c8052df90523e74a2d16aa11b01}{validate}} ()
 \begin{DoxyCompactList}\small\item\em Validates the JSON file. \end{DoxyCompactList}\item 
@@ -71,6 +71,16 @@ Destructor for \doxylink{class_json_manager}{Json\+Manager}.
 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_json_manager_aaf853db7b725a4b0d2381aed57a02631}\label{class_json_manager_aaf853db7b725a4b0d2381aed57a02631} 
+\index{JsonManager@{JsonManager}!close@{close}}
+\index{close@{close}!JsonManager@{JsonManager}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Json\+Manager\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exits the \doxylink{class_json_manager}{Json\+Manager}. 
+
 \Hypertarget{class_json_manager_a053445c350b3ffcea0496323660a5a8c}\label{class_json_manager_a053445c350b3ffcea0496323660a5a8c} 
 \index{JsonManager@{JsonManager}!contains@{contains}}
 \index{contains@{contains}!JsonManager@{JsonManager}}
@@ -121,16 +131,6 @@ Deletes an element in the JSON.
 {\em path} & The path to the element to delete. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{class_json_manager_ae27c26642d8bc720664575d41559a3a8}\label{class_json_manager_ae27c26642d8bc720664575d41559a3a8} 
-\index{JsonManager@{JsonManager}!exit@{exit}}
-\index{exit@{exit}!JsonManager@{JsonManager}}
-\doxysubsubsection{\texorpdfstring{exit()}{exit()}}
-{\footnotesize\ttfamily void Json\+Manager\+::exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Exits the \doxylink{class_json_manager}{Json\+Manager}. 
-
 \Hypertarget{class_json_manager_a3acb1531a5d27032a7914bfd1f1874a1}\label{class_json_manager_a3acb1531a5d27032a7914bfd1f1874a1} 
 \index{JsonManager@{JsonManager}!move@{move}}
 \index{move@{move}!JsonManager@{JsonManager}}

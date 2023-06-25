@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_c_m_d_interpreter" kind="class" language="C++" prot="public">
+    <compoundname>CMDInterpreter</compoundname>
+    <includes refid="cmd__interpreter_8h" local="no">cmd_interpreter.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_m_d_interpreter_1a804828dc87816444aaa68cb7011d11ab" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_command" kindref="compound">Command</ref> * &gt;</type>
+        <definition>std::vector&lt;Command*&gt; CMDInterpreter::supported_commands</definition>
+        <argsstring></argsstring>
+        <name>supported_commands</name>
+        <qualifiedname>CMDInterpreter::supported_commands</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A list/vector of supported commands. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/cmd_interpreter.h" line="21" column="21" bodyfile="include/cmd_interpreter/cmd_interpreter.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_c_m_d_interpreter_1af8517519af24111c20020ac065a021cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_command" kindref="compound">Command</ref> *</type>
+        <definition>Command * CMDInterpreter::getCommandByName</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>getCommandByName</name>
+        <qualifiedname>CMDInterpreter::getCommandByName</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Fetches a command by its name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the command with the corresponding name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/cmd_interpreter.h" line="28" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_m_d_interpreter_1a67c2b78b6ebcfe02aa06a2a53a702104" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; CMDInterpreter::tokenizeCommand</definition>
+        <argsstring>(std::string &amp;input_cmd)</argsstring>
+        <name>tokenizeCommand</name>
+        <qualifiedname>CMDInterpreter::tokenizeCommand</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>input_cmd</declname>
+        </param>
+        <briefdescription>
+<para>Splits a command string into a list of strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The command string to split. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector of strings/tokens. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/cmd_interpreter.h" line="35" column="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_m_d_interpreter_1ab6ee8bd9f2621420b68cecf4e247159a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMDInterpreter::CMDInterpreter</definition>
+        <argsstring>(JsonManager *jsonManager)</argsstring>
+        <name>CMDInterpreter</name>
+        <qualifiedname>CMDInterpreter::CMDInterpreter</qualifiedname>
+        <param>
+          <type><ref refid="class_json_manager" kindref="compound">JsonManager</ref> *</type>
+          <declname>jsonManager</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_c_m_d_interpreter" kindref="compound">CMDInterpreter</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an instance of <ref refid="class_json_manager" kindref="compound">JsonManager</ref> class. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/cmd_interpreter.h" line="43" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_m_d_interpreter_1a424621865de29085e789d3a4216549a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMDInterpreter::~CMDInterpreter</definition>
+        <argsstring>()</argsstring>
+        <name>~CMDInterpreter</name>
+        <qualifiedname>CMDInterpreter::~CMDInterpreter</qualifiedname>
+        <briefdescription>
+<para>Destructor for <ref refid="class_c_m_d_interpreter" kindref="compound">CMDInterpreter</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/cmd_interpreter.h" line="47" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_m_d_interpreter_1aeae6e4662ded719fab7c4e4c2274194a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMDInterpreter::interpret</definition>
+        <argsstring>(std::string &amp;cmd)</argsstring>
+        <name>interpret</name>
+        <qualifiedname>CMDInterpreter::interpret</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+<para>Interprets a command string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input string commmand. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the command executed successfully, false otherwise. Can throw a runtime error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/cmd_interpreter.h" line="54" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for the <ref refid="class_command" kindref="compound">Command</ref> Interpreter. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It serves as a translator of string-based commands to command classes and then executing it. </para>
+    </detaileddescription>
+    <location file="include/cmd_interpreter/cmd_interpreter.h" line="19" column="1" bodyfile="include/cmd_interpreter/cmd_interpreter.h" bodystart="19" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_c_m_d_interpreter_1ab6ee8bd9f2621420b68cecf4e247159a" prot="public" virt="non-virtual"><scope>CMDInterpreter</scope><name>CMDInterpreter</name></member>
+      <member refid="class_c_m_d_interpreter_1af8517519af24111c20020ac065a021cc" prot="private" virt="non-virtual"><scope>CMDInterpreter</scope><name>getCommandByName</name></member>
+      <member refid="class_c_m_d_interpreter_1aeae6e4662ded719fab7c4e4c2274194a" prot="public" virt="non-virtual"><scope>CMDInterpreter</scope><name>interpret</name></member>
+      <member refid="class_c_m_d_interpreter_1a804828dc87816444aaa68cb7011d11ab" prot="private" virt="non-virtual"><scope>CMDInterpreter</scope><name>supported_commands</name></member>
+      <member refid="class_c_m_d_interpreter_1a67c2b78b6ebcfe02aa06a2a53a702104" prot="private" virt="non-virtual"><scope>CMDInterpreter</scope><name>tokenizeCommand</name></member>
+      <member refid="class_c_m_d_interpreter_1a424621865de29085e789d3a4216549a1" prot="public" virt="non-virtual"><scope>CMDInterpreter</scope><name>~CMDInterpreter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -18,7 +18,7 @@
  * @brief Enum class defining the possible value types of a JSON element
  */
 enum class ValueType {
-    Number, String, Bool, Object, Array
+    Null, Number, String, Bool, Object, Array
 };
 
 /**

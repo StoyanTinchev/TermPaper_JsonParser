@@ -2,10 +2,12 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
   <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
     <compoundname>include</compoundname>
+    <innerdir refid="dir_a83ee45263564283995732f930ff36ba">include/cmd_interpreter</innerdir>
     <innerdir refid="dir_108e9b8a5e91f655c686c7842a88adac">include/json_base</innerdir>
     <innerfile refid="json__manager_8h">json_manager.h</innerfile>
     <innerfile refid="json__parser_8h">json_parser.h</innerfile>
     <innerfile refid="json__validator_8h">json_validator.h</innerfile>
+    <innerfile refid="json__whitespace__formatter_8h">json_whitespace_formatter.h</innerfile>
     <innerfile refid="mainpage_8h">mainpage.h</innerfile>
     <briefdescription>
     </briefdescription>

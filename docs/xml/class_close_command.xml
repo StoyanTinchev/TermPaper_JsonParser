@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_close_command" kind="class" language="C++" prot="public">
+    <compoundname>CloseCommand</compoundname>
+    <basecompoundref refid="class_command" prot="public" virt="non-virtual">Command</basecompoundref>
+    <includes refid="command_8h" local="no">command.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_close_command_1a1086a31ff7b1fad89babdcfe9daba620" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool CloseCommand::validate</definition>
+        <argsstring>(std::vector&lt; std::string &gt; tokenized_cmd) override</argsstring>
+        <name>validate</name>
+        <qualifiedname>CloseCommand::validate</qualifiedname>
+        <reimplements refid="class_command_1aa12f7ffc1dcd0b5d6e1c676539d9cd35">validate</reimplements>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>tokenized_cmd</declname>
+        </param>
+        <briefdescription>
+<para>Validates the syntax of the string command &quot;close&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tokenized_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tokenized string command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the command syntax is correct, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="148" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_close_command_1a85fa1c09b124fb97075972e58e0d1dfc" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CloseCommand::CloseCommand</definition>
+        <argsstring>(JsonManager *jsonManager)</argsstring>
+        <name>CloseCommand</name>
+        <qualifiedname>CloseCommand::CloseCommand</qualifiedname>
+        <param>
+          <type><ref refid="class_json_manager" kindref="compound">JsonManager</ref> *</type>
+          <declname>jsonManager</declname>
+        </param>
+        <briefdescription>
+<para>Contructor of the class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a <ref refid="class_json_manager" kindref="compound">JsonManager</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="155" column="18" bodyfile="include/cmd_interpreter/command.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_close_command_1aac2dcb5ff5f84ddc356da6e183515d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool CloseCommand::execute</definition>
+        <argsstring>(std::vector&lt; std::string &gt; tokenized_cmd) override</argsstring>
+        <name>execute</name>
+        <qualifiedname>CloseCommand::execute</qualifiedname>
+        <reimplements refid="class_command_1a393b091363cf8b83e860f72eb3623686">execute</reimplements>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>tokenized_cmd</declname>
+        </param>
+        <briefdescription>
+<para>Executes the &quot;close&quot; command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tokenized_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tokenized string command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the command executed without problems, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="161" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class representing the &quot;close&quot; command. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CloseCommand</label>
+        <link refid="class_close_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Command</label>
+        <link refid="class_command"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CloseCommand</label>
+        <link refid="class_close_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Command</label>
+        <link refid="class_command"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/cmd_interpreter/command.h" line="141" column="1" bodyfile="include/cmd_interpreter/command.h" bodystart="141" bodyend="162"/>
+    <listofallmembers>
+      <member refid="class_close_command_1a85fa1c09b124fb97075972e58e0d1dfc" prot="public" virt="non-virtual"><scope>CloseCommand</scope><name>CloseCommand</name></member>
+      <member refid="class_command_1a34e4ceaef9f5a66416803d02089ae93a" prot="public" virt="non-virtual"><scope>CloseCommand</scope><name>Command</name></member>
+      <member refid="class_close_command_1aac2dcb5ff5f84ddc356da6e183515d68" prot="public" virt="virtual"><scope>CloseCommand</scope><name>execute</name></member>
+      <member refid="class_command_1a1bdb719fbff3d94e8578e99430217a0c" prot="public" virt="non-virtual"><scope>CloseCommand</scope><name>getJsonManager</name></member>
+      <member refid="class_command_1a0608c58857c617fa752425dac10cf0fe" prot="public" virt="non-virtual"><scope>CloseCommand</scope><name>getName</name></member>
+      <member refid="class_close_command_1a1086a31ff7b1fad89babdcfe9daba620" prot="private" virt="virtual"><scope>CloseCommand</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

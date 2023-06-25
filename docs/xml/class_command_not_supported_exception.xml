@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_command_not_supported_exception" kind="class" language="C++" prot="public">
+    <compoundname>CommandNotSupportedException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::runtime_error</basecompoundref>
+    <includes refid="cmd__interpreter_8h" local="no">cmd_interpreter.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_command_not_supported_exception_1a692687b10f807b98d8aa9f1b35e225ea" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CommandNotSupportedException::CommandNotSupportedException</definition>
+        <argsstring>(const std::string &amp;msg)</argsstring>
+        <name>CommandNotSupportedException</name>
+        <qualifiedname>CommandNotSupportedException::CommandNotSupportedException</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="class_command_not_supported_exception" kindref="compound">CommandNotSupportedException</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string error message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/cmd_interpreter.h" line="68" column="18" bodyfile="include/cmd_interpreter/cmd_interpreter.h" bodystart="68" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Exception thrown when a non-supported command was passed. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CommandNotSupportedException</label>
+        <link refid="class_command_not_supported_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::runtime_error</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CommandNotSupportedException</label>
+        <link refid="class_command_not_supported_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::runtime_error</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/cmd_interpreter/cmd_interpreter.h" line="61" column="1" bodyfile="include/cmd_interpreter/cmd_interpreter.h" bodystart="61" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_command_not_supported_exception_1a692687b10f807b98d8aa9f1b35e225ea" prot="public" virt="non-virtual"><scope>CommandNotSupportedException</scope><name>CommandNotSupportedException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

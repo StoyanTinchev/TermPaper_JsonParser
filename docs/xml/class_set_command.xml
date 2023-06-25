@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_set_command" kind="class" language="C++" prot="public">
+    <compoundname>SetCommand</compoundname>
+    <basecompoundref refid="class_command" prot="public" virt="non-virtual">Command</basecompoundref>
+    <includes refid="command_8h" local="no">command.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_set_command_1a0b088a1b70ca36f4a0e4c5653b29df6c" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SetCommand::validate</definition>
+        <argsstring>(std::vector&lt; std::string &gt; tokenized_cmd) override</argsstring>
+        <name>validate</name>
+        <qualifiedname>SetCommand::validate</qualifiedname>
+        <reimplements refid="class_command_1aa12f7ffc1dcd0b5d6e1c676539d9cd35">validate</reimplements>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>tokenized_cmd</declname>
+        </param>
+        <briefdescription>
+<para>Validates the syntax of the string command &quot;set&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tokenized_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tokenized string command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the command syntax is correct, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="310" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_set_command_1a64511c020122a9b1f65d5b0c15a5fe1e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SetCommand::SetCommand</definition>
+        <argsstring>(JsonManager *jsonManager)</argsstring>
+        <name>SetCommand</name>
+        <qualifiedname>SetCommand::SetCommand</qualifiedname>
+        <param>
+          <type><ref refid="class_json_manager" kindref="compound">JsonManager</ref> *</type>
+          <declname>jsonManager</declname>
+        </param>
+        <briefdescription>
+<para>Contructor of the class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a <ref refid="class_json_manager" kindref="compound">JsonManager</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="317" column="14" bodyfile="include/cmd_interpreter/command.h" bodystart="317" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="class_set_command_1a0093782cd874a816e13195ca62ecfe27" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SetCommand::execute</definition>
+        <argsstring>(std::vector&lt; std::string &gt; tokenized_cmd) override</argsstring>
+        <name>execute</name>
+        <qualifiedname>SetCommand::execute</qualifiedname>
+        <reimplements refid="class_command_1a393b091363cf8b83e860f72eb3623686">execute</reimplements>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>tokenized_cmd</declname>
+        </param>
+        <briefdescription>
+<para>Executes the &quot;set&quot; command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tokenized_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tokenized string command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the command executed without problems, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="323" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class representing the &quot;set&quot; command. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Command</label>
+        <link refid="class_command"/>
+      </node>
+      <node id="1">
+        <label>SetCommand</label>
+        <link refid="class_set_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Command</label>
+        <link refid="class_command"/>
+      </node>
+      <node id="1">
+        <label>SetCommand</label>
+        <link refid="class_set_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/cmd_interpreter/command.h" line="303" column="1" bodyfile="include/cmd_interpreter/command.h" bodystart="303" bodyend="324"/>
+    <listofallmembers>
+      <member refid="class_command_1a34e4ceaef9f5a66416803d02089ae93a" prot="public" virt="non-virtual"><scope>SetCommand</scope><name>Command</name></member>
+      <member refid="class_set_command_1a0093782cd874a816e13195ca62ecfe27" prot="public" virt="virtual"><scope>SetCommand</scope><name>execute</name></member>
+      <member refid="class_command_1a1bdb719fbff3d94e8578e99430217a0c" prot="public" virt="non-virtual"><scope>SetCommand</scope><name>getJsonManager</name></member>
+      <member refid="class_command_1a0608c58857c617fa752425dac10cf0fe" prot="public" virt="non-virtual"><scope>SetCommand</scope><name>getName</name></member>
+      <member refid="class_set_command_1a64511c020122a9b1f65d5b0c15a5fe1e" prot="public" virt="non-virtual"><scope>SetCommand</scope><name>SetCommand</name></member>
+      <member refid="class_set_command_1a0b088a1b70ca36f4a0e4c5653b29df6c" prot="private" virt="virtual"><scope>SetCommand</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

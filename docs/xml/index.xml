@@ -1,5 +1,50 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="class_close_command" kind="class"><name>CloseCommand</name>
+    <member refid="class_close_command_1a1086a31ff7b1fad89babdcfe9daba620" kind="function"><name>validate</name></member>
+    <member refid="class_close_command_1a85fa1c09b124fb97075972e58e0d1dfc" kind="function"><name>CloseCommand</name></member>
+    <member refid="class_close_command_1aac2dcb5ff5f84ddc356da6e183515d68" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_c_m_d_interpreter" kind="class"><name>CMDInterpreter</name>
+    <member refid="class_c_m_d_interpreter_1a804828dc87816444aaa68cb7011d11ab" kind="variable"><name>supported_commands</name></member>
+    <member refid="class_c_m_d_interpreter_1af8517519af24111c20020ac065a021cc" kind="function"><name>getCommandByName</name></member>
+    <member refid="class_c_m_d_interpreter_1a67c2b78b6ebcfe02aa06a2a53a702104" kind="function"><name>tokenizeCommand</name></member>
+    <member refid="class_c_m_d_interpreter_1ab6ee8bd9f2621420b68cecf4e247159a" kind="function"><name>CMDInterpreter</name></member>
+    <member refid="class_c_m_d_interpreter_1a424621865de29085e789d3a4216549a1" kind="function"><name>~CMDInterpreter</name></member>
+    <member refid="class_c_m_d_interpreter_1aeae6e4662ded719fab7c4e4c2274194a" kind="function"><name>interpret</name></member>
+  </compound>
+  <compound refid="class_command" kind="class"><name>Command</name>
+    <member refid="class_command_1a8d66550a9895cbd96373a9a221fa2b25" kind="variable"><name>name</name></member>
+    <member refid="class_command_1a10fbc783774ae9e600b1e0da6cf6e693" kind="variable"><name>json_man</name></member>
+    <member refid="class_command_1aa12f7ffc1dcd0b5d6e1c676539d9cd35" kind="function"><name>validate</name></member>
+    <member refid="class_command_1a34e4ceaef9f5a66416803d02089ae93a" kind="function"><name>Command</name></member>
+    <member refid="class_command_1a0608c58857c617fa752425dac10cf0fe" kind="function"><name>getName</name></member>
+    <member refid="class_command_1a1bdb719fbff3d94e8578e99430217a0c" kind="function"><name>getJsonManager</name></member>
+    <member refid="class_command_1a393b091363cf8b83e860f72eb3623686" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_command_not_supported_exception" kind="class"><name>CommandNotSupportedException</name>
+    <member refid="class_command_not_supported_exception_1a692687b10f807b98d8aa9f1b35e225ea" kind="function"><name>CommandNotSupportedException</name></member>
+  </compound>
+  <compound refid="class_contains_command" kind="class"><name>ContainsCommand</name>
+    <member refid="class_contains_command_1a6204b7ddc9b821d20a5dbeacf998fe65" kind="function"><name>validate</name></member>
+    <member refid="class_contains_command_1a94a877141c1ec2d40b2a80396b4bbb7d" kind="function"><name>ContainsCommand</name></member>
+    <member refid="class_contains_command_1aa7f47d39e9385c0916f107331994e9f0" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_create_command" kind="class"><name>CreateCommand</name>
+    <member refid="class_create_command_1a8f0481c5d3acfab10b20a22be2ceb489" kind="function"><name>validate</name></member>
+    <member refid="class_create_command_1a3eb592e65d8d2bedd9f9307189b0e84e" kind="function"><name>CreateCommand</name></member>
+    <member refid="class_create_command_1a447b49b5e2aae4ae6399585e535c391d" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_delete_command" kind="class"><name>DeleteCommand</name>
+    <member refid="class_delete_command_1a341e4b67d71b0af64ed7d43ceb580943" kind="function"><name>validate</name></member>
+    <member refid="class_delete_command_1a25c1f3f2de55ca7af6fe09c19d4e7009" kind="function"><name>DeleteCommand</name></member>
+    <member refid="class_delete_command_1a92e65eed00331c1c8215d2912b750453" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_exit_command" kind="class"><name>ExitCommand</name>
+    <member refid="class_exit_command_1a4d1528590ca2bfae5a9fd8ce076884b1" kind="function"><name>validate</name></member>
+    <member refid="class_exit_command_1a187a62e1bd1715aa5eb037af8c0154c1" kind="function"><name>ExitCommand</name></member>
+    <member refid="class_exit_command_1a7b112387caed7f7e48b28d14b4ffde70" kind="function"><name>execute</name></member>
+  </compound>
   <compound refid="class_json_array" kind="class"><name>JsonArray</name>
     <member refid="class_json_array_1a4e9cbf56ac5002929df6ce8584b9c6b1" kind="variable"><name>data</name></member>
     <member refid="class_json_array_1a304f5ede160dbc87f9ec7d7983bd1cbf" kind="function"><name>JsonArray</name></member>
@@ -35,13 +80,14 @@
     <member refid="class_json_manager_1ac81021abf489ed6486557dac851890a8" kind="variable"><name>currentFilePath</name></member>
     <member refid="class_json_manager_1a9cc0436c016fe245b8c3c0f3d980ac3d" kind="variable"><name>root</name></member>
     <member refid="class_json_manager_1a92b0f8cf64c4844d71a15ab1b7480cb2" kind="variable"><name>parser</name></member>
+    <member refid="class_json_manager_1a6947859961cb6d1ea3f670093aa22949" kind="variable"><name>jsonOpened</name></member>
     <member refid="class_json_manager_1abdba52bb6daf33665b9bdcba30e760a0" kind="function"><name>split</name></member>
     <member refid="class_json_manager_1aa59244b57e3e2464b6eb304ccab55a8a" kind="function"><name>JsonManager</name></member>
     <member refid="class_json_manager_1ade81448ded6365c5eb6b221106287167" kind="function"><name>~JsonManager</name></member>
     <member refid="class_json_manager_1a9c7da9043a8ea2e1a2abd0dc80aacd0a" kind="function"><name>open</name></member>
     <member refid="class_json_manager_1a99193595221737461254a7ac1070f094" kind="function"><name>save</name></member>
     <member refid="class_json_manager_1abee72a29e0831cda8677e8580f873f39" kind="function"><name>saveAs</name></member>
-    <member refid="class_json_manager_1ae27c26642d8bc720664575d41559a3a8" kind="function"><name>exit</name></member>
+    <member refid="class_json_manager_1aaf853db7b725a4b0d2381aed57a02631" kind="function"><name>close</name></member>
     <member refid="class_json_manager_1abd264c8052df90523e74a2d16aa11b01" kind="function"><name>validate</name></member>
     <member refid="class_json_manager_1a7d9abbe836ab188e9557243d0009de6f" kind="function"><name>print</name></member>
     <member refid="class_json_manager_1ae06d1273d38e97c73a0664bbd9954b6e" kind="function"><name>search</name></member>
@@ -69,13 +115,13 @@
   <compound refid="class_json_parser" kind="class"><name>JsonParser</name>
     <member refid="class_json_parser_1a798b64482e73aee50a30d5c1bf629c57" kind="variable"><name>jsonStream</name></member>
     <member refid="class_json_parser_1aecdf359ca07d0748d337bdab026ae690" kind="variable"><name>position</name></member>
-    <member refid="class_json_parser_1afcbd78da5ae4291f23d776251b7f9427" kind="function"><name>validate</name></member>
     <member refid="class_json_parser_1a07f37ba9dcb901b89cd5a9701a0ddfa8" kind="function"><name>skipWhitespace</name></member>
     <member refid="class_json_parser_1abe01048896188530fc33a27fa578339c" kind="function"><name>parseNumber</name></member>
     <member refid="class_json_parser_1ab5f66a89e940a1b8767e8b92225ef767" kind="function"><name>parseString</name></member>
     <member refid="class_json_parser_1a0785b63ffba2c8ed4ad59d90bbbdb57e" kind="function"><name>parseBool</name></member>
     <member refid="class_json_parser_1a2c16d35f18b257201ecb3508071767c2" kind="function"><name>parseArray</name></member>
     <member refid="class_json_parser_1ac46751c3ee66d7ea9e4d9bf2b1eba8e2" kind="function"><name>parseObject</name></member>
+    <member refid="class_json_parser_1afcbd78da5ae4291f23d776251b7f9427" kind="function"><name>validate</name></member>
     <member refid="class_json_parser_1ab2bfea1ba43bf7110d05bd1537cd3f90" kind="function"><name>JsonParser</name></member>
     <member refid="class_json_parser_1a95c7513cd7b8c7f09a2deda73c019bb4" kind="function"><name>parse</name></member>
   </compound>
@@ -103,6 +149,55 @@
     <member refid="class_json_value_1a22721a96f72f09a56e2004f24ea80eee" kind="function"><name>delete_element</name></member>
     <member refid="class_json_value_1a48f892b291985cc0e8e5d1804a4776ec" kind="function"><name>move</name></member>
   </compound>
+  <compound refid="class_json_whitespace_formatter" kind="class"><name>JsonWhitespaceFormatter</name>
+    <member refid="class_json_whitespace_formatter_1af2ee62e58571471e3f1d628cbeaab44d" kind="function"><name>format</name></member>
+  </compound>
+  <compound refid="class_move_command" kind="class"><name>MoveCommand</name>
+    <member refid="class_move_command_1af4882329128947af682e60cba7e88467" kind="function"><name>validate</name></member>
+    <member refid="class_move_command_1a7e2a298166f496f64922d483ac998a32" kind="function"><name>MoveCommand</name></member>
+    <member refid="class_move_command_1aace8ade15b624e98b5ad3086ef5ca6ba" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_open_command" kind="class"><name>OpenCommand</name>
+    <member refid="class_open_command_1a15c2efd7ddb3cc08ee8b004a76e6ff1a" kind="function"><name>validate</name></member>
+    <member refid="class_open_command_1aa03c58eafcaa1506534f1af19b62f529" kind="function"><name>OpenCommand</name></member>
+    <member refid="class_open_command_1ada91aa0496b95cd7a3845f92989137e3" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_print_command" kind="class"><name>PrintCommand</name>
+    <member refid="class_print_command_1a2630e8b71c1a7820362a3f1c3fbec865" kind="function"><name>validate</name></member>
+    <member refid="class_print_command_1a0d656cc686aedb434aecf0931b18a289" kind="function"><name>PrintCommand</name></member>
+    <member refid="class_print_command_1afe4b01d729aab17934e403e4dd2b2bfe" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_save_as_command" kind="class"><name>SaveAsCommand</name>
+    <member refid="class_save_as_command_1af2e315276fa211a2daef723a544591f6" kind="function"><name>validate</name></member>
+    <member refid="class_save_as_command_1ac0890f3dbe05cd27bf3960462ab681b8" kind="function"><name>SaveAsCommand</name></member>
+    <member refid="class_save_as_command_1a1c5e1b25e573b2b6a6603a6cd7c5b1b1" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_save_command" kind="class"><name>SaveCommand</name>
+    <member refid="class_save_command_1a437be177d884169d82bbc85fb3cdec1c" kind="function"><name>validate</name></member>
+    <member refid="class_save_command_1a1ff65a4e39af8686d8e2f8d6edbaf151" kind="function"><name>SaveCommand</name></member>
+    <member refid="class_save_command_1a5717c24b451d0fdc4975c50946f1737a" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_search_command" kind="class"><name>SearchCommand</name>
+    <member refid="class_search_command_1a1fcb248944497df3f028718b86dfae61" kind="function"><name>validate</name></member>
+    <member refid="class_search_command_1a7c9ffff690ba08ff05f9d8c7c78f0156" kind="function"><name>SearchCommand</name></member>
+    <member refid="class_search_command_1a3a1d9fad50b27c1393077dc3452431ef" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_set_command" kind="class"><name>SetCommand</name>
+    <member refid="class_set_command_1a0b088a1b70ca36f4a0e4c5653b29df6c" kind="function"><name>validate</name></member>
+    <member refid="class_set_command_1a64511c020122a9b1f65d5b0c15a5fe1e" kind="function"><name>SetCommand</name></member>
+    <member refid="class_set_command_1a0093782cd874a816e13195ca62ecfe27" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="class_validate_command" kind="class"><name>ValidateCommand</name>
+    <member refid="class_validate_command_1a0a4411c4f2a14d93e8c20cdcb491edd0" kind="function"><name>validate</name></member>
+    <member refid="class_validate_command_1a3fd974424556aa979661ebc5cba0d440" kind="function"><name>ValidateCommand</name></member>
+    <member refid="class_validate_command_1a5a56984e067b98f1cf6c6489987efd2b" kind="function"><name>execute</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="cmd__interpreter_8h" kind="file"><name>cmd_interpreter.h</name>
+  </compound>
+  <compound refid="command_8h" kind="file"><name>command.h</name>
+  </compound>
   <compound refid="json__array_8h" kind="file"><name>json_array.h</name>
   </compound>
   <compound refid="json__element_8h" kind="file"><name>json_element.h</name>
@@ -113,6 +208,7 @@
   </compound>
   <compound refid="json__value_8h" kind="file"><name>json_value.h</name>
     <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1" kind="enum"><name>ValueType</name></member>
+    <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1abbb93ef26e3c101ff11cdd21cab08a94" kind="enumvalue"><name>Null</name></member>
     <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1ab2ee912b91d69b435159c7c3f6df7f5f" kind="enumvalue"><name>Number</name></member>
     <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1a27118326006d3829667a400ad23d5d98" kind="enumvalue"><name>String</name></member>
     <member refid="json__value_8h_1ad9971b6ef33e02ba2c75d19c1d2518a1ac26f15e86e3de4c398a8273272aba034" kind="enumvalue"><name>Bool</name></member>
@@ -125,7 +221,11 @@
   </compound>
   <compound refid="json__validator_8h" kind="file"><name>json_validator.h</name>
   </compound>
+  <compound refid="json__whitespace__formatter_8h" kind="file"><name>json_whitespace_formatter.h</name>
+  </compound>
   <compound refid="mainpage_8h" kind="file"><name>mainpage.h</name>
+  </compound>
+  <compound refid="dir_a83ee45263564283995732f930ff36ba" kind="dir"><name>include/cmd_interpreter</name>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
   </compound>

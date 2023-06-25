@@ -17,6 +17,16 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="6">
+        <label>include/cmd_interpreter/cmd_interpreter.h</label>
+        <link refid="cmd__interpreter_8h"/>
+      </node>
+      <node id="7">
+        <label>include/cmd_interpreter/command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
       <node id="1">
         <label>include/json_base/json_key.h</label>
         <link refid="json__key_8h"/>
@@ -42,6 +52,10 @@
       <node id="5">
         <label>include/json_manager.h</label>
         <link refid="json__manager_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
       <node id="4">
         <label>include/json_parser.h</label>

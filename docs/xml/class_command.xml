@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_command" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Command</compoundname>
+    <derivedcompoundref refid="class_close_command" prot="public" virt="non-virtual">CloseCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_contains_command" prot="public" virt="non-virtual">ContainsCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_create_command" prot="public" virt="non-virtual">CreateCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_delete_command" prot="public" virt="non-virtual">DeleteCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_exit_command" prot="public" virt="non-virtual">ExitCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_move_command" prot="public" virt="non-virtual">MoveCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_open_command" prot="public" virt="non-virtual">OpenCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_print_command" prot="public" virt="non-virtual">PrintCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_save_as_command" prot="public" virt="non-virtual">SaveAsCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_save_command" prot="public" virt="non-virtual">SaveCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_search_command" prot="public" virt="non-virtual">SearchCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_set_command" prot="public" virt="non-virtual">SetCommand</derivedcompoundref>
+    <derivedcompoundref refid="class_validate_command" prot="public" virt="non-virtual">ValidateCommand</derivedcompoundref>
+    <includes refid="command_8h" local="no">command.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_command_1a8d66550a9895cbd96373a9a221fa2b25" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Command::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Command::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The name of the command. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="20" column="21" bodyfile="include/cmd_interpreter/command.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_1a10fbc783774ae9e600b1e0da6cf6e693" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_manager" kindref="compound">JsonManager</ref> *</type>
+        <definition>JsonManager* Command::json_man</definition>
+        <argsstring></argsstring>
+        <name>json_man</name>
+        <qualifiedname>Command::json_man</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to a <ref refid="class_json_manager" kindref="compound">JsonManager</ref> instance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="21" column="21" bodyfile="include/cmd_interpreter/command.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_command_1aa12f7ffc1dcd0b5d6e1c676539d9cd35" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Command::validate</definition>
+        <argsstring>(std::vector&lt; std::string &gt; tokenized_cmd)=0</argsstring>
+        <name>validate</name>
+        <qualifiedname>Command::validate</qualifiedname>
+        <reimplementedby refid="class_validate_command_1a0a4411c4f2a14d93e8c20cdcb491edd0">validate</reimplementedby>
+        <reimplementedby refid="class_print_command_1a2630e8b71c1a7820362a3f1c3fbec865">validate</reimplementedby>
+        <reimplementedby refid="class_open_command_1a15c2efd7ddb3cc08ee8b004a76e6ff1a">validate</reimplementedby>
+        <reimplementedby refid="class_close_command_1a1086a31ff7b1fad89babdcfe9daba620">validate</reimplementedby>
+        <reimplementedby refid="class_exit_command_1a4d1528590ca2bfae5a9fd8ce076884b1">validate</reimplementedby>
+        <reimplementedby refid="class_save_command_1a437be177d884169d82bbc85fb3cdec1c">validate</reimplementedby>
+        <reimplementedby refid="class_save_as_command_1af2e315276fa211a2daef723a544591f6">validate</reimplementedby>
+        <reimplementedby refid="class_search_command_1a1fcb248944497df3f028718b86dfae61">validate</reimplementedby>
+        <reimplementedby refid="class_contains_command_1a6204b7ddc9b821d20a5dbeacf998fe65">validate</reimplementedby>
+        <reimplementedby refid="class_set_command_1a0b088a1b70ca36f4a0e4c5653b29df6c">validate</reimplementedby>
+        <reimplementedby refid="class_create_command_1a8f0481c5d3acfab10b20a22be2ceb489">validate</reimplementedby>
+        <reimplementedby refid="class_delete_command_1a341e4b67d71b0af64ed7d43ceb580943">validate</reimplementedby>
+        <reimplementedby refid="class_move_command_1af4882329128947af682e60cba7e88467">validate</reimplementedby>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>tokenized_cmd</declname>
+        </param>
+        <briefdescription>
+<para>Pure virtual function that validates a string-based tokenized command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tokenized_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of the split tokens of the string-based command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the command syntax is valid, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="27" column="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_command_1a34e4ceaef9f5a66416803d02089ae93a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Command::Command</definition>
+        <argsstring>(std::string name, JsonManager *json_manager)</argsstring>
+        <name>Command</name>
+        <qualifiedname>Command::Command</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_manager" kindref="compound">JsonManager</ref> *</type>
+          <declname>json_manager</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_command" kindref="compound">Command</ref> class used for initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the command. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>json_manager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a <ref refid="class_json_manager" kindref="compound">JsonManager</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="35" column="9" bodyfile="include/cmd_interpreter/command.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_command_1a0608c58857c617fa752425dac10cf0fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Command::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <qualifiedname>Command::getName</qualifiedname>
+        <briefdescription>
+<para>Getter for the &apos;name&apos; field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the command. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="43" column="21" bodyfile="include/cmd_interpreter/command.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_command_1a1bdb719fbff3d94e8578e99430217a0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_json_manager" kindref="compound">JsonManager</ref> *</type>
+        <definition>JsonManager * Command::getJsonManager</definition>
+        <argsstring>()</argsstring>
+        <name>getJsonManager</name>
+        <qualifiedname>Command::getJsonManager</qualifiedname>
+        <briefdescription>
+<para>Getter for the &apos;json_man&apos; field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to a <ref refid="class_json_manager" kindref="compound">JsonManager</ref> instance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="48" column="21" bodyfile="include/cmd_interpreter/command.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_command_1a393b091363cf8b83e860f72eb3623686" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Command::execute</definition>
+        <argsstring>(std::vector&lt; std::string &gt; tokenized_cmd)=0</argsstring>
+        <name>execute</name>
+        <qualifiedname>Command::execute</qualifiedname>
+        <reimplementedby refid="class_validate_command_1a5a56984e067b98f1cf6c6489987efd2b">execute</reimplementedby>
+        <reimplementedby refid="class_print_command_1afe4b01d729aab17934e403e4dd2b2bfe">execute</reimplementedby>
+        <reimplementedby refid="class_open_command_1ada91aa0496b95cd7a3845f92989137e3">execute</reimplementedby>
+        <reimplementedby refid="class_close_command_1aac2dcb5ff5f84ddc356da6e183515d68">execute</reimplementedby>
+        <reimplementedby refid="class_exit_command_1a7b112387caed7f7e48b28d14b4ffde70">execute</reimplementedby>
+        <reimplementedby refid="class_save_command_1a5717c24b451d0fdc4975c50946f1737a">execute</reimplementedby>
+        <reimplementedby refid="class_save_as_command_1a1c5e1b25e573b2b6a6603a6cd7c5b1b1">execute</reimplementedby>
+        <reimplementedby refid="class_search_command_1a3a1d9fad50b27c1393077dc3452431ef">execute</reimplementedby>
+        <reimplementedby refid="class_contains_command_1aa7f47d39e9385c0916f107331994e9f0">execute</reimplementedby>
+        <reimplementedby refid="class_set_command_1a0093782cd874a816e13195ca62ecfe27">execute</reimplementedby>
+        <reimplementedby refid="class_create_command_1a447b49b5e2aae4ae6399585e535c391d">execute</reimplementedby>
+        <reimplementedby refid="class_delete_command_1a92e65eed00331c1c8215d2912b750453">execute</reimplementedby>
+        <reimplementedby refid="class_move_command_1aace8ade15b624e98b5ad3086ef5ca6ba">execute</reimplementedby>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>tokenized_cmd</declname>
+        </param>
+        <briefdescription>
+<para>Pure virtual function that executes a string-based tokenized command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tokenized_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of the tokens of a split string command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="53" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The abstract class <ref refid="class_command" kindref="compound">Command</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An abstract class that is inherited by all supported commands&apos; classes. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CloseCommand</label>
+        <link refid="class_close_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Command</label>
+        <link refid="class_command"/>
+      </node>
+      <node id="3">
+        <label>ContainsCommand</label>
+        <link refid="class_contains_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CreateCommand</label>
+        <link refid="class_create_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>DeleteCommand</label>
+        <link refid="class_delete_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ExitCommand</label>
+        <link refid="class_exit_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MoveCommand</label>
+        <link refid="class_move_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>OpenCommand</label>
+        <link refid="class_open_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>PrintCommand</label>
+        <link refid="class_print_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SaveAsCommand</label>
+        <link refid="class_save_as_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SaveCommand</label>
+        <link refid="class_save_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>SearchCommand</label>
+        <link refid="class_search_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>SetCommand</label>
+        <link refid="class_set_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ValidateCommand</label>
+        <link refid="class_validate_command"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/cmd_interpreter/command.h" line="18" column="1" bodyfile="include/cmd_interpreter/command.h" bodystart="18" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_command_1a34e4ceaef9f5a66416803d02089ae93a" prot="public" virt="non-virtual"><scope>Command</scope><name>Command</name></member>
+      <member refid="class_command_1a393b091363cf8b83e860f72eb3623686" prot="public" virt="pure-virtual"><scope>Command</scope><name>execute</name></member>
+      <member refid="class_command_1a1bdb719fbff3d94e8578e99430217a0c" prot="public" virt="non-virtual"><scope>Command</scope><name>getJsonManager</name></member>
+      <member refid="class_command_1a0608c58857c617fa752425dac10cf0fe" prot="public" virt="non-virtual"><scope>Command</scope><name>getName</name></member>
+      <member refid="class_command_1a10fbc783774ae9e600b1e0da6cf6e693" prot="private" virt="non-virtual"><scope>Command</scope><name>json_man</name></member>
+      <member refid="class_command_1a8d66550a9895cbd96373a9a221fa2b25" prot="private" virt="non-virtual"><scope>Command</scope><name>name</name></member>
+      <member refid="class_command_1aa12f7ffc1dcd0b5d6e1c676539d9cd35" prot="private" virt="pure-virtual"><scope>Command</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

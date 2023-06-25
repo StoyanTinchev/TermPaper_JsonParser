@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_json_whitespace_formatter" kind="class" language="C++" prot="public">
+    <compoundname>JsonWhitespaceFormatter</compoundname>
+    <includes refid="json__whitespace__formatter_8h" local="no">json_whitespace_formatter.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_json_whitespace_formatter_1af2ee62e58571471e3f1d628cbeaab44d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string JsonWhitespaceFormatter::format</definition>
+        <argsstring>(const std::string &amp;unformatted_output)</argsstring>
+        <name>format</name>
+        <qualifiedname>JsonWhitespaceFormatter::format</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>unformatted_output</declname>
+        </param>
+        <briefdescription>
+<para>Restores whitespace characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unformatted_output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unformatted string representation of a JSON structure. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string formatted with whitespace characters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_whitespace_formatter.h" line="25" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that restores whitespace characters. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The class has a static function &quot;format&quot; that accepts a string representation of a JSON structure with no whitespace characters, and adds those characters whereever needed. </para>
+    </detaileddescription>
+    <location file="include/json_whitespace_formatter.h" line="18" column="1" bodyfile="include/json_whitespace_formatter.h" bodystart="18" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_json_whitespace_formatter_1af2ee62e58571471e3f1d628cbeaab44d" prot="public" virt="non-virtual"><scope>JsonWhitespaceFormatter</scope><name>format</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

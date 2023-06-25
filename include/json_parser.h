@@ -29,13 +29,6 @@ private:
     size_t position; /**< @brief Current position in the JSON text */
 
     /**
-     * @brief Validates the JSON text structure.
-     *
-     * Uses the `JsonValidator` class to ensure that the JSON text has a valid structure.
-     */
-    void validate();
-
-    /**
      * @brief Skips whitespace characters in the JSON text.
      */
     void skipWhitespace();
@@ -77,6 +70,13 @@ private:
 
 public:
     /**
+     * @brief Validates the JSON text structure.
+     *
+     * Uses the `JsonValidator` class to ensure that the JSON text has a valid structure.
+     */
+    void validate();
+    
+    /**
      * @brief Constructs a new Json Parser object.
      *
      * @param jsonStream The JSON text to parse.
@@ -90,8 +90,5 @@ public:
      */
     JsonElement *parse();
 };
-
-#endif // JSON_PARSER_H
-
 
 #endif // JSON_PARSER_H

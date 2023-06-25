@@ -1,0 +1,147 @@
+\doxysection{command.\+h}
+\hypertarget{command_8h_source}{}\label{command_8h_source}\index{include/cmd\_interpreter/command.h@{include/cmd\_interpreter/command.h}}
+\mbox{\hyperlink{command_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ COMMAND\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ COMMAND\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__manager_8h}{json\_manager.h}}>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ std::string\ name;\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_json_manager}{JsonManager}}*\ json\_man;\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ =\ 0;}
+\DoxyCodeLine{00028\ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_command_a34e4ceaef9f5a66416803d02089ae93a}{Command}}(std::string\ name,\ \mbox{\hyperlink{class_json_manager}{JsonManager}}*\ json\_manager)\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>name\ =\ name;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>json\_man\ =\ json\_manager;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_command_a0608c58857c617fa752425dac10cf0fe}{getName}}()\ \{\textcolor{keywordflow}{return}\ name;\}\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_json_manager}{JsonManager}}*\ \mbox{\hyperlink{class_command_a1bdb719fbff3d94e8578e99430217a0c}{getJsonManager}}()\ \{\textcolor{keywordflow}{return}\ json\_man;\}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_command_a393b091363cf8b83e860f72eb3623686}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ =\ 0;}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_validate_command}{ValidateCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{private}:\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_validate_command_a3fd974424556aa979661ebc5cba0d440}{ValidateCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}validate"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_validate_command_a5a56984e067b98f1cf6c6489987efd2b}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_print_command}{PrintCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_print_command_a0d656cc686aedb434aecf0931b18a289}{PrintCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}print"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_print_command_afe4b01d729aab17934e403e4dd2b2bfe}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00108\ \};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_open_command}{OpenCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_open_command_aa03c58eafcaa1506534f1af19b62f529}{OpenCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}open"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_open_command_ada91aa0496b95cd7a3845f92989137e3}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00135\ \};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00141\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_close_command}{CloseCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_close_command_a85fa1c09b124fb97075972e58e0d1dfc}{CloseCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}close"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_close_command_aac2dcb5ff5f84ddc356da6e183515d68}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00162\ \};}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00168\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_exit_command}{ExitCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00169\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_exit_command_a187a62e1bd1715aa5eb037af8c0154c1}{ExitCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}exit"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_exit_command_a7b112387caed7f7e48b28d14b4ffde70}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00189\ \};}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00195\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_save_command}{SaveCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00196\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_save_command_a1ff65a4e39af8686d8e2f8d6edbaf151}{SaveCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}save"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_save_command_a5717c24b451d0fdc4975c50946f1737a}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00216\ \};}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00222\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_save_as_command}{SaveAsCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00223\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00229\ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00236\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_save_as_command_ac0890f3dbe05cd27bf3960462ab681b8}{SaveAsCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}saveas"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00242\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_save_as_command_a1c5e1b25e573b2b6a6603a6cd7c5b1b1}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00243\ \};}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00249\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_search_command}{SearchCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00250\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00257\ }
+\DoxyCodeLine{00258\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_search_command_a7c9ffff690ba08ff05f9d8c7c78f0156}{SearchCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}search"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00269\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_search_command_a3a1d9fad50b27c1393077dc3452431ef}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00270\ \};}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00276\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_contains_command}{ContainsCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00277\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00283\ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00284\ }
+\DoxyCodeLine{00285\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00290\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_contains_command_a94a877141c1ec2d40b2a80396b4bbb7d}{ContainsCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}contains"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00296\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_contains_command_aa7f47d39e9385c0916f107331994e9f0}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00297\ \};}
+\DoxyCodeLine{00298\ }
+\DoxyCodeLine{00303\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_set_command}{SetCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00304\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00310\ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00311\ }
+\DoxyCodeLine{00312\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00317\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_set_command_a64511c020122a9b1f65d5b0c15a5fe1e}{SetCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}set"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00323\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_set_command_a0093782cd874a816e13195ca62ecfe27}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00324\ \};}
+\DoxyCodeLine{00325\ }
+\DoxyCodeLine{00330\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_create_command}{CreateCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00331\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00337\ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00338\ }
+\DoxyCodeLine{00339\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00344\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_create_command_a3eb592e65d8d2bedd9f9307189b0e84e}{CreateCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}create"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00350\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_command_a447b49b5e2aae4ae6399585e535c391d}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00351\ \};}
+\DoxyCodeLine{00352\ }
+\DoxyCodeLine{00357\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_delete_command}{DeleteCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00358\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00364\ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00365\ }
+\DoxyCodeLine{00366\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00371\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_delete_command_a25c1f3f2de55ca7af6fe09c19d4e7009}{DeleteCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}delete"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00377\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_delete_command_a92e65eed00331c1c8215d2912b750453}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00378\ \};}
+\DoxyCodeLine{00379\ }
+\DoxyCodeLine{00384\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_move_command}{MoveCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00385\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00391\ \ \ \ \ \textcolor{keywordtype}{bool}\ validate(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00392\ }
+\DoxyCodeLine{00393\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00398\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_move_command_a7e2a298166f496f64922d483ac998a32}{MoveCommand}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager)\ :\ \mbox{\hyperlink{class_command}{Command}}(\textcolor{stringliteral}{"{}move"{}},\ jsonManager)\ \{\}}
+\DoxyCodeLine{00404\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_move_command_aace8ade15b624e98b5ad3086ef5ca6ba}{execute}}(std::vector<std::string>\ tokenized\_cmd)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00405\ \};}
+\DoxyCodeLine{00406\ }
+\DoxyCodeLine{00407\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COMMAND\_H}}
+
+\end{DoxyCode}

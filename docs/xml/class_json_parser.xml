@@ -36,22 +36,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
-      <memberdef kind="function" id="class_json_parser_1afcbd78da5ae4291f23d776251b7f9427" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void JsonParser::validate</definition>
-        <argsstring>()</argsstring>
-        <name>validate</name>
-        <qualifiedname>JsonParser::validate</qualifiedname>
-        <briefdescription>
-<para>Validates the JSON text structure. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Uses the <computeroutput><ref refid="class_json_validator" kindref="compound">JsonValidator</ref></computeroutput> class to ensure that the JSON text has a valid structure. </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/json_parser.h" line="36" column="10"/>
-      </memberdef>
       <memberdef kind="function" id="class_json_parser_1a07f37ba9dcb901b89cd5a9701a0ddfa8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void JsonParser::skipWhitespace</definition>
@@ -65,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_parser.h" line="41" column="10"/>
+        <location file="include/json_parser.h" line="34" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_parser_1abe01048896188530fc33a27fa578339c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -83,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_parser.h" line="48" column="12"/>
+        <location file="include/json_parser.h" line="41" column="12"/>
       </memberdef>
       <memberdef kind="function" id="class_json_parser_1ab5f66a89e940a1b8767e8b92225ef767" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -101,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_parser.h" line="55" column="17"/>
+        <location file="include/json_parser.h" line="48" column="17"/>
       </memberdef>
       <memberdef kind="function" id="class_json_parser_1a0785b63ffba2c8ed4ad59d90bbbdb57e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -119,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_parser.h" line="62" column="10"/>
+        <location file="include/json_parser.h" line="55" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_parser_1a2c16d35f18b257201ecb3508071767c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_json_array" kindref="compound">JsonArray</ref> *</type>
@@ -137,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_parser.h" line="69" column="15"/>
+        <location file="include/json_parser.h" line="62" column="15"/>
       </memberdef>
       <memberdef kind="function" id="class_json_parser_1ac46751c3ee66d7ea9e4d9bf2b1eba8e2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_json_object" kindref="compound">JsonObject</ref> *</type>
@@ -155,10 +139,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_parser.h" line="76" column="16"/>
+        <location file="include/json_parser.h" line="69" column="16"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_parser_1afcbd78da5ae4291f23d776251b7f9427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonParser::validate</definition>
+        <argsstring>()</argsstring>
+        <name>validate</name>
+        <qualifiedname>JsonParser::validate</qualifiedname>
+        <briefdescription>
+<para>Validates the JSON text structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses the <computeroutput><ref refid="class_json_validator" kindref="compound">JsonValidator</ref></computeroutput> class to ensure that the JSON text has a valid structure. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_parser.h" line="77" column="10"/>
+      </memberdef>
       <memberdef kind="function" id="class_json_parser_1ab2bfea1ba43bf7110d05bd1537cd3f90" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
         <definition>JsonParser::JsonParser</definition>
@@ -225,7 +225,7 @@
       <member refid="class_json_parser_1ab5f66a89e940a1b8767e8b92225ef767" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>parseString</name></member>
       <member refid="class_json_parser_1aecdf359ca07d0748d337bdab026ae690" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>position</name></member>
       <member refid="class_json_parser_1a07f37ba9dcb901b89cd5a9701a0ddfa8" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>skipWhitespace</name></member>
-      <member refid="class_json_parser_1afcbd78da5ae4291f23d776251b7f9427" prot="private" virt="non-virtual"><scope>JsonParser</scope><name>validate</name></member>
+      <member refid="class_json_parser_1afcbd78da5ae4291f23d776251b7f9427" prot="public" virt="non-virtual"><scope>JsonParser</scope><name>validate</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

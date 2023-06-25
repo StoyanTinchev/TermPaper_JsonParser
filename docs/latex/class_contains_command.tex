@@ -1,0 +1,86 @@
+\doxysection{Contains\+Command Class Reference}
+\hypertarget{class_contains_command}{}\label{class_contains_command}\index{ContainsCommand@{ContainsCommand}}
+
+
+A class representing the \"{}contains\"{} command.  
+
+
+
+
+{\ttfamily \#include $<$command.\+h$>$}
+
+Inheritance diagram for Contains\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_contains_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_contains_command_a94a877141c1ec2d40b2a80396b4bbb7d}{Contains\+Command}} (\mbox{\hyperlink{class_json_manager}{Json\+Manager}} \texorpdfstring{$\ast$}{*}json\+Manager)
+\begin{DoxyCompactList}\small\item\em Contructor of the class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_contains_command_aa7f47d39e9385c0916f107331994e9f0}{execute}} (std\+::vector$<$ std\+::string $>$ tokenized\+\_\+cmd) override
+\begin{DoxyCompactList}\small\item\em Executes the \"{}contains\"{} command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_command}{Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_command_a34e4ceaef9f5a66416803d02089ae93a}{Command}} (std\+::string name, \mbox{\hyperlink{class_json_manager}{Json\+Manager}} \texorpdfstring{$\ast$}{*}json\+\_\+manager)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_command}{Command} class used for initialization. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_command_a0608c58857c617fa752425dac10cf0fe}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the \textquotesingle{}name\textquotesingle{} field. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_json_manager}{Json\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_command_a1bdb719fbff3d94e8578e99430217a0c}{get\+Json\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the \textquotesingle{}json\+\_\+man\textquotesingle{} field. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_command_a393b091363cf8b83e860f72eb3623686}{execute}} (std\+::vector$<$ std\+::string $>$ tokenized\+\_\+cmd)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function that executes a string-\/based tokenized command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing the \"{}contains\"{} command. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_contains_command_a94a877141c1ec2d40b2a80396b4bbb7d}\label{class_contains_command_a94a877141c1ec2d40b2a80396b4bbb7d} 
+\index{ContainsCommand@{ContainsCommand}!ContainsCommand@{ContainsCommand}}
+\index{ContainsCommand@{ContainsCommand}!ContainsCommand@{ContainsCommand}}
+\doxysubsubsection{\texorpdfstring{ContainsCommand()}{ContainsCommand()}}
+{\footnotesize\ttfamily Contains\+Command\+::\+Contains\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_json_manager}{Json\+Manager}} \texorpdfstring{$\ast$}{*}}]{json\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Contructor of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Manager} & A pointer to a \doxylink{class_json_manager}{Json\+Manager} instance. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_contains_command_aa7f47d39e9385c0916f107331994e9f0}\label{class_contains_command_aa7f47d39e9385c0916f107331994e9f0} 
+\index{ContainsCommand@{ContainsCommand}!execute@{execute}}
+\index{execute@{execute}!ContainsCommand@{ContainsCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily bool Contains\+Command\+::execute (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{tokenized\+\_\+cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the \"{}contains\"{} command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokenized\+\_\+cmd} & The tokenized string command. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the command executed without problems, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_command_a393b091363cf8b83e860f72eb3623686}{Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/cmd\+\_\+interpreter/\mbox{\hyperlink{command_8h}{command.\+h}}\end{DoxyCompactItemize}

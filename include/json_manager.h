@@ -8,8 +8,8 @@
 
 #include <string>
 #include <fstream>
-#include <regex>
 #include <json_parser.h>
+#include <json_whitespace_formatter.h>
 
 /**
  * @class JsonManager
@@ -23,7 +23,8 @@ private:
     std::string currentFilePath; /**< The current file path of the JSON file. */
     JsonElement *root; /**< The root of the JSON structure. */
     JsonParser *parser; /**< The JsonParser used to parse the JSON. */
-
+    bool jsonOpened; /**< Flag that is true if a file was opened and is ready for processing. */
+    
     /**
      * @brief Splits a string by a delimiter.
      *
@@ -66,7 +67,7 @@ public:
     /**
      * @brief Exits the JsonManager.
      */
-    void exit();
+    void close();
 
     /**
      * @brief Validates the JSON file.

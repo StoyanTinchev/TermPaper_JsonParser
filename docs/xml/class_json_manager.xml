@@ -49,6 +49,21 @@
         </inbodydescription>
         <location file="include/json_manager.h" line="25" column="16" bodyfile="include/json_manager.h" bodystart="25" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="class_json_manager_1a6947859961cb6d1ea3f670093aa22949" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool JsonManager::jsonOpened</definition>
+        <argsstring></argsstring>
+        <name>jsonOpened</name>
+        <qualifiedname>JsonManager::jsonOpened</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag that is true if a file was opened and is ready for processing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/json_manager.h" line="26" column="10" bodyfile="include/json_manager.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="class_json_manager_1abdba52bb6daf33665b9bdcba30e760a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -92,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="34" column="17"/>
+        <location file="include/json_manager.h" line="35" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -109,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="40" column="5"/>
+        <location file="include/json_manager.h" line="41" column="5"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1ade81448ded6365c5eb6b221106287167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -124,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="45" column="5"/>
+        <location file="include/json_manager.h" line="46" column="5"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1a9c7da9043a8ea2e1a2abd0dc80aacd0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -153,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="52" column="10"/>
+        <location file="include/json_manager.h" line="53" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1a99193595221737461254a7ac1070f094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -168,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="57" column="10"/>
+        <location file="include/json_manager.h" line="58" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1abee72a29e0831cda8677e8580f873f39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -197,14 +212,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="64" column="10"/>
+        <location file="include/json_manager.h" line="65" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="class_json_manager_1ae27c26642d8bc720664575d41559a3a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_json_manager_1aaf853db7b725a4b0d2381aed57a02631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void JsonManager::exit</definition>
+        <definition>void JsonManager::close</definition>
         <argsstring>()</argsstring>
-        <name>exit</name>
-        <qualifiedname>JsonManager::exit</qualifiedname>
+        <name>close</name>
+        <qualifiedname>JsonManager::close</qualifiedname>
         <briefdescription>
 <para>Exits the <ref refid="class_json_manager" kindref="compound">JsonManager</ref>. </para>
         </briefdescription>
@@ -212,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="69" column="10"/>
+        <location file="include/json_manager.h" line="70" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1abd264c8052df90523e74a2d16aa11b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -230,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="76" column="10"/>
+        <location file="include/json_manager.h" line="77" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1a7d9abbe836ab188e9557243d0009de6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -245,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="81" column="10"/>
+        <location file="include/json_manager.h" line="82" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1ae06d1273d38e97c73a0664bbd9954b6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::string &gt;</type>
@@ -276,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="89" column="17"/>
+        <location file="include/json_manager.h" line="90" column="17"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1a053445c350b3ffcea0496323660a5a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -307,7 +322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="97" column="10"/>
+        <location file="include/json_manager.h" line="98" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1af5a3960c3006c90f0d807437b0e9b766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -348,7 +363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="105" column="10"/>
+        <location file="include/json_manager.h" line="106" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1ad0c5ce51d3704bd940cd1bf611ff31de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -389,7 +404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="113" column="10"/>
+        <location file="include/json_manager.h" line="114" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1a9cee399626899e3d7e89c34b10c2ec61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -418,7 +433,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="120" column="10"/>
+        <location file="include/json_manager.h" line="121" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_json_manager_1a3acb1531a5d27032a7914bfd1f1874a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -459,7 +474,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/json_manager.h" line="128" column="10"/>
+        <location file="include/json_manager.h" line="129" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -468,14 +483,15 @@
     <detaileddescription>
 <para><ref refid="class_json_manager" kindref="compound">JsonManager</ref> uses a <ref refid="class_json_parser" kindref="compound">JsonParser</ref> to parse the JSON, and provides operations like opening, saving, validating, printing, searching, checking containment, setting, creating, deleting, and moving elements within a JSON. </para>
     </detaileddescription>
-    <location file="include/json_manager.h" line="21" column="1" bodyfile="include/json_manager.h" bodystart="21" bodyend="129"/>
+    <location file="include/json_manager.h" line="21" column="1" bodyfile="include/json_manager.h" bodystart="21" bodyend="130"/>
     <listofallmembers>
+      <member refid="class_json_manager_1aaf853db7b725a4b0d2381aed57a02631" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>close</name></member>
       <member refid="class_json_manager_1a053445c350b3ffcea0496323660a5a8c" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>contains</name></member>
       <member refid="class_json_manager_1ad0c5ce51d3704bd940cd1bf611ff31de" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>create</name></member>
       <member refid="class_json_manager_1ac81021abf489ed6486557dac851890a8" prot="private" virt="non-virtual"><scope>JsonManager</scope><name>currentFilePath</name></member>
       <member refid="class_json_manager_1a9cee399626899e3d7e89c34b10c2ec61" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>delete_element</name></member>
-      <member refid="class_json_manager_1ae27c26642d8bc720664575d41559a3a8" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>exit</name></member>
       <member refid="class_json_manager_1aa59244b57e3e2464b6eb304ccab55a8a" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>JsonManager</name></member>
+      <member refid="class_json_manager_1a6947859961cb6d1ea3f670093aa22949" prot="private" virt="non-virtual"><scope>JsonManager</scope><name>jsonOpened</name></member>
       <member refid="class_json_manager_1a3acb1531a5d27032a7914bfd1f1874a1" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>move</name></member>
       <member refid="class_json_manager_1a9c7da9043a8ea2e1a2abd0dc80aacd0a" prot="public" virt="non-virtual"><scope>JsonManager</scope><name>open</name></member>
       <member refid="class_json_manager_1a92b0f8cf64c4844d71a15ab1b7480cb2" prot="private" virt="non-virtual"><scope>JsonManager</scope><name>parser</name></member>

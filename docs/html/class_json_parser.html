@@ -83,6 +83,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:afcbd78da5ae4291f23d776251b7f9427"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_json_parser.html#afcbd78da5ae4291f23d776251b7f9427">validate</a> ()</td></tr>
+<tr class="memdesc:afcbd78da5ae4291f23d776251b7f9427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the JSON text structure.  <br /></td></tr>
+<tr class="separator:afcbd78da5ae4291f23d776251b7f9427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2bfea1ba43bf7110d05bd1537cd3f90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_json_parser.html#ab2bfea1ba43bf7110d05bd1537cd3f90">JsonParser</a> (const std::string &amp;jsonStream)</td></tr>
 <tr class="memdesc:ab2bfea1ba43bf7110d05bd1537cd3f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new Json Parser object.  <br /></td></tr>
 <tr class="separator:ab2bfea1ba43bf7110d05bd1537cd3f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +149,26 @@ Public Member Functions</h2></td></tr>
 
 <p>Begins parsing the JSON text. </p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the root <code><a class="el" href="class_json_element.html" title="An abstract class representing an element in a JSON document.">JsonElement</a></code> object representing the parsed JSON. </dd></dl>
+
+</div>
+</div>
+<a id="afcbd78da5ae4291f23d776251b7f9427" name="afcbd78da5ae4291f23d776251b7f9427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcbd78da5ae4291f23d776251b7f9427">&#9670;&#160;</a></span>validate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JsonParser::validate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates the JSON text structure. </p>
+<p>Uses the <code><a class="el" href="class_json_validator.html" title="The JsonValidator class validates a string to check if it&#39;s a correctly formed JSON.">JsonValidator</a></code> class to ensure that the JSON text has a valid structure. </p>
 
 </div>
 </div>

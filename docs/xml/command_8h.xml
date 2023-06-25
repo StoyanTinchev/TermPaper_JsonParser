@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="command_8h" kind="file" language="C++">
+    <compoundname>command.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="json__manager_8h" local="no">json_manager.h</includes>
+    <includedby refid="cmd__interpreter_8h" local="yes">include/cmd_interpreter/cmd_interpreter.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/cmd_interpreter/command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>json_base/json_array.h</label>
+        <link refid="json__array_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>json_base/json_element.h</label>
+        <link refid="json__element_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>json_base/json_key.h</label>
+        <link refid="json__key_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>json_base/json_object.h</label>
+        <link refid="json__object_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>json_base/json_value.h</label>
+        <link refid="json__value_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>json_manager.h</label>
+        <link refid="json__manager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>json_parser.h</label>
+        <link refid="json__parser_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>json_validator.h</label>
+        <link refid="json__validator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>json_whitespace_formatter.h</label>
+        <link refid="json__whitespace__formatter_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>cctype</label>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="13">
+        <label>json_exceptions.h</label>
+      </node>
+      <node id="7">
+        <label>sstream</label>
+      </node>
+      <node id="17">
+        <label>stack</label>
+      </node>
+      <node id="15">
+        <label>stdexcept</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/cmd_interpreter/cmd_interpreter.h</label>
+        <link refid="cmd__interpreter_8h"/>
+      </node>
+      <node id="1">
+        <label>include/cmd_interpreter/command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_command" prot="public">Command</innerclass>
+    <innerclass refid="class_validate_command" prot="public">ValidateCommand</innerclass>
+    <innerclass refid="class_print_command" prot="public">PrintCommand</innerclass>
+    <innerclass refid="class_open_command" prot="public">OpenCommand</innerclass>
+    <innerclass refid="class_close_command" prot="public">CloseCommand</innerclass>
+    <innerclass refid="class_exit_command" prot="public">ExitCommand</innerclass>
+    <innerclass refid="class_save_command" prot="public">SaveCommand</innerclass>
+    <innerclass refid="class_save_as_command" prot="public">SaveAsCommand</innerclass>
+    <innerclass refid="class_search_command" prot="public">SearchCommand</innerclass>
+    <innerclass refid="class_contains_command" prot="public">ContainsCommand</innerclass>
+    <innerclass refid="class_set_command" prot="public">SetCommand</innerclass>
+    <innerclass refid="class_create_command" prot="public">CreateCommand</innerclass>
+    <innerclass refid="class_delete_command" prot="public">DeleteCommand</innerclass>
+    <innerclass refid="class_move_command" prot="public">MoveCommand</innerclass>
+    <briefdescription>
+<para>Defines <ref refid="class_command" kindref="compound">Command</ref> abstract class and classes for all supported commands. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/cmd_interpreter/command.h"/>
+  </compounddef>
+</doxygen>

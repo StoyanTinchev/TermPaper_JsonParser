@@ -1,0 +1,35 @@
+\doxysection{cmd\+\_\+interpreter.\+h}
+\hypertarget{cmd__interpreter_8h_source}{}\label{cmd__interpreter_8h_source}\index{include/cmd\_interpreter/cmd\_interpreter.h@{include/cmd\_interpreter/cmd\_interpreter.h}}
+\mbox{\hyperlink{cmd__interpreter_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CMD\_INTERPRETER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CMD\_INTERPRETER\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{command_8h}{command.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{json__manager_8h}{json\_manager.h}}>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_m_d_interpreter}{CMDInterpreter}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{private}:\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::vector<Command*>\ supported\_commands;\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_command}{Command}}*\ getCommandByName(std::string\ name);\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ std::vector<std::string>\ tokenizeCommand(std::string\&\ input\_cmd);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_m_d_interpreter_ab6ee8bd9f2621420b68cecf4e247159a}{CMDInterpreter}}(\mbox{\hyperlink{class_json_manager}{JsonManager}}*\ jsonManager);\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_m_d_interpreter_a424621865de29085e789d3a4216549a1}{\string~CMDInterpreter}}();}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_m_d_interpreter_aeae6e4662ded719fab7c4e4c2274194a}{interpret}}(std::string\&\ cmd);}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_command_not_supported_exception}{CommandNotSupportedException}}\ :\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_command_not_supported_exception_a692687b10f807b98d8aa9f1b35e225ea}{CommandNotSupportedException}}(\textcolor{keyword}{const}\ std::string\ \&msg)\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ :\ std::runtime\_error(\textcolor{stringliteral}{"{}CommandNotSupportedException:\ "{}}\ +\ msg)\ \{\}}
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CMD\_INTERPRETER\_H}}
+
+\end{DoxyCode}

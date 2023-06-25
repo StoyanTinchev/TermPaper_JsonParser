@@ -2,7 +2,7 @@
 #include <json_manager.h>
 #include <json_exceptions.h>
 
-JsonManager::JsonManager() : root(nullptr), parser(nullptr) {}
+JsonManager::JsonManager() : root(nullptr), parser(nullptr), jsonOpened(false) {}
 
 JsonManager::~JsonManager() {
     delete root;
@@ -10,6 +10,9 @@ JsonManager::~JsonManager() {
 }
 
 void JsonManager::open(const std::string &filePath) {
+    if (jsonOpened)
+        throw FileError("A JSON file is already opened for processing.");
+
     std::ifstream inFile(filePath);
     if (!inFile) {
         throw FileError("Failed to open file: " + filePath);
@@ -18,12 +21,11 @@ void JsonManager::open(const std::string &filePath) {
     std::string jsonContent((std::istreambuf_iterator<char>(inFile)), std::istreambuf_iterator<char>());
     inFile.close();
 
-    delete parser;
     parser = new JsonParser(jsonContent);
-    delete root;
     root = parser->parse();
 
     currentFilePath = filePath;
+    jsonOpened = true;
     std::cout << "Successfully opened " << filePath << std::endl;
 }
 
@@ -44,26 +46,29 @@ void JsonManager::saveAs(const std::string &filePath) {
         throw FileError("Failed to open file: " + filePath);
     }
 
-    outFile << root->to_string();
+    outFile << JsonWhitespaceFormatter::format(root -> to_string());
     outFile.close();
 
     currentFilePath = filePath;
     std::cout << "Successfully saved " << filePath << std::endl;
 }
 
-void JsonManager::exit() {
+void JsonManager::close() {
+    if (!jsonOpened) 
+        throw FileError("No JSON file is opened for processing.");
+
     delete root;
     root = nullptr;
     delete parser;
     parser = nullptr;
-    currentFilePath.clear();
-    std::cout << "Exiting the application." << std::endl;
-    // todo note: Actual application exit should be handled by the environment.
+    jsonOpened = false;
+    std::cout << "Successfully closed " << currentFilePath << std::endl;
+    currentFilePath = "";
 }
 
 bool JsonManager::validate() {
     try {
-        parser->parse();
+        parser->validate();
         return true;
     } catch (const JsonException &ex) {
         std::cerr << "JSON file is not valid: " << ex.what() << std::endl;
@@ -76,7 +81,7 @@ void JsonManager::print() {
         throw InvalidPathError("No data to print");
     }
 
-    std::cout << root->to_string() << std::endl;
+    std::cout << JsonWhitespaceFormatter::format(root -> to_string()) << std::endl;
 }
 
 std::vector<std::string> JsonManager::search(const std::string &key) {

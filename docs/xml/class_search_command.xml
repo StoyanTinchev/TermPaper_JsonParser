@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_search_command" kind="class" language="C++" prot="public">
+    <compoundname>SearchCommand</compoundname>
+    <basecompoundref refid="class_command" prot="public" virt="non-virtual">Command</basecompoundref>
+    <includes refid="command_8h" local="no">command.h</includes>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_search_command_1a1fcb248944497df3f028718b86dfae61" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SearchCommand::validate</definition>
+        <argsstring>(std::vector&lt; std::string &gt; tokenized_cmd) override</argsstring>
+        <name>validate</name>
+        <qualifiedname>SearchCommand::validate</qualifiedname>
+        <reimplements refid="class_command_1aa12f7ffc1dcd0b5d6e1c676539d9cd35">validate</reimplements>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>tokenized_cmd</declname>
+        </param>
+        <briefdescription>
+<para>Validates the syntax of the string command &quot;search&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tokenized_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tokenized string command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the command syntax is correct, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="256" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_search_command_1a7c9ffff690ba08ff05f9d8c7c78f0156" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SearchCommand::SearchCommand</definition>
+        <argsstring>(JsonManager *jsonManager)</argsstring>
+        <name>SearchCommand</name>
+        <qualifiedname>SearchCommand::SearchCommand</qualifiedname>
+        <param>
+          <type><ref refid="class_json_manager" kindref="compound">JsonManager</ref> *</type>
+          <declname>jsonManager</declname>
+        </param>
+        <briefdescription>
+<para>Contructor of the class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jsonManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a <ref refid="class_json_manager" kindref="compound">JsonManager</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="263" column="14" bodyfile="include/cmd_interpreter/command.h" bodystart="263" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="class_search_command_1a3a1d9fad50b27c1393077dc3452431ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SearchCommand::execute</definition>
+        <argsstring>(std::vector&lt; std::string &gt; tokenized_cmd) override</argsstring>
+        <name>execute</name>
+        <qualifiedname>SearchCommand::execute</qualifiedname>
+        <reimplements refid="class_command_1a393b091363cf8b83e860f72eb3623686">execute</reimplements>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>tokenized_cmd</declname>
+        </param>
+        <briefdescription>
+<para>Executes the &quot;search&quot; command. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tokenized_cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tokenized string command. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the command executed without problems, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/cmd_interpreter/command.h" line="269" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class representing the &quot;search&quot; command. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Command</label>
+        <link refid="class_command"/>
+      </node>
+      <node id="1">
+        <label>SearchCommand</label>
+        <link refid="class_search_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Command</label>
+        <link refid="class_command"/>
+      </node>
+      <node id="1">
+        <label>SearchCommand</label>
+        <link refid="class_search_command"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/cmd_interpreter/command.h" line="249" column="1" bodyfile="include/cmd_interpreter/command.h" bodystart="249" bodyend="270"/>
+    <listofallmembers>
+      <member refid="class_command_1a34e4ceaef9f5a66416803d02089ae93a" prot="public" virt="non-virtual"><scope>SearchCommand</scope><name>Command</name></member>
+      <member refid="class_search_command_1a3a1d9fad50b27c1393077dc3452431ef" prot="public" virt="virtual"><scope>SearchCommand</scope><name>execute</name></member>
+      <member refid="class_command_1a1bdb719fbff3d94e8578e99430217a0c" prot="public" virt="non-virtual"><scope>SearchCommand</scope><name>getJsonManager</name></member>
+      <member refid="class_command_1a0608c58857c617fa752425dac10cf0fe" prot="public" virt="non-virtual"><scope>SearchCommand</scope><name>getName</name></member>
+      <member refid="class_search_command_1a7c9ffff690ba08ff05f9d8c7c78f0156" prot="public" virt="non-virtual"><scope>SearchCommand</scope><name>SearchCommand</name></member>
+      <member refid="class_search_command_1a1fcb248944497df3f028718b86dfae61" prot="private" virt="virtual"><scope>SearchCommand</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

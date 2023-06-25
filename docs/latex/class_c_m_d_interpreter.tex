@@ -1,0 +1,79 @@
+\doxysection{CMDInterpreter Class Reference}
+\hypertarget{class_c_m_d_interpreter}{}\label{class_c_m_d_interpreter}\index{CMDInterpreter@{CMDInterpreter}}
+
+
+Class for the \doxylink{class_command}{Command} Interpreter.  
+
+
+
+
+{\ttfamily \#include $<$cmd\+\_\+interpreter.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_m_d_interpreter_ab6ee8bd9f2621420b68cecf4e247159a}{CMDInterpreter}} (\mbox{\hyperlink{class_json_manager}{Json\+Manager}} \texorpdfstring{$\ast$}{*}json\+Manager)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_c_m_d_interpreter}{CMDInterpreter} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_m_d_interpreter_a424621865de29085e789d3a4216549a1}{\texorpdfstring{$\sim$}{\string~}\+CMDInterpreter}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_c_m_d_interpreter}{CMDInterpreter} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_m_d_interpreter_aeae6e4662ded719fab7c4e4c2274194a}{interpret}} (std\+::string \&cmd)
+\begin{DoxyCompactList}\small\item\em Interprets a command string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the \doxylink{class_command}{Command} Interpreter. 
+
+It serves as a translator of string-\/based commands to command classes and then executing it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_c_m_d_interpreter_ab6ee8bd9f2621420b68cecf4e247159a}\label{class_c_m_d_interpreter_ab6ee8bd9f2621420b68cecf4e247159a} 
+\index{CMDInterpreter@{CMDInterpreter}!CMDInterpreter@{CMDInterpreter}}
+\index{CMDInterpreter@{CMDInterpreter}!CMDInterpreter@{CMDInterpreter}}
+\doxysubsubsection{\texorpdfstring{CMDInterpreter()}{CMDInterpreter()}}
+{\footnotesize\ttfamily CMDInterpreter\+::\+CMDInterpreter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_json_manager}{Json\+Manager}} \texorpdfstring{$\ast$}{*}}]{json\+Manager }\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_c_m_d_interpreter}{CMDInterpreter} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Manager} & A pointer to an instance of \doxylink{class_json_manager}{Json\+Manager} class. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_c_m_d_interpreter_a424621865de29085e789d3a4216549a1}\label{class_c_m_d_interpreter_a424621865de29085e789d3a4216549a1} 
+\index{CMDInterpreter@{CMDInterpreter}!````~CMDInterpreter@{\texorpdfstring{$\sim$}{\string~}CMDInterpreter}}
+\index{````~CMDInterpreter@{\texorpdfstring{$\sim$}{\string~}CMDInterpreter}!CMDInterpreter@{CMDInterpreter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CMDInterpreter()}{\string~CMDInterpreter()}}
+{\footnotesize\ttfamily CMDInterpreter\+::\texorpdfstring{$\sim$}{\string~}\+CMDInterpreter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_c_m_d_interpreter}{CMDInterpreter} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_m_d_interpreter_aeae6e4662ded719fab7c4e4c2274194a}\label{class_c_m_d_interpreter_aeae6e4662ded719fab7c4e4c2274194a} 
+\index{CMDInterpreter@{CMDInterpreter}!interpret@{interpret}}
+\index{interpret@{interpret}!CMDInterpreter@{CMDInterpreter}}
+\doxysubsubsection{\texorpdfstring{interpret()}{interpret()}}
+{\footnotesize\ttfamily bool CMDInterpreter\+::interpret (\begin{DoxyParamCaption}\item[{std\+::string \&}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Interprets a command string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The input string commmand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the command executed successfully, false otherwise. Can throw a runtime error. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/cmd\+\_\+interpreter/\mbox{\hyperlink{cmd__interpreter_8h}{cmd\+\_\+interpreter.\+h}}\end{DoxyCompactItemize}

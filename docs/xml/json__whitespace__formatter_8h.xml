@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="json__whitespace__formatter_8h" kind="file" language="C++">
+    <compoundname>json_whitespace_formatter.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="json__manager_8h" local="no">include/json_manager.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/json_whitespace_formatter.h</label>
+        <link refid="json__whitespace__formatter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/cmd_interpreter/cmd_interpreter.h</label>
+        <link refid="cmd__interpreter_8h"/>
+      </node>
+      <node id="4">
+        <label>include/cmd_interpreter/command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/json_manager.h</label>
+        <link refid="json__manager_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/json_whitespace_formatter.h</label>
+        <link refid="json__whitespace__formatter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_json_whitespace_formatter" prot="public">JsonWhitespaceFormatter</innerclass>
+    <briefdescription>
+<para>Defines a class that restores whitespace character whereever needed. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/json_whitespace_formatter.h"/>
+  </compounddef>
+</doxygen>

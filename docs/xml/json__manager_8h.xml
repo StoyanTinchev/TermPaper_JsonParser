@@ -4,47 +4,51 @@
     <compoundname>json_manager.h</compoundname>
     <includes local="no">string</includes>
     <includes local="no">fstream</includes>
-    <includes local="no">regex</includes>
     <includes refid="json__parser_8h" local="no">json_parser.h</includes>
+    <includes refid="json__whitespace__formatter_8h" local="no">json_whitespace_formatter.h</includes>
+    <includedby refid="cmd__interpreter_8h" local="no">include/cmd_interpreter/cmd_interpreter.h</includedby>
+    <includedby refid="command_8h" local="no">include/cmd_interpreter/command.h</includedby>
     <incdepgraph>
-      <node id="12">
+      <node id="11">
         <label>json_base/json_array.h</label>
         <link refid="json__array_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="7">
         <label>json_base/json_element.h</label>
         <link refid="json__element_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="10">
+      <node id="9">
         <label>json_base/json_key.h</label>
         <link refid="json__key_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="10">
         <label>json_base/json_object.h</label>
         <link refid="json__object_8h"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
-      <node id="7">
+      <node id="6">
         <label>json_base/json_value.h</label>
         <link refid="json__value_8h"/>
-        <childnode refid="8" relation="include">
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -52,9 +56,7 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
@@ -68,69 +70,92 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="4">
         <label>json_parser.h</label>
         <link refid="json__parser_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="15">
         <label>json_validator.h</label>
         <link refid="json__validator_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="17">
+        <label>json_whitespace_formatter.h</label>
+        <link refid="json__whitespace__formatter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
         <label>cctype</label>
       </node>
       <node id="3">
         <label>fstream</label>
       </node>
-      <node id="13">
+      <node id="12">
         <label>json_exceptions.h</label>
       </node>
-      <node id="4">
-        <label>regex</label>
-      </node>
-      <node id="6">
+      <node id="5">
         <label>sstream</label>
       </node>
-      <node id="17">
+      <node id="16">
         <label>stack</label>
       </node>
-      <node id="15">
+      <node id="14">
         <label>stdexcept</label>
       </node>
       <node id="2">
         <label>string</label>
       </node>
-      <node id="9">
+      <node id="8">
         <label>vector</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/cmd_interpreter/cmd_interpreter.h</label>
+        <link refid="cmd__interpreter_8h"/>
+      </node>
+      <node id="3">
+        <label>include/cmd_interpreter/command.h</label>
+        <link refid="command_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/json_manager.h</label>
+        <link refid="json__manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innerclass refid="class_json_manager" prot="public">JsonManager</innerclass>
     <briefdescription>
 <para>Defines the class that manages JSON operations. </para>
